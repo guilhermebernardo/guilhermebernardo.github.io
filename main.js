@@ -82,9 +82,17 @@ const PRODUCTS = [
     id: 9,
     brand: 'Lacoste',
     name: 'Polo Azul Djokovic',
-    images: ['Polo Grafico Azul Djokovic.jpeg'],
+    images: ['Polo Grafico Azul Djokovic.jpg'],
     description:
       'Polo da colaboração Lacoste × Novak Djokovic em azul oceano com grafismo artístico em cruz. Piqué de performance com gestão de umidade avançada — onde o esporte se torna arte contemporânea nas quadras de prestígio.',
+  },
+  {
+    id: 99,
+    brand: 'Lacoste',
+    name: 'Polo Verde Djokovic',
+    images: ['Polo Verde Djokovic.jpg'],
+    description:
+      'Polo da colaboração Lacoste × Novak Djokovic em verde com branco. Piqué de performance com gestão de umidade avançada — onde o esporte se torna arte contemporânea nas quadras de prestígio.',
   },
   {
     id: 10,
