@@ -174,20 +174,6 @@ button { font-family: inherit; cursor: pointer; }
   mask-image: radial-gradient(ellipse at 50% 50%, black 20%, transparent 80%);
 }
 
-.hero-scroll {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-}
-
 .hero-glow {
   position: absolute;
   width: 600px;
