@@ -727,6 +727,89 @@ const PRODUCTS = [
   },
 
   /* ══════════════════════════════════════════════════
+     LACOSTE × MEDVEDEV + NOVOS (Masculino)
+  ══════════════════════════════════════════════════ */
+  {
+    id: 70, brand: 'Lacoste', gender: 'masculino',
+    tags: ['camiseta', 'sport'],
+    price: 335.90, originalPrice: 559.90,
+    name: 'Camiseta Medvedev Azul',
+    images: [
+      'masculino/lacoste/lacoste-medvedev-tshirt-azul-1.jpg',
+      'masculino/lacoste/lacoste-medvedev-tshirt-azul-2.jpg',
+    ],
+    description: 'Camiseta da collab Lacoste × Daniil Medvedev em azul técnico — leveza e precisão de quem compete no mais alto nível do tênis mundial.',
+  },
+  {
+    id: 71, brand: 'Lacoste', gender: 'masculino',
+    tags: ['short'],
+    price: 447.90, originalPrice: 746.90,
+    name: 'Short Monograma Bege',
+    images: [
+      'masculino/lacoste/lacoste-short-monograma-bege-1.jpg',
+      'masculino/lacoste/lacoste-short-monograma-bege-2.jpg',
+      'masculino/lacoste/lacoste-short-monograma-bege-3.jpg',
+    ],
+    description: 'Short leve em monograma bege, marrom e branco — sofisticação de tons neutros com o padrão exclusivo da Maison em cada detalhe.',
+  },
+  {
+    id: 72, brand: 'Lacoste', gender: 'masculino',
+    tags: ['short'],
+    price: 447.90, originalPrice: 746.90,
+    name: 'Short Monograma Azul',
+    images: [
+      'masculino/lacoste/lacoste-short-monograma-azul-1.jpg',
+      'masculino/lacoste/lacoste-short-monograma-azul-2.jpg',
+      'masculino/lacoste/lacoste-short-monograma-azul-3.jpg',
+    ],
+    description: 'Short leve em monograma azul e branco — o padrão icônico Lacoste em tecido ultra-leve para os dias mais quentes do ano.',
+  },
+  {
+    id: 73, brand: 'Lacoste', gender: 'masculino',
+    tags: ['calca'],
+    price: 527.90, originalPrice: 879.90,
+    name: 'Calça Estampada Azul e Branco',
+    images: [
+      'masculino/lacoste/lacoste-calca-estampada-azulbranco-1.jpg',
+      'masculino/lacoste/lacoste-calca-estampada-azulbranco-2.jpg',
+      'masculino/lacoste/lacoste-calca-estampada-azulbranco-3.jpg',
+    ],
+    description: 'Calça de moletom com estampa monograma em azul e branco — streetwear de alto nível com o DNA da Maison em cada centímetro do tecido.',
+  },
+  {
+    id: 74, brand: 'Lacoste', gender: 'masculino',
+    tags: ['calca'],
+    price: 527.90, originalPrice: 879.90,
+    name: 'Calça Estampada Marinho e Vermelho',
+    images: [
+      'masculino/lacoste/lacoste-calca-estampada-marinho-1.jpg',
+    ],
+    description: 'Calça de moletom em marinho e vermelho com estampa exclusiva — contraste vibrante com o acabamento premium que a Lacoste assina.',
+  },
+  {
+    id: 75, brand: 'Lacoste', gender: 'masculino',
+    tags: ['short', 'sport'],
+    price: 367.90, originalPrice: 613.90,
+    name: 'Short Tennis Ultra Dry Marinho',
+    images: [
+      'masculino/lacoste/lacoste-short-tennis-marinho-1.jpg',
+      'masculino/lacoste/lacoste-short-tennis-marinho-2.jpg',
+    ],
+    description: 'Short Ultra Dry em azul marinho com tecnologia de evaporação rápida — feito para as quadras, perfeito para qualquer movimento.',
+  },
+  {
+    id: 76, brand: 'Lacoste', gender: 'masculino',
+    tags: ['short', 'sport'],
+    price: 367.90, originalPrice: 613.90,
+    name: 'Short Tennis Ultra Dry Roxo',
+    images: [
+      'masculino/lacoste/lacoste-short-tennis-roxo-1.jpg',
+      'masculino/lacoste/lacoste-short-tennis-roxo-2.jpg',
+    ],
+    description: 'Short Ultra Dry em roxo com fabric de secagem instantânea — ousadia cromática com a performance técnica que o tênis de elite exige.',
+  },
+
+  /* ══════════════════════════════════════════════════
      LACOSTE — Calças Femininas
   ══════════════════════════════════════════════════ */
   {
@@ -740,6 +823,17 @@ const PRODUCTS = [
       'feminino/lacoste/lacoste-calca-monograma-azul-3.jpg',
     ],
     description: 'Calça flared feminina em azul com monograma all-over — silhueta alongada e presença marcante com a identidade inconfundível da Maison.',
+  },
+  {
+    id: 77, brand: 'Lacoste', gender: 'feminino',
+    tags: ['polo', 'sport'],
+    price: 575.90, originalPrice: 959.90,
+    name: 'Polo Tennis Termorregulador Verde',
+    images: [
+      'feminino/lacoste/lacoste-polo-tennis-verde-1.jpg',
+      'feminino/lacoste/lacoste-polo-tennis-verde-2.jpg',
+    ],
+    description: 'Polo feminino de tênis com tecnologia termorreguladora em verde e branco — performance de Grand Slam com a elegância atemporal da Maison.',
   },
   {
     id: 69, brand: 'Lacoste', gender: 'feminino',
@@ -899,11 +993,14 @@ function renderProducts() {
          <button class="carousel-btn carousel-next" aria-label="Próximo">&#8250;</button>`
       : '';
 
+    const discountPct = product.originalPrice
+      ? Math.round((1 - product.price / product.originalPrice) * 100)
+      : 0;
     const priceHTML = product.originalPrice
       ? `<div class="card-price">
            <span class="price-original">${fmt(product.originalPrice)}</span>
            <span class="price-current">${fmt(product.price)}</span>
-           <span class="price-badge">-5%</span>
+           <span class="price-badge">-${discountPct}%</span>
          </div>`
       : `<div class="card-price"><span class="price-current">${fmt(product.price)}</span></div>`;
 
