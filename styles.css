@@ -339,6 +339,70 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 /* =====================================================
+   PREÇOS
+   ===================================================== */
+.card-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.price-current {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: 0.5px;
+}
+.price-original {
+  font-size: 13px;
+  color: var(--grey);
+  text-decoration: line-through;
+  letter-spacing: 0.3px;
+}
+.price-badge {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  background: var(--gold);
+  color: var(--black);
+  padding: 3px 8px;
+  text-transform: uppercase;
+}
+.modal-price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.modal-price .price-current { font-size: 26px; }
+.modal-price .price-original { font-size: 15px; }
+
+/* =====================================================
+   CATEGORY BAR
+   ===================================================== */
+.category-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 48px;
+}
+.category-bar .filter-btn {
+  border-color: rgba(201,169,110,0.14);
+  font-size: 9px;
+  padding: 8px 22px;
+}
+.category-bar .filter-btn:hover,
+.category-bar .filter-btn.active {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: rgba(201,169,110,0.06);
+}
+
+/* =====================================================
    GENDER TABS
    ===================================================== */
 .gender-tabs {
