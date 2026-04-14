@@ -497,6 +497,18 @@ const PRODUCTS = [
     images: ['masculino/lacoste/Short Sport Lacoste Azul.jpeg'],
     description: 'Short de performance Lacoste Sport em azul royal. Tecido de secagem rápida, vivos brancos nos bolsos e emblema de crocodilo bordado — feito para as quadras, com a elegância de quem domina qualquer ambiente.',
   },
+  {
+    id: 69, brand: 'Lacoste', gender: 'masculino',
+    tags: ['short', 'sport'],
+    price: 600.00, originalPrice: 720.00,
+    name: 'Short Tennis x Novak Djokovic Azul Marinho',
+    images: [
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Shorts C$ 125.00 List of variations    +2 Colours Blue : Navy Blue • JNN 1.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Shorts C$ 125.00 List of variations    +2 Colours Blue : Navy Blue • JNN 2.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Shorts C$ 125.00 List of variations    +2 Colours Blue : Navy Blue • JNN 3.avif',
+    ],
+    description: 'Short de tênis Lacoste × Novak Djokovic em azul marinho. Tecido ultra-leve de secagem rápida com corte atlético de alta performance — edição limitada da collab mais icônica das quadras.',
+  },
 
   /* ══════════════════════════════════════════════════
      CAMISETAS
