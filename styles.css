@@ -323,6 +323,69 @@ button { font-family: inherit; cursor: pointer; }
 .btn-gold-outline:hover::before { transform: translateX(0); }
 
 /* =====================================================
+   HERO — GENDER BUTTONS
+   ===================================================== */
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: fadeUp 1.2s 0.7s var(--ease) both;
+}
+.hero-ctas .btn-gold,
+.hero-ctas .btn-gold-outline {
+  animation: none;
+  margin-top: 0;
+}
+
+/* =====================================================
+   GENDER TABS
+   ===================================================== */
+.gender-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 40px;
+  border: 1px solid var(--gold-border);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gender-tab {
+  padding: 13px 48px;
+  background: transparent;
+  border: none;
+  color: var(--grey);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: all 0.35s var(--ease);
+  position: relative;
+}
+.gender-tab + .gender-tab {
+  border-left: 1px solid var(--gold-border);
+}
+.gender-tab .gender-icon {
+  font-size: 14px;
+  vertical-align: middle;
+  margin-right: 6px;
+  line-height: 1;
+}
+.gender-tab:hover {
+  color: var(--gold);
+  background: rgba(201,169,110,0.04);
+}
+.gender-tab.active {
+  color: var(--black);
+  background: var(--gold);
+}
+.gender-tab.active .gender-icon {
+  color: var(--black);
+}
+
+/* =====================================================
    MARQUEE
    ===================================================== */
 .marquee-track {

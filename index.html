@@ -15,7 +15,7 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">
-        <img src="../new_logo.png" alt="Tolent Imports" />
+        <img src="images/new_logo.png" alt="Tolent Imports" />
       </a>
       <ul class="nav-links">
         <li><a href="#collection">Coleção</a></li>
@@ -42,7 +42,7 @@
     <div class="hero-glow hero-glow--right"></div>
     <div class="hero-content">
       <img
-        src="../new_logo.png"
+        src="images/new_logo.png"
         alt="Tolent Imports"
         class="hero-logo"
         id="heroLogo"
@@ -50,7 +50,14 @@
       <p class="hero-tagline">Luxo Curado. Estilo Elevado.</p>
       <div class="hero-divider"></div>
       <p class="hero-sub">Importações premium das casas de moda mais prestigiadas do mundo</p>
-      <a href="#collection" class="btn-gold">Explorar Coleção</a>
+      <div class="hero-ctas">
+        <a href="#collection" class="btn-gold hero-gender-btn" data-gender="masculino">Coleção Masculina</a>
+        <a href="#collection" class="btn-gold-outline hero-gender-btn" data-gender="feminino">Coleção Feminina</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span class="hero-scroll-label">Role para Baixo</span>
+      <div class="hero-scroll-line"></div>
     </div>
   </section>
 
@@ -82,16 +89,16 @@
       <div class="gold-line"></div>
     </div>
 
-    <div class="filter-bar reveal">
-      <button class="filter-btn active" data-filter="all">Todos</button>
-      <button class="filter-btn" data-filter="Lacoste">Lacoste</button>
-      <button class="filter-btn" data-filter="Louis Vuitton">Louis Vuitton</button>
-      <button class="filter-btn" data-filter="Nike">Nike</button>
-      <button class="filter-btn" data-filter="Hugo Boss">Hugo Boss</button>
-      <button class="filter-btn" data-filter="Tommy Hilfiger">Tommy Hilfiger</button>
-      <button class="filter-btn" data-filter="Christian Dior">Dior</button>
-      <button class="filter-btn" data-filter="Hermès">Hermès</button>
+    <div class="gender-tabs reveal">
+      <button class="gender-tab active" data-gender="masculino">
+        <span class="gender-icon">♂</span> Masculino
+      </button>
+      <button class="gender-tab" data-gender="feminino">
+        <span class="gender-icon">♀</span> Feminino
+      </button>
     </div>
+
+    <div class="filter-bar reveal"></div>
 
     <div class="product-grid" id="productGrid"></div>
   </section>
@@ -172,7 +179,7 @@
   <!-- ======== FOOTER / CONTACT ======== -->
   <footer id="contact">
     <div class="footer-logo">
-      <img src="../new_logo.png" alt="Tolent Imports" />
+      <img src="images/new_logo.png" alt="Tolent Imports" />
     </div>
     <p class="footer-tagline">Luxo Curado. Estilo Elevado.</p>
 

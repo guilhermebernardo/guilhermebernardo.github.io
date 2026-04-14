@@ -7,205 +7,218 @@
 const WA_NUMBER = '5512991510752';
 
 /* =====================================================
-   CATÁLOGO — 32 peças consolidadas
+   CATÁLOGO
    ===================================================== */
 const PRODUCTS = [
 
   /* ══════════════════════════════════
-     LACOSTE  (12 peças)
+     LACOSTE  (12 peças) — Masculino
   ══════════════════════════════════ */
   {
     id: 1,
     brand: 'Lacoste',
+    gender: 'masculino',
     name: 'Conjunto Monograma Lacoste',
-    images: ['lacoste-conjunto-monograma-azul.jpeg'],
+    images: ['masculino/lacoste/lacoste-conjunto-monograma-azul.jpeg'],
     description:
       'Conjunto de duas peças Lacoste em jacquard monograma azul powder. Jaqueta de gola alta com zíper e calça jogger afinada, ambas com faixas laterais brancas em contraste. Uma obra-prima da elegância esportiva francesa.',
   },
   {
     id: 2,
     brand: 'Lacoste',
+    gender: 'masculino',
     name: 'Moletom Zip Premium Verde',
-    images: ['lacoste-moletom-zip-verde.jpeg'],
+    images: ['masculino/lacoste/lacoste-moletom-zip-verde.jpeg'],
     description:
       'Moletom com zíper completo em verde sálvia de malha pesada escovada. Emblema do crocodilo Lacoste no punho, com ribana de precisão no cós e mangas — silhueta atlética refinada para o guarda-roupa contemporâneo.',
   },
   {
     id: 3,
     brand: 'Lacoste',
+    gender: 'masculino',
     name: 'Jaqueta Sport Branca',
-    images: ['lacoste-jaqueta-sport-branca.jpeg'],
+    images: ['masculino/lacoste/lacoste-jaqueta-sport-branca.jpeg'],
     description:
       'Jaqueta de performance Lacoste Sport em branco off-white. Tecido leve e elástico, vivos em preto ao longo das laterais e gola, com icônico emblema de crocodilo — criada para as quadras modernas e para além delas.',
   },
   {
     id: 4,
     brand: 'Lacoste',
+    gender: 'masculino',
     name: 'Polo Roland Garros — Laranja',
-    images: ['lacoste-polo-roland-garros-laranja.jpeg'],
+    images: ['masculino/lacoste/lacoste-polo-roland-garros-laranja.jpeg'],
     description:
       'Polo edição limitada Lacoste × Novak Djokovic Roland Garros em laranja queimado. Piqué de performance ultraleve com proteção UV e padrão jacquard nas mangas — peça de coleção nascida no saibro de Paris.',
   },
   {
     id: 5,
     brand: 'Lacoste',
+    gender: 'masculino',
     name: 'Calça Jogger Monograma',
-    images: ['lacoste-calca-jogger-monograma.jpeg'],
+    images: ['masculino/lacoste/lacoste-calca-jogger-monograma.jpeg'],
     description:
       'Calça jogger Lacoste em jacquard monograma azul celeste. Cós elástico com cordão, detalhamento de faixas em dourado e marinho — lazer elegante redefinido para quem se move com intenção e estilo.',
   },
   {
     id: 6,
     brand: 'Lacoste',
+    gender: 'masculino',
     name: 'Jaqueta Track Preto e Dourado',
-    images: ['lacoste-jaqueta-track-preto-dourado.jpeg'],
+    images: ['masculino/lacoste/lacoste-jaqueta-track-preto-dourado.jpeg'],
     description:
       'Jaqueta track premium Lacoste em preto meia-noite com faixas laterais douradas. Silhueta de gola alta com zíper e emblema discreto do crocodilo — luxo contido que fala por si só.',
   },
   {
     id: 7,
     brand: 'Lacoste',
+    gender: 'masculino',
     name: 'Corta-Vento com Logo',
-    images: ['lacoste-corta-vento-azul.jpeg'],
+    images: ['masculino/lacoste/lacoste-corta-vento-azul.jpeg'],
     description:
       'Corta-vento com capuz Lacoste em azul marinho com marca em verde sálvia no peito. Shell leve e dobrável que oferece proteção eficiente com estilo esportivo clássico — sempre pronto para o próximo movimento.',
   },
   {
     id: 8,
     brand: 'Lacoste',
+    gender: 'masculino',
     name: 'Short Sport Lacoste Azul',
-    images: ['Short Sport Lacoste Azul.jpeg'],
+    images: ['masculino/lacoste/Short Sport Lacoste Azul.jpeg'],
     description:
       'Short de performance Lacoste Sport em azul royal. Tecido de secagem rápida, vivos brancos nos bolsos e emblema de crocodilo bordado — feito para as quadras, com a elegância de quem domina qualquer ambiente.',
   },
   {
     id: 9,
     brand: 'Lacoste',
-    name: 'Polo Azul Djokovic',
-    images: ['Polo Grafico Azul Djokovic.jpg'],
+    gender: 'masculino',
+    name: 'Polo Gráfico Azul — Djokovic',
+    images: ['masculino/lacoste/Polo Gráfico Azul — Djokovic.jpeg'],
     description:
       'Polo da colaboração Lacoste × Novak Djokovic em azul oceano com grafismo artístico em cruz. Piqué de performance com gestão de umidade avançada — onde o esporte se torna arte contemporânea nas quadras de prestígio.',
   },
   {
-    id: 99,
-    brand: 'Lacoste',
-    name: 'Polo Verde Djokovic',
-    images: ['Polo Verde Djokovic.jpg'],
-    description:
-      'Polo da colaboração Lacoste × Novak Djokovic em verde com branco. Piqué de performance com gestão de umidade avançada — onde o esporte se torna arte contemporânea nas quadras de prestígio.',
-  },
-  {
     id: 10,
     brand: 'Lacoste',
+    gender: 'masculino',
     name: 'Jaqueta Metasport Cobalt',
-    images: ['Jaqueta Metasport Cobalt.jpeg'],
+    images: ['masculino/lacoste/Jaqueta Metasport Cobalt.jpeg'],
     description:
       'Jaqueta full-zip Lacoste METASPORT em azul cobalto. Tecido elástico de performance com proteção UV, silhueta de gola alta e emblema de crocodilo em amarelo vibrante — estilo de quadra de próxima geração.',
   },
   {
     id: 11,
     brand: 'Lacoste',
+    gender: 'masculino',
     name: 'Conjunto Wimbledon Azul Celeste',
-    images: ['Conjunto Wimbledon Azul Celeste.jpeg'],
+    images: ['masculino/lacoste/Conjunto Wimbledon Azul Celeste.jpeg'],
     description:
       'Conjunto polo e short Lacoste ultra-premium em azul celeste. Polo com padrão xadrez jacquard e colarinho branco, combinado com short coordenado — uma homenagem refinada às lendárias quadras de Wimbledon.',
   },
   {
     id: 12,
     brand: 'Lacoste',
+    gender: 'masculino',
     name: 'Polo Listrado Marinho',
-    images: ['Polo Listrado Marinho Lacoste.jpeg'],
+    images: ['masculino/lacoste/Polo Listrado Marinho Lacoste.jpeg'],
     description:
       'Polo Lacoste em azul marinho com faixas tricolores no peito: branco e azul royal. Construção em algodão piqué premium com emblema bordado — o ícone do sportswear francês reimaginado para o guarda-roupa contemporâneo.',
   },
 
   /* ══════════════════════════════════
-     TOMMY HILFIGER  (1 peça)
+     TOMMY HILFIGER  (1 peça) — Masculino
   ══════════════════════════════════ */
   {
     id: 13,
     brand: 'Tommy Hilfiger',
+    gender: 'masculino',
     name: 'Polo Signature Stripe',
-    images: ['tommy-polo-signature-stripe.jpeg'],
+    images: ['masculino/tommy-hilfiger/tommy-polo-signature-stripe.jpeg'],
     description:
       'Polo piqué clássico Tommy Hilfiger em azul marinho com icônica fita tricolor vermelha e branca nos ombros. Construção em algodão premium com logo bordado no peito — um ícone preppy reinventado para o homem moderno.',
   },
 
   /* ══════════════════════════════════
-     NIKE  (3 peças)
+     NIKE  (3 peças) — Masculino
   ══════════════════════════════════ */
   {
     id: 14,
     brand: 'Nike',
+    gender: 'masculino',
     name: 'Conjunto Tech Fleece Cinza',
-    images: ['nike-conjunto-tech-fleece-cinza.jpeg'],
+    images: ['masculino/nike/nike-conjunto-tech-fleece-cinza.jpeg'],
     description:
       'Conjunto moletom e calça Nike Tech Fleece em cinza mesclado. Construção em duas camadas bonded para calor leve, com costuramento angular que define uma nova geração de luxo esportivo.',
   },
   {
     id: 16,
     brand: 'Nike',
+    gender: 'masculino',
     name: 'Moletom Tech Fleece Preto',
-    images: ['nike-moletom-tech-fleece-preto.jpeg'],
+    images: ['masculino/nike/nike-moletom-tech-fleece-preto.jpeg'],
     description:
       'Moletom Nike Tech Fleece em preto com detalhes refletivos em prata. A versão mais elegante do clássico Tech Fleece — reinventado com tecnologia de ponta para quem exige conforto e estética urban luxury.',
   },
 
   /* ══════════════════════════════════
-     HUGO BOSS  (2 peças)
+     HUGO BOSS  (2 peças) — Masculino
   ══════════════════════════════════ */
   {
     id: 17,
     brand: 'Hugo Boss',
+    gender: 'masculino',
     name: 'Corta-Vento Mapa Abstrato',
-    images: ['Corta-Vento Boss Mapa Abstrato.jpeg'],
+    images: ['masculino/hugo-boss/Corta-Vento Boss Mapa Abstrato.jpeg'],
     description:
       'Jaqueta com capuz BOSS com estampa abstrata de mapa urbano em off-white e cinza. Shell leve premium com zíper preto e logo bordado no peito — onde a arte contemporânea encontra a utilidade executiva.',
   },
   {
     id: 18,
     brand: 'Hugo Boss',
+    gender: 'masculino',
     name: 'Moletom Zip Boss Green',
-    images: ['Moletom Zip Boss Green \u2014 Cinza.jpeg'],
+    images: ['masculino/hugo-boss/Moletom Zip Boss Green \u2014 Cinza.jpeg'],
     description:
       'Moletom com zíper BOSS Green em cinza pedra com faixas contrastantes em relevo nos ombros. Interior escovado macio com puxador de zíper com marca — onde o DNA atlético encontra o artesanato de luxo.',
   },
 
   /* ══════════════════════════════════
-     LOUIS VUITTON — Tênis  (7 peças)
+     LOUIS VUITTON — Tênis  (6 peças) — Masculino
   ══════════════════════════════════ */
   {
     id: 19,
     brand: 'Louis Vuitton',
+    gender: 'masculino',
     name: 'LV Trainer Preto e Branco',
-    images: ['lv-trainer-preto-branco.jpeg'],
+    images: ['masculino/louis-vuitton/lv-trainer-preto-branco.jpeg'],
     description:
       'O icônico LV Trainer em couro preto monograma em relevo com cadarço branco. Um tênis que redefine o luxo das ruas com a precisão artesanal da Maison Louis Vuitton — o objeto de desejo do streetwear de alto luxo.',
   },
   {
     id: 20,
     brand: 'Louis Vuitton',
+    gender: 'masculino',
     name: 'LV Trainer Denim Azul',
-    images: ['lv-trainer-denim-azul.jpeg'],
+    images: ['masculino/louis-vuitton/lv-trainer-denim-azul.jpeg'],
     description:
       'LV Trainer na coloração denim azul com monograma LV em relevo e detalhes brancos. Uma fusão da herança francesa centenária com a cultura streetwear contemporânea — para quem escreve suas próprias regras.',
   },
   {
     id: 22,
     brand: 'Louis Vuitton',
+    gender: 'masculino',
     name: 'LV Trainer — 5 Colorways',
-    images: ['lv-trainer-4-colorways.jpeg'],
+    images: ['masculino/louis-vuitton/lv-trainer-4-colorways.jpeg'],
     description:
       'Coleção completa do LV Trainer em cinco variações: azul denim, azul multicolorido, marrom camelo, preto total e branco com vermelho. A diversidade criativa que define o universo Louis Vuitton — escolha sua assinatura.',
   },
   {
     id: 23,
     brand: 'Louis Vuitton',
+    gender: 'masculino',
     name: 'LV Trainer — Coleção em Display',
     images: [
-      'lv-trainer-display-1.jpeg',
-      'lv-trainer-display-2.jpeg',
-      'lv-trainer-display-3.jpeg',
+      'masculino/louis-vuitton/lv-trainer-display-1.jpeg',
+      'masculino/louis-vuitton/lv-trainer-display-2.jpeg',
+      'masculino/louis-vuitton/lv-trainer-display-3.jpeg',
     ],
     description:
       'Trio de LV Trainers em exposição de coleção: camelo, azul denim e preto total. Fotografados em múltiplos ângulos para revelar cada detalhe artesanal — o tênis mais icônico do luxo contemporâneo em toda sua extensão.',
@@ -213,13 +226,14 @@ const PRODUCTS = [
   {
     id: 24,
     brand: 'Louis Vuitton',
+    gender: 'masculino',
     name: 'LV Trainer Preto — Edição Completa',
     images: [
-      'lv-trainer-preto-detalhe-2.jpeg',
-      'lv-trainer-preto-unboxing.jpeg',
-      'lv-trainer-preto-detalhe-1.jpeg',
-      'lv-trainer-preto-detalhe-3.jpeg',
-      'lv-trainer-preto-boutique.jpeg',
+      'masculino/louis-vuitton/lv-trainer-preto-detalhe-2.jpeg',
+      'masculino/louis-vuitton/lv-trainer-preto-unboxing.jpeg',
+      'masculino/louis-vuitton/lv-trainer-preto-detalhe-1.jpeg',
+      'masculino/louis-vuitton/lv-trainer-preto-detalhe-3.jpeg',
+      'masculino/louis-vuitton/lv-trainer-preto-boutique.jpeg',
     ],
     description:
       'LV Trainer preto em couro monograma, documentado do unboxing ao detalhe: dustbag em algodão, caixa laranja icônica e boutique oficial. A experiência completa do luxo — do primeiro toque ao último olhar.',
@@ -227,23 +241,25 @@ const PRODUCTS = [
   {
     id: 25,
     brand: 'Louis Vuitton',
+    gender: 'masculino',
     name: 'LV Trainer — Boutique Display',
-    images: ['lv-trainer-boutique-display.jpeg'],
+    images: ['masculino/louis-vuitton/lv-trainer-boutique-display.jpeg'],
     description:
       'Vista da prateleira de boutique Louis Vuitton com LV Trainers em azul denim e preto monograma. A experiência de compra como extensão do luxo da peça — o ambiente que merece a coleção.',
   },
 
   /* ══════════════════════════════════
-     LOUIS VUITTON — Camisetas  (5 peças)
+     LOUIS VUITTON — Camisetas  (4 peças) — Masculino
   ══════════════════════════════════ */
   {
     id: 26,
     brand: 'Louis Vuitton',
+    gender: 'masculino',
     name: 'Camiseta LV Graffiti',
     images: [
-      'lv-camiseta-graffiti-preta-3.jpeg',
-      'lv-camiseta-graffiti-preta-2.jpeg',
-      'lv-camiseta-graffiti-preta-1.jpeg',
+      'masculino/louis-vuitton/lv-camiseta-graffiti-preta-3.jpeg',
+      'masculino/louis-vuitton/lv-camiseta-graffiti-preta-2.jpeg',
+      'masculino/louis-vuitton/lv-camiseta-graffiti-preta-1.jpeg',
     ],
     description:
       'Camiseta em algodão premium com grafismo do monograma LV e caligrafia artística multicolorida. Disponível em detalhe frontal, no cabide e em duo preto + branco — arte e luxo em perfeita harmonia.',
@@ -251,10 +267,11 @@ const PRODUCTS = [
   {
     id: 27,
     brand: 'Louis Vuitton',
+    gender: 'masculino',
     name: 'Camiseta Louis Graffiti',
     images: [
-      'lv-camiseta-louis-graffiti-1.jpeg',
-      'lv-camiseta-louis-graffiti-2.jpeg',
+      'masculino/louis-vuitton/lv-camiseta-louis-graffiti-1.jpeg',
+      'masculino/louis-vuitton/lv-camiseta-louis-graffiti-2.jpeg',
     ],
     description:
       'Camiseta "Louis Vuitton" Graffiti preta com lettering em gradiente azul-verde e fleurs de monograma multicoloridas. Detalhe e frente/verso em sequência — a dualidade entre artesanato de topo e atitude urbana que define a LV moderna.',
@@ -262,10 +279,11 @@ const PRODUCTS = [
   {
     id: 28,
     brand: 'Louis Vuitton',
+    gender: 'masculino',
     name: 'Camiseta Monograma Clássica LV',
     images: [
-      'lv-camiseta-monograma-classica-2.jpeg',
-      'lv-camiseta-monograma-classica-1.jpeg',
+      'masculino/louis-vuitton/lv-camiseta-monograma-classica-2.jpeg',
+      'masculino/louis-vuitton/lv-camiseta-monograma-classica-1.jpeg',
     ],
     description:
       'Camiseta Louis Vuitton com monograma LV clássico em preto spray, em foto de coleção e produto limpo de estúdio. O básico que nunca é básico — a essência da Maison em algodão premium de alto gramado.',
@@ -273,46 +291,63 @@ const PRODUCTS = [
   {
     id: 29,
     brand: 'Louis Vuitton',
+    gender: 'masculino',
     name: 'Look Completo Louis Vuitton',
     images: [
-      'lv-look-completo-1.jpeg',
-      'lv-look-completo-2.jpeg',
-      'v-camiseta-monograma-branca.jpeg'
+      'masculino/louis-vuitton/lv-look-completo-1.jpeg',
+      'masculino/louis-vuitton/lv-look-completo-2.jpeg',
+      'masculino/louis-vuitton/lv-camiseta-monograma-branca.jpeg',
     ],
     description:
       'Look completo Louis Vuitton: camiseta monograma branca com calça jeans oversized com patches em cruz em preto e branco. O equilíbrio perfeito entre o heritage da Maison e a atitude do estilo urbano de luxo.',
   },
 
   /* ══════════════════════════════════
-     CHRISTIAN DIOR  (1 peça)
+     CHRISTIAN DIOR  (1 peça) — Feminino
   ══════════════════════════════════ */
   {
     id: 31,
     brand: 'Christian Dior',
+    gender: 'feminino',
     name: 'Bolsa Lady Dior Preta',
-    images: ['dior-bolsa-lady-dior-preta.jpeg'],
+    images: ['feminino/dior/dior-bolsa-lady-dior-preta.jpeg'],
     description:
       'A lendária Lady Dior em bordado toile de jouy preto e branco com alça removível. Bordados elaborados com padrão exclusivo, ferragens douradas e charm "D.I.O.R." — um objeto de desejo absoluto, símbolo da haute couture parisiense.',
   },
 
   /* ══════════════════════════════════
-     HERMÈS  (1 peça)
+     HERMÈS  (1 peça) — Masculino
   ══════════════════════════════════ */
   {
     id: 32,
     brand: 'Hermès',
+    gender: 'masculino',
     name: 'Sandália Chypre Preta',
-    images: ['hermes-sandalia-chypre-preta.jpeg'],
+    images: ['masculino/hermes/hermes-sandalia-chypre-preta.jpeg'],
     description:
       'A icônica sandália Chypre da Hermès em couro negro mate com palmilha em couro goffrado. Silhueta de corte limpo com fivela ajustável — o calçado definitivo do luxo discreto, construído à mão por mestres artesãos em Paris.',
   },
 ];
 
 /* =====================================================
+   BRAND LISTS PER GENDER
+   ===================================================== */
+const BRANDS_BY_GENDER = {
+  masculino: ['Lacoste', 'Louis Vuitton', 'Nike', 'Hugo Boss', 'Tommy Hilfiger', 'Hermès'],
+  feminino:  ['Christian Dior'],
+};
+
+/* =====================================================
+   STATE
+   ===================================================== */
+let activeGender = 'masculino';
+let activeBrand  = 'all';
+
+/* =====================================================
    UTILITÁRIOS
    ===================================================== */
 function encodeImg(file) {
-  return '../' + encodeURIComponent(file);
+  return 'images/' + file.split('/').map(encodeURIComponent).join('/');
 }
 
 function buildWhatsAppURL(name, brand) {
@@ -323,15 +358,67 @@ function buildWhatsAppURL(name, brand) {
 }
 
 /* =====================================================
+   GENDER TABS
+   ===================================================== */
+function buildBrandFilters(gender) {
+  const bar = document.querySelector('.filter-bar');
+  const brands = BRANDS_BY_GENDER[gender];
+
+  bar.innerHTML = `<button class="filter-btn active" data-filter="all">Todos</button>`;
+  brands.forEach(b => {
+    const label = b === 'Christian Dior' ? 'Dior' : b;
+    bar.innerHTML += `<button class="filter-btn" data-filter="${b}">${label}</button>`;
+  });
+
+  bar.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      bar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeBrand = btn.dataset.filter;
+      renderProducts(activeBrand, activeGender);
+    });
+  });
+}
+
+document.querySelectorAll('.gender-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.gender-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    activeGender = tab.dataset.gender;
+    activeBrand  = 'all';
+    buildBrandFilters(activeGender);
+    renderProducts('all', activeGender);
+  });
+});
+
+/* =====================================================
+   HERO GENDER BUTTONS
+   ===================================================== */
+document.querySelectorAll('.hero-gender-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const gender = btn.dataset.gender;
+    // Activate the matching gender tab
+    document.querySelectorAll('.gender-tab').forEach(t => {
+      t.classList.toggle('active', t.dataset.gender === gender);
+    });
+    activeGender = gender;
+    activeBrand  = 'all';
+    buildBrandFilters(activeGender);
+    renderProducts('all', activeGender);
+  });
+});
+
+/* =====================================================
    RENDERIZAR PRODUTOS
    ===================================================== */
-function renderProducts(filter) {
+function renderProducts(brandFilter, gender) {
   const grid = document.getElementById('productGrid');
   grid.innerHTML = '';
 
-  const list = filter === 'all'
-    ? PRODUCTS
-    : PRODUCTS.filter(p => p.brand === filter);
+  let list = PRODUCTS.filter(p => p.gender === gender);
+  if (brandFilter !== 'all') {
+    list = list.filter(p => p.brand === brandFilter);
+  }
 
   if (!list.length) {
     grid.innerHTML = '<p style="text-align:center;color:var(--grey);grid-column:1/-1;padding:60px 0;">Nenhuma peça encontrada para esta categoria.</p>';
@@ -341,14 +428,12 @@ function renderProducts(filter) {
   list.forEach((product, i) => {
     const multi = product.images.length > 1;
 
-    // Build carousel dots HTML
     const dotsHTML = multi
       ? `<div class="carousel-dots">${product.images.map((_, idx) =>
           `<span class="carousel-dot${idx === 0 ? ' active' : ''}"></span>`
         ).join('')}</div>`
       : '';
 
-    // Build carousel arrows HTML
     const arrowsHTML = multi
       ? `<button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
          <button class="carousel-btn carousel-next" aria-label="Próximo">&#8250;</button>`
@@ -382,14 +467,13 @@ function renderProducts(filter) {
       </div>
     `;
 
-    // Carousel state
     let cardIdx = 0;
 
     if (multi) {
-      const imgEl  = card.querySelector('.card-img');
-      const dots   = card.querySelectorAll('.carousel-dot');
-      const prev   = card.querySelector('.carousel-prev');
-      const next   = card.querySelector('.carousel-next');
+      const imgEl = card.querySelector('.card-img');
+      const dots  = card.querySelectorAll('.carousel-dot');
+      const prev  = card.querySelector('.carousel-prev');
+      const next  = card.querySelector('.carousel-next');
 
       function cardGoTo(n) {
         cardIdx = ((n % product.images.length) + product.images.length) % product.images.length;
@@ -402,7 +486,6 @@ function renderProducts(filter) {
       dots.forEach((dot, k) => dot.addEventListener('click', e => { e.stopPropagation(); cardGoTo(k); }));
     }
 
-    // Open modal at current card carousel position
     card.addEventListener('click', () => openModal(product, cardIdx));
     card.addEventListener('keydown', e => {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(product, cardIdx); }
@@ -410,7 +493,6 @@ function renderProducts(filter) {
 
     grid.appendChild(card);
 
-    // Staggered reveal
     requestAnimationFrame(() => setTimeout(() => card.classList.add('visible'), 60 + i * 70));
   });
 }
@@ -435,13 +517,11 @@ function openModal(product, startIdx = 0) {
   _mImages  = product.images;
   _mCurrent = startIdx;
 
-  // Info
   modalBrand.textContent = product.brand;
   modalName.textContent  = product.name;
   modalDesc.textContent  = product.description;
   modalCta.href          = buildWhatsAppURL(product.name, product.brand);
 
-  // Dots
   modalDots.innerHTML = _mImages.map((_, i) =>
     `<span class="modal-dot${i === startIdx ? ' active' : ''}"></span>`
   ).join('');
@@ -449,15 +529,12 @@ function openModal(product, startIdx = 0) {
     dot.addEventListener('click', () => modalGoTo(i));
   });
 
-  // Show/hide arrows
   const multi = _mImages.length > 1;
   modalPrev.classList.toggle('visible', multi);
   modalNext.classList.toggle('visible', multi);
 
-  // Load image
   modalImg.src = encodeImg(_mImages[startIdx]);
 
-  // Open
   modalOverlay.classList.add('open');
   document.body.style.overflow = 'hidden';
   document.getElementById('modalClose').focus();
@@ -477,7 +554,6 @@ function closeModal() {
   setTimeout(() => { modalImg.src = ''; }, 460);
 }
 
-// Modal controls
 document.getElementById('modalClose').addEventListener('click', closeModal);
 modalPrev.addEventListener('click', () => modalGoTo(_mCurrent - 1));
 modalNext.addEventListener('click', () => modalGoTo(_mCurrent + 1));
@@ -486,7 +562,6 @@ modalOverlay.addEventListener('click', e => {
   if (e.target === modalOverlay) closeModal();
 });
 
-// "Fazer Pedido" closes modal (WhatsApp opens in new tab via href)
 modalCta.addEventListener('click', () => setTimeout(closeModal, 300));
 
 /* =====================================================
@@ -536,17 +611,6 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 /* =====================================================
-   FILTROS
-   ===================================================== */
-document.querySelectorAll('.filter-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    renderProducts(btn.dataset.filter);
-  });
-});
-
-/* =====================================================
    SCROLL REVEAL
    ===================================================== */
 const revealObs = new IntersectionObserver(entries => {
@@ -575,4 +639,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 /* =====================================================
    INIT
    ===================================================== */
-renderProducts('all');
+buildBrandFilters('masculino');
+renderProducts('all', 'masculino');
