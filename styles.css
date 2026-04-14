@@ -403,6 +403,84 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 /* =====================================================
+   SORT BAR
+   ===================================================== */
+.sort-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+.sort-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-right: 4px;
+}
+.sort-btn {
+  font-size: 8.5px;
+  padding: 7px 18px;
+  border-color: rgba(201,169,110,0.12);
+}
+
+/* =====================================================
+   SOLD OVERLAY
+   ===================================================== */
+.sold-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  background: rgba(7, 7, 7, 0.54);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+}
+.sold-overlay::before,
+.sold-overlay::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  width: 110%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.22);
+  pointer-events: none;
+}
+.sold-overlay::before { transform: rotate(28deg); }
+.sold-overlay::after  { transform: rotate(-28deg); }
+.sold-badge {
+  position: relative;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.92);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  padding: 8px 20px;
+  background: rgba(0, 0, 0, 0.28);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.6);
+}
+.product-card.is-sold .card-img { opacity: 0.72; }
+.product-card.is-sold .card-hover-overlay { display: none; }
+.card-sold-tag {
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* =====================================================
    GENDER TABS
    ===================================================== */
 .gender-tabs {
