@@ -121,6 +121,56 @@ const PRODUCTS = [
     images: ['masculino/lacoste/lacoste-conjunto-monograma-azul.jpeg'],
     description: 'Conjunto de duas peças Lacoste em jacquard monograma azul powder. Jaqueta de gola alta com zíper e calça jogger afinada, ambas com faixas laterais brancas em contraste. Uma obra-prima da elegância esportiva francesa.',
   },
+  {
+    id: 81, brand: 'Lacoste', gender: 'masculino',
+    tags: ['conjunto', 'sport'],
+    price: 979.90, originalPrice: 1629.90,
+    name: 'Conjunto Tracksuit x Daniil Medvedev Branco e Preto',
+    images: [
+      'new_clothes/Men\'s Lacoste Tennis x Daniil Medvedev Tracksuit C$ 203.99 Price after discount- C$ 203.99 C$ 340.00 Original price before discount- C$ 340.00 List of variations  White : Black • AJ8 1.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Daniil Medvedev Tracksuit C$ 203.99 Price after discount- C$ 203.99 C$ 340.00 Original price before discount- C$ 340.00 List of variations  White : Black • AJ8 2.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Daniil Medvedev Tracksuit C$ 203.99 Price after discount- C$ 203.99 C$ 340.00 Original price before discount- C$ 340.00 List of variations  White : Black • AJ8 3.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Daniil Medvedev Tracksuit C$ 203.99 Price after discount- C$ 203.99 C$ 340.00 Original price before discount- C$ 340.00 List of variations  White : Black • AJ8 4.avif',
+    ],
+    description: 'Tracksuit Lacoste × Daniil Medvedev em branco e preto. Jaqueta e calça em tecido técnico de alta performance com design da collab — a expressão máxima do tênis de elite.',
+  },
+  {
+    id: 82, brand: 'Lacoste', gender: 'masculino',
+    tags: ['conjunto', 'sport'],
+    price: 979.90, originalPrice: 1629.90,
+    name: 'Conjunto Tracksuit x Daniil Medvedev Azul Marinho',
+    images: [
+      'new_clothes/Men\'s Lacoste Tennis x Daniil Medvedev Tracksuit C$ 203.99 Price after discount- C$ 203.99C$ 340.00Original price before discount- C$ 340.00 List of variations  Navy Blue • 423 1.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Daniil Medvedev Tracksuit C$ 203.99 Price after discount- C$ 203.99C$ 340.00Original price before discount- C$ 340.00 List of variations  Navy Blue • 423 2.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Daniil Medvedev Tracksuit C$ 203.99 Price after discount- C$ 203.99C$ 340.00Original price before discount- C$ 340.00 List of variations  Navy Blue • 423 3.avif',
+    ],
+    description: 'Tracksuit Lacoste × Daniil Medvedev em azul marinho total. Construção em duas peças com tecido de performance e detalhes da collab — edição limitada para quem joga no mais alto nível.',
+  },
+  {
+    id: 83, brand: 'Lacoste', gender: 'masculino',
+    tags: ['conjunto', 'sport'],
+    price: 779.90, originalPrice: 1559.90,
+    name: 'Conjunto x Novak Djokovic Azul Marinho',
+    images: [
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Set C$ 161.99 Price after discount- C$ 161.99C$ 325.00Original price before discount- C$ 325.00 List of variations Navy Blue • 423 1.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Set C$ 161.99 Price after discount- C$ 161.99C$ 325.00Original price before discount- C$ 325.00 List of variations Navy Blue • 423 2.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Set C$ 161.99 Price after discount- C$ 161.99C$ 325.00Original price before discount- C$ 325.00 List of variations Navy Blue • 423 3.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Set C$ 161.99 Price after discount- C$ 161.99C$ 325.00Original price before discount- C$ 325.00 List of variations Navy Blue • 423 4.avif',
+    ],
+    description: 'Conjunto Lacoste × Novak Djokovic em azul marinho. Polo e short coordenados com tecido Ultra Dry e emblema da collab — a coleção definitiva para fãs do lendário tenista.',
+  },
+  {
+    id: 84, brand: 'Lacoste', gender: 'masculino',
+    tags: ['conjunto', 'sport'],
+    price: 909.90, originalPrice: 1509.90,
+    name: 'Conjunto Tennis Logo Stripe Cream',
+    images: [
+      'new_clothes/Men\'s Logo Stripe Tennis Tracksuit C$ 188.99 Price after discount- C$ 188.99C$ 315.00Original price before discount- C$ 315.00 List of variations Cream • XFJ 1.avif',
+      'new_clothes/Men\'s Logo Stripe Tennis Tracksuit C$ 188.99 Price after discount- C$ 188.99C$ 315.00Original price before discount- C$ 315.00 List of variations Cream • XFJ 2.avif',
+      'new_clothes/Men\'s Logo Stripe Tennis Tracksuit C$ 188.99 Price after discount- C$ 188.99C$ 315.00Original price before discount- C$ 315.00 List of variations Cream • XFJ 3.avif',
+    ],
+    description: 'Tracksuit Lacoste Tennis com listras e logo em cream. Jaqueta full-zip e calça coordenada com tecido técnico de alta performance — elegância de quadra reinterpretada para o urbano.',
+  },
 
   /* ══════════════════════════════════════════════════
      POLOS
@@ -500,7 +550,7 @@ const PRODUCTS = [
   {
     id: 69, brand: 'Lacoste', gender: 'masculino',
     tags: ['short', 'sport'],
-    price: 600.00, originalPrice: 720.00,
+    price: 589.90, originalPrice: 719.90,
     name: 'Short Tennis x Novak Djokovic Azul Marinho',
     images: [
       'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Shorts C$ 125.00 List of variations    +2 Colours Blue : Navy Blue • JNN 1.avif',
@@ -508,6 +558,167 @@ const PRODUCTS = [
       'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Shorts C$ 125.00 List of variations    +2 Colours Blue : Navy Blue • JNN 3.avif',
     ],
     description: 'Short de tênis Lacoste × Novak Djokovic em azul marinho. Tecido ultra-leve de secagem rápida com corte atlético de alta performance — edição limitada da collab mais icônica das quadras.',
+  },
+  {
+    id: 70, brand: 'Lacoste', gender: 'masculino',
+    tags: ['short', 'sport'],
+    price: 589.90, originalPrice: 719.90,
+    name: 'Short Tennis x Novak Djokovic Branco e Marrom',
+    images: [
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Shorts C$ 125.00 List of variations    +2 Colours Blanc : Marron • 3IN 1.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Shorts C$ 125.00 List of variations    +2 Colours Blanc : Marron • 3IN 2.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Shorts C$ 125.00 List of variations    +2 Colours Blanc : Marron • 3IN 3.avif',
+    ],
+    description: 'Short de tênis Lacoste × Novak Djokovic em branco e marrom. Tecido de performance com detalhes em contraste — a elegância das quadras com a assinatura inconfundível da Maison.',
+  },
+  {
+    id: 71, brand: 'Lacoste', gender: 'masculino',
+    tags: ['short', 'sport'],
+    price: 589.90, originalPrice: 719.90,
+    name: 'Short Tennis x Novak Djokovic Azul Marinho e Verde',
+    images: [
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Shorts C$ 125.00 List of variations    +2 Colours Navy Blue : Green • RIJ 1.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Shorts C$ 125.00 List of variations    +2 Colours Navy Blue : Green • RIJ 2.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Shorts C$ 125.00 List of variations    +2 Colours Navy Blue : Green • RIJ 3.webp',
+    ],
+    description: 'Short de tênis Lacoste × Novak Djokovic em azul marinho e verde. Construção leve e respirável com emblema bordado — performance Grand Slam com o refinamento francês.',
+  },
+  {
+    id: 72, brand: 'Lacoste', gender: 'masculino',
+    tags: ['short', 'sport'],
+    price: 589.90, originalPrice: 719.90,
+    name: 'Short Tennis x Novak Djokovic Laranja e Branco',
+    images: [
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Shorts C$ 125.00 List of variations    +2 Colours Orange : Blanc • 4AF 1.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Shorts C$ 125.00 List of variations    +2 Colours Orange : Blanc • 4AF 2.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Shorts C$ 125.00 List of variations    +2 Colours Orange : Blanc • 4AF 3.webp',
+    ],
+    description: 'Short de tênis Lacoste × Novak Djokovic em laranja e branco. Cor vibrante com tecido técnico de secagem rápida — ousadia cromática com a precisão da Maison.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     POLOS — NOVAS CHEGADAS
+  ══════════════════════════════════════════════════ */
+  {
+    id: 73, brand: 'Lacoste', gender: 'masculino',
+    tags: ['polo'],
+    price: 839.90, originalPrice: 1019.90,
+    name: 'Polo Classic Fit Monogram Azul',
+    images: [
+      'new_clothes/Men\'s Classic Fit Monogram Polo C$ 175.00 List of variations    Blue • HGI 1.avif',
+      'new_clothes/Men\'s Classic Fit Monogram Polo C$ 175.00 List of variations    Blue • HGI 2.avif',
+      'new_clothes/Men\'s Classic Fit Monogram Polo C$ 175.00 List of variations    Blue • HGI 3.avif',
+    ],
+    description: 'Polo Lacoste Classic Fit com monograma em azul. Algodão piqué premium com corte preciso — o DNA da Maison em sua expressão mais atemporal.',
+  },
+  {
+    id: 74, brand: 'Lacoste', gender: 'masculino',
+    tags: ['polo', 'sport'],
+    price: 549.90, originalPrice: 909.90,
+    name: 'Polo Tennis x Daniil Medvedev Azul e Roxo',
+    images: [
+      'new_clothes/Men\'s Lacoste Tennis x Daniil Medvedev Polo C$ 113.99 Price after discount- C$ 113.99C$ 190.00Original price before discount- C$ 190.00 List of variations Navy Blue : Purple • 7IJ 1.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Daniil Medvedev Polo C$ 113.99 Price after discount- C$ 113.99C$ 190.00Original price before discount- C$ 190.00 List of variations Navy Blue : Purple • 7IJ 2.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Daniil Medvedev Polo C$ 113.99 Price after discount- C$ 113.99C$ 190.00Original price before discount- C$ 190.00 List of variations Navy Blue : Purple • 7IJ 3.avif',
+    ],
+    description: 'Polo Lacoste × Daniil Medvedev em azul marinho e roxo. Tecido Ultra Dry de secagem rápida com design da collab — performance de elite com o estilo inconfundível da Maison.',
+  },
+  {
+    id: 75, brand: 'Lacoste', gender: 'masculino',
+    tags: ['polo', 'sport'],
+    price: 589.90, originalPrice: 989.90,
+    name: 'Polo Tennis x Novak Djokovic On Court Noir',
+    images: [
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic On Court Polo C$ 122.99 Price after discount- C$ 122.99C$ 205.00Original price before discount- C$ 205.00 List of variations Noir • 031 1.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic On Court Polo C$ 122.99 Price after discount- C$ 122.99C$ 205.00Original price before discount- C$ 205.00 List of variations Noir • 031 2.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic On Court Polo C$ 122.99 Price after discount- C$ 122.99C$ 205.00Original price before discount- C$ 205.00 List of variations Noir • 031 3.avif',
+    ],
+    description: 'Polo Lacoste × Novak Djokovic On Court em preto total. Piqué de alta performance com detalhes da collab — a peça definitiva para quem domina as quadras.',
+  },
+  {
+    id: 76, brand: 'Lacoste', gender: 'masculino',
+    tags: ['polo', 'sport'],
+    price: 429.90, originalPrice: 629.90,
+    name: 'Polo Tennis x Novak Djokovic Noir',
+    images: [
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Polo C$ 89.99 Price after discount- C$ 89.99C$ 130.00Original price before discount- C$ 130.00 List of variations Noir • 031 1.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Polo C$ 89.99 Price after discount- C$ 89.99C$ 130.00Original price before discount- C$ 130.00 List of variations Noir • 031 2.avif',
+      'new_clothes/Men\'s Lacoste Tennis x Novak Djokovic Polo C$ 89.99 Price after discount- C$ 89.99C$ 130.00Original price before discount- C$ 130.00 List of variations Noir • 031 3.avif',
+    ],
+    description: 'Polo Lacoste × Novak Djokovic em preto. Tecido leve com corte atlético e emblema bordado — a essência do tênis de alta costura em formato polo.',
+  },
+  {
+    id: 77, brand: 'Lacoste', gender: 'masculino',
+    tags: ['polo', 'sport'],
+    price: 349.90, originalPrice: 699.90,
+    name: 'Polo Golf UV Protect Azul e Violeta',
+    images: [
+      'new_clothes/Men\'s Regular Fit UV Protect Golf Polo  Reviews (6)      C$ 71.99 Price after discount- C$ 71.99C$ 145.00Original price before discount- C$ 145.00 List of variations Bleu : Violet • 5ID 1.avif',
+      'new_clothes/Men\'s Regular Fit UV Protect Golf Polo  Reviews (6)      C$ 71.99 Price after discount- C$ 71.99C$ 145.00Original price before discount- C$ 145.00 List of variations Bleu : Violet • 5ID 2.avif',
+    ],
+    description: 'Polo Lacoste Golf com proteção UV em azul e violeta. Regular Fit com tecido respirável de alta tecnologia — elegância nos fairways com conforto premium.',
+  },
+  {
+    id: 78, brand: 'Lacoste', gender: 'masculino',
+    tags: ['polo', 'sport'],
+    price: 309.90, originalPrice: 629.90,
+    name: 'Polo Tennis Ultra Dry Branded Stripe Verde Cáqui',
+    images: [
+      'new_clothes/Men\'s Ultra Dry Branded Stripe Tennis Polo C$ 64.99 Price after discount- C$ 64.99C$ 130.00Original price before discount- C$ 130.00 List of variations Khaki Green • E9F 1.avif',
+      'new_clothes/Men\'s Ultra Dry Branded Stripe Tennis Polo C$ 64.99 Price after discount- C$ 64.99C$ 130.00Original price before discount- C$ 130.00 List of variations Khaki Green • E9F 2.avif',
+      'new_clothes/Men\'s Ultra Dry Branded Stripe Tennis Polo C$ 64.99 Price after discount- C$ 64.99C$ 130.00Original price before discount- C$ 130.00 List of variations Khaki Green • E9F 3.avif',
+    ],
+    description: 'Polo Lacoste Ultra Dry com listras e badge em verde cáqui. Tecido de secagem rápida com emblema em destaque — o sportswear francês em sua forma mais acessível.',
+  },
+  {
+    id: 79, brand: 'Lacoste', gender: 'masculino',
+    tags: ['polo', 'sport'],
+    price: 399.90, originalPrice: 799.90,
+    name: 'Polo Tennis Ultra Dry Printed Slim Fit Roxo',
+    images: [
+      'new_clothes/Men\'s Ultra Dry Printed Slim Fit Tennis Polo C$ 81.99 Price after discount- C$ 81.99 C$ 165.00 Original price before discount- C$ 165.00 List of variations  Purple • HXL 1.avif',
+      'new_clothes/Men\'s Ultra Dry Printed Slim Fit Tennis Polo C$ 81.99 Price after discount- C$ 81.99 C$ 165.00 Original price before discount- C$ 165.00 List of variations  Purple • HXL 2.avif',
+      'new_clothes/Men\'s Ultra Dry Printed Slim Fit Tennis Polo C$ 81.99 Price after discount- C$ 81.99 C$ 165.00 Original price before discount- C$ 165.00 List of variations  Purple • HXL 3.avif',
+    ],
+    description: 'Polo Lacoste Ultra Dry com estampa exclusiva em roxo. Slim Fit com tecido Ultra Dry de evaporação acelerada — performance e estilo em perfeita sintonia.',
+  },
+  {
+    id: 80, brand: 'Lacoste', gender: 'masculino',
+    tags: ['polo', 'sport'],
+    price: 399.90, originalPrice: 799.90,
+    name: 'Polo Tennis Ultra Dry Printed Slim Fit Verde Cáqui',
+    images: [
+      'new_clothes/Men\'s Ultra Dry Printed Slim Fit Tennis Polo C$ 81.99 Price after discount- C$ 81.99C$ 165.00Original price before discount- C$ 165.00 List of variations  Khaki Green • E9F 1.avif',
+      'new_clothes/Men\'s Ultra Dry Printed Slim Fit Tennis Polo C$ 81.99 Price after discount- C$ 81.99C$ 165.00Original price before discount- C$ 165.00 List of variations  Khaki Green • E9F 2.avif',
+    ],
+    description: 'Polo Lacoste Ultra Dry com estampa em verde cáqui. Slim Fit com construção técnica de secagem instantânea — para quem exige performance sem abrir mão do estilo.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     SHORTS — NOVAS CHEGADAS
+  ══════════════════════════════════════════════════ */
+  {
+    id: 85, brand: 'Lacoste', gender: 'masculino',
+    tags: ['short'],
+    price: 299.90, originalPrice: 509.90,
+    name: 'Short Cotton Fleece Colorblock Branco e Marrom',
+    images: [
+      'new_clothes/Men\'s Cotton Fleece Colorblock Shorts C$ 62.99 Price after discount- C$ 62.99C$ 105.00Original price before discount- C$ 105.00 List of variations White : Brown : Light Brown • HBI 1.avif',
+      'new_clothes/Men\'s Cotton Fleece Colorblock Shorts C$ 62.99 Price after discount- C$ 62.99C$ 105.00Original price before discount- C$ 105.00 List of variations White : Brown : Light Brown • HBI 2.webp',
+    ],
+    description: 'Short Lacoste em cotton fleece com colorblock em branco, marrom e marrom claro. Conforto premium com corte relaxado — o luxo casual em sua forma mais refinada.',
+  },
+  {
+    id: 86, brand: 'Lacoste', gender: 'masculino',
+    tags: ['short', 'sport'],
+    price: 289.90, originalPrice: 579.90,
+    name: 'Short Tennis Ultra Dry Badge Accent Branco e Azul Marinho',
+    images: [
+      'new_clothes/Men\'s Ultra Dry Badge Accent Tennis Heritage Shorts C$ 59.99 Price after discount- C$ 59.99C$ 120.00Original price before discount- C$ 120.00 List of variations White : Navy Blue • 522 1.avif',
+      'new_clothes/Men\'s Ultra Dry Badge Accent Tennis Heritage Shorts C$ 59.99 Price after discount- C$ 59.99C$ 120.00Original price before discount- C$ 120.00 List of variations White : Navy Blue • 522 2.avif',
+      'new_clothes/Men\'s Ultra Dry Badge Accent Tennis Heritage Shorts C$ 59.99 Price after discount- C$ 59.99C$ 120.00Original price before discount- C$ 120.00 List of variations White : Navy Blue • 522 3.avif',
+    ],
+    description: 'Short Lacoste Tennis Ultra Dry com badge accent em branco e azul marinho. Tecido de secagem rápida com emblema em destaque — herência de quadra com tecnologia de ponta.',
   },
 
   /* ══════════════════════════════════════════════════
@@ -686,6 +897,49 @@ const PRODUCTS = [
     name: 'Sandália Chypre Preta',
     images: ['masculino/hermes/hermes-sandalia-chypre-preta.jpeg'],
     description: 'A icônica sandália Chypre da Hermès em couro negro mate com palmilha em couro goffrado. Silhueta de corte limpo com fivela ajustável — o calçado definitivo do luxo discreto, construído à mão por mestres artesãos em Paris.',
+  },
+  {
+    id: 87, brand: 'Lacoste', gender: 'masculino',
+    tags: ['tenis'],
+    price: 579.90, originalPrice: 959.90,
+    name: 'Tênis L003 Neo Shot Branco Off White',
+    images: [
+      'new_clothes/Men\'s L003 Neo Shot Sneakers C$ 119.99 Price after discount- C$ 119.99C$ 200.00Original price before discount- C$ 200.00 List of variations  +5 Variations WHT:OFF WHT • 65T 1.avif',
+    ],
+    description: 'Tênis Lacoste L003 Neo Shot em branco off-white. Solado vulcanizado com silhueta retrô e emblema do crocodilo — o clássico das quadras reinterpretado para as ruas.',
+  },
+  {
+    id: 88, brand: 'Lacoste', gender: 'masculino',
+    tags: ['tenis'],
+    price: 599.90, originalPrice: 999.90,
+    name: 'Tênis L-Guard Breaker CT Trail Preto',
+    images: [
+      'new_clothes/Men\'s L-Guard Breaker CT Trail Sneakers C$ 125.99 Price after discount- C$ 125.99C$ 210.00Original price before discount- C$ 210.00 List of variations  BLK:BLK • 02H 1.avif',
+      'new_clothes/Men\'s L-Guard Breaker CT Trail Sneakers C$ 125.99 Price after discount- C$ 125.99C$ 210.00Original price before discount- C$ 210.00 List of variations  BLK:BLK • 02H 2.avif',
+    ],
+    description: 'Tênis Lacoste L-Guard Breaker CT Trail em preto total. Construção robusta com solado de tração agressiva — performance de trilha com a elegância inconfundível da Maison.',
+  },
+  {
+    id: 89, brand: 'Lacoste', gender: 'masculino',
+    tags: ['tenis'],
+    price: 489.90, originalPrice: 809.90,
+    name: 'Tênis Carnaby Golf Leather Branco',
+    images: [
+      'new_clothes/Men\'s Carnaby Golf Leather Golf Shoes C$ 101.99 Price after discount- C$ 101.99 C$ 170.00 Original price before discount- C$ 170.00 List of variations  WHT:WHT • 21G 1.avif',
+      'new_clothes/Men\'s Carnaby Golf Leather Golf Shoes C$ 101.99 Price after discount- C$ 101.99 C$ 170.00 Original price before discount- C$ 170.00 List of variations  WHT:WHT • 21G 2.avif',
+    ],
+    description: 'Tênis Lacoste Carnaby Golf em couro branco. Design clássico de golf com solado de tração otimizada — a tradição das quadras em couro premium.',
+  },
+  {
+    id: 90, brand: 'Lacoste', gender: 'masculino',
+    tags: ['tenis'],
+    price: 489.90, originalPrice: 809.90,
+    name: 'Tênis Carnaby Golf Leather Azul Marinho e Branco',
+    images: [
+      'new_clothes/Men\'s Carnaby Golf Leather Golf Shoes C$ 101.99 Price after discount- C$ 101.99C$ 170.00Original price before discount- C$ 170.00 List of variations  NVY:WHT • 092 1.avif',
+      'new_clothes/Men\'s Carnaby Golf Leather Golf Shoes C$ 101.99 Price after discount- C$ 101.99C$ 170.00Original price before discount- C$ 170.00 List of variations  NVY:WHT • 092 2.avif',
+    ],
+    description: 'Tênis Lacoste Carnaby Golf em couro azul marinho e branco. Elegância de fairway com construção premium e tração de performance — o golf shoe definitivo.',
   },
 
   /* ══════════════════════════════════════════════════
