@@ -327,6 +327,253 @@ const PRODUCTS = [
     description:
       'A icônica sandália Chypre da Hermès em couro negro mate com palmilha em couro goffrado. Silhueta de corte limpo com fivela ajustável — o calçado definitivo do luxo discreto, construído à mão por mestres artesãos em Paris.',
   },
+
+  /* ══════════════════════════════════
+     LACOSTE — Novos Lançamentos (Masculino)
+  ══════════════════════════════════ */
+  {
+    id: 33,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Polo Piqué Estampado',
+    images: [
+      'masculino/lacoste/lacoste-polo-pique-estampado-1.jpg',
+      'masculino/lacoste/lacoste-polo-pique-estampado-2.jpg',
+      'masculino/lacoste/lacoste-polo-pique-estampado-3.jpg',
+    ],
+    description: 'Polo em piqué premium com estampa exclusiva — a elegância do crocodilo reinterpretada com grafismo contemporâneo.',
+  },
+  {
+    id: 34,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Polo Made in France Listrado',
+    images: [
+      'masculino/lacoste/lacoste-polo-made-france-stripe-1.jpg',
+      'masculino/lacoste/lacoste-polo-made-france-stripe-2.jpg',
+    ],
+    description: 'Feito em França com algodão piqué de excelência — listras precisas e gola em contraste que definem o refinamento clássico Lacoste.',
+  },
+  {
+    id: 35,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Sweatshirt Tênis Colorblock',
+    images: [
+      'masculino/lacoste/lacoste-sweatshirt-colorblock-1.jpg',
+      'masculino/lacoste/lacoste-sweatshirt-colorblock-2.jpg',
+    ],
+    description: 'Moletom com zíper em blocos de cor inspirados nas quadras — performance e estilo que transitam do esporte ao urbano com naturalidade.',
+  },
+  {
+    id: 36,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Calça Jogger Verde',
+    images: [
+      'masculino/lacoste/lacoste-calca-verde-1.jpg',
+      'masculino/lacoste/lacoste-calca-verde-2.jpg',
+    ],
+    description: 'Calça jogger em verde sálvia com detalhes em contraste — conforto de alto padrão para quem não abre mão do estilo no dia a dia.',
+  },
+  {
+    id: 37,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Conjunto Sport Verde',
+    images: [
+      'masculino/lacoste/lacoste-conjunto-sport-verde-1.jpg',
+      'masculino/lacoste/lacoste-conjunto-sport-verde-2.jpg',
+    ],
+    description: 'Conjunto coordenado em verde vibrante com silhueta atlética — presença marcante nas quadras e além delas.',
+  },
+  {
+    id: 38,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Conjunto Azul Masculino',
+    images: [
+      'masculino/lacoste/lacoste-conjunto-azul-1.jpg',
+      'masculino/lacoste/lacoste-conjunto-azul-2.jpg',
+    ],
+    description: 'Conjunto em azul meia-noite com corte contemporâneo — o sportswear francês elevado ao seu estado mais refinado.',
+  },
+  {
+    id: 39,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Polo Azul Piqué Fit',
+    images: [
+      'masculino/lacoste/lacoste-polo-azul-pique-1.jpg',
+      'masculino/lacoste/lacoste-polo-azul-pique-2.jpg',
+      'masculino/lacoste/lacoste-polo-azul-pique-3.jpg',
+    ],
+    description: 'Polo em piqué azul de corte slim — construção precisa em algodão premium que defne a silhueta com elegância esportiva.',
+  },
+  {
+    id: 40,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Polo Classic Fit Branco',
+    images: [
+      'masculino/lacoste/lacoste-polo-classic-branco-1.jpg',
+      'masculino/lacoste/lacoste-polo-classic-branco-2.jpg',
+    ],
+    description: 'O polo branco clássico Lacoste em algodão piqué imaculado — atemporal, infalível e inegavelmente sofisticado.',
+  },
+  {
+    id: 41,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Conjunto Branco Sport',
+    images: [
+      'masculino/lacoste/lacoste-conjunto-branco-1.jpg',
+      'masculino/lacoste/lacoste-conjunto-branco-2.jpg',
+      'masculino/lacoste/lacoste-conjunto-branco-3.jpg',
+    ],
+    description: 'Conjunto branco de corte esportivo com acabamento impecável — a pureza do branco Lacoste em sua expressão mais completa.',
+  },
+  {
+    id: 42,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Tech Fleece Verde',
+    images: [
+      'masculino/lacoste/lacoste-tech-fleece-verde-1.jpg',
+      'masculino/lacoste/lacoste-tech-fleece-verde-2.jpg',
+      'masculino/lacoste/lacoste-tech-fleece-verde-3.jpg',
+    ],
+    description: 'Tech fleece em verde com tecnologia de dupla camada — calor leve e silhueta aerodinâmica para quem vive em movimento.',
+  },
+  {
+    id: 43,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Moletom Branco Premium',
+    images: [
+      'masculino/lacoste/lacoste-moletom-branco-1.jpg',
+      'masculino/lacoste/lacoste-moletom-branco-2.jpg',
+    ],
+    description: 'Moletom em branco opaco de malha pesada — o conforto do algodão escovado com a assinatura inconfundível do crocodilo.',
+  },
+  {
+    id: 44,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Moletom Preto Premium',
+    images: [
+      'masculino/lacoste/lacoste-moletom-preto-1.jpg',
+      'masculino/lacoste/lacoste-moletom-preto-2.jpg',
+    ],
+    description: 'Moletom em preto total com detalhes discretos em relevo — a força do estilo noturno Lacoste em sua forma mais essencial.',
+  },
+  {
+    id: 45,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Conjunto Sport Roxo',
+    images: [
+      'masculino/lacoste/lacoste-conjunto-sport-roxo-1.jpg',
+      'masculino/lacoste/lacoste-conjunto-sport-roxo-2.jpg',
+    ],
+    description: 'Conjunto esportivo em roxo com corte atlético e acabamento premium — ousadia cromática com a precisão técnica da Maison.',
+  },
+  {
+    id: 46,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Sport Verde',
+    images: [
+      'masculino/lacoste/lacoste-sport-verde-1.jpg',
+      'masculino/lacoste/lacoste-sport-verde-2.jpg',
+    ],
+    description: 'Peça sport em verde com construção técnica de alto desempenho — onde a funcionalidade das quadras encontra o design de Maison.',
+  },
+  {
+    id: 47,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Tênis Verde',
+    images: [
+      'masculino/lacoste/lacoste-tenis-verde-1.jpg',
+      'masculino/lacoste/lacoste-tenis-verde-2.jpg',
+    ],
+    description: 'Tênis em couro verde com solado vulcanizado e monograma bordado — a herança das quadras traduzida em calçado de rua inconfundível.',
+  },
+  {
+    id: 48,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Tênis Branco Masculino',
+    images: [
+      'masculino/lacoste/lacoste-tenis-branco-1.jpg',
+      'masculino/lacoste/lacoste-tenis-branco-2.jpg',
+      'masculino/lacoste/lacoste-tenis-branco-3.jpg',
+      'masculino/lacoste/lacoste-tenis-branco-4.jpg',
+      'masculino/lacoste/lacoste-tenis-branco-5.jpg',
+    ],
+    description: 'O clássico tênis branco Lacoste em couro liso com solado icônico — peça atemporal que eleva qualquer look com eficiência silenciosa.',
+  },
+  {
+    id: 49,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Boné Branco Lacoste',
+    images: [
+      'masculino/lacoste/lacoste-bone-branco-1.jpg',
+      'masculino/lacoste/lacoste-bone-branco-2.jpg',
+      'masculino/lacoste/lacoste-bone-branco-3.jpg',
+    ],
+    description: 'Boné estruturado em branco com crocodilo bordado em verde — o acessório que completa o look com a elegância característica da Maison.',
+  },
+  {
+    id: 50,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Polo Paris Branco',
+    images: [
+      'masculino/lacoste/lacoste-polo-paris-branco-1.jpg',
+      'masculino/lacoste/lacoste-polo-paris-branco-2.jpg',
+    ],
+    description: 'Polo Paris em branco imaculado — edição que homenageia a capital da moda com o piqué inconfundível da tradição Lacoste.',
+  },
+  {
+    id: 51,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Bolsa Preta Lacoste',
+    images: [
+      'masculino/lacoste/lacoste-bolsa-preta-1.jpg',
+      'masculino/lacoste/lacoste-bolsa-preta-2.jpg',
+    ],
+    description: 'Bolsa em nylon premium preto com ferragens douradas e crocodilo em relevo — acessório funcional com a sofisticação que a Maison assina.',
+  },
+  {
+    id: 52,
+    brand: 'Lacoste',
+    gender: 'masculino',
+    name: 'Suéter Vermelho',
+    images: [
+      'masculino/lacoste/lacoste-sueter-vermelho-1.jpg',
+      'masculino/lacoste/lacoste-sueter-vermelho-2.jpg',
+    ],
+    description: 'Suéter em vermelho cardinal com logo bordado — presença cromática intensa com o refinamento têxtil que define a tradição Lacoste.',
+  },
+
+  /* ══════════════════════════════════
+     LACOSTE — Novos Lançamentos (Feminino)
+  ══════════════════════════════════ */
+  {
+    id: 53,
+    brand: 'Lacoste',
+    gender: 'feminino',
+    name: 'Tênis Lacoste Feminino',
+    images: [
+      'feminino/lacoste/lacoste-tenis-feminino-1.jpg',
+      'feminino/lacoste/lacoste-tenis-feminino-2.jpg',
+    ],
+    description: 'Tênis feminino Lacoste em couro premium com silhueta refinada — a elegância esportiva francesa reinterpretada para o guarda-roupa contemporâneo.',
+  },
 ];
 
 /* =====================================================
@@ -334,7 +581,7 @@ const PRODUCTS = [
    ===================================================== */
 const BRANDS_BY_GENDER = {
   masculino: ['Lacoste', 'Louis Vuitton', 'Nike', 'Hugo Boss', 'Tommy Hilfiger', 'Hermès'],
-  feminino:  ['Christian Dior'],
+  feminino:  ['Lacoste', 'Christian Dior'],
 };
 
 /* =====================================================
