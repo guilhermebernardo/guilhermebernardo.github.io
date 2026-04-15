@@ -325,6 +325,104 @@ const PRODUCTS = [
     ],
     description: 'O L.12.12 em branco — a versão mais pura do polo original que René Lacoste criou para libertar o movimento nas quadras de tênis.',
   },
+  {
+    id: 123, brand: 'Tommy Hilfiger', gender: 'masculino',
+    tags: ['polo'],
+    price: 249.90, originalPrice: 419.90,
+    name: 'Polo Embroidered Logo Preto',
+    images: [
+      'new_clothes/Embroidered Tommy Logo Polo (35) $89.50 CAD $53.70 CAD 40% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorBlack 1.webp',
+      'new_clothes/Embroidered Tommy Logo Polo (35) $89.50 CAD $53.70 CAD 40% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorBlack  2.webp',
+    ],
+    description: 'Polo Tommy Hilfiger com logo bordado em preto. Piqué de algodão premium com corte regular — o clássico americano com assinatura tricolor no peito.',
+  },
+  {
+    id: 124, brand: 'Tommy Hilfiger', gender: 'masculino',
+    tags: ['polo'],
+    price: 189.90, originalPrice: 469.90,
+    name: 'Polo Long-Sleeve Pilot Blue',
+    images: [
+      'new_clothes/New To Sale Regular Fit Long-Sleeve Polo $99.50 CAD $39.80 CAD 60% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorPilot Blue 1.webp',
+      'new_clothes/New To Sale Regular Fit Long-Sleeve Polo $99.50 CAD $39.80 CAD 60% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorPilot Blue 2.webp',
+    ],
+    description: 'Polo Tommy manga longa em pilot blue. Regular Fit com piqué macio e logo discreto — sofisticação casual para dias mais frescos com a elegância preppy.',
+  },
+  {
+    id: 125, brand: 'Tommy Hilfiger', gender: 'masculino',
+    tags: ['polo'],
+    price: 179.90, originalPrice: 449.90,
+    name: 'Polo Monotype Logo Deep Indigo',
+    images: [
+      'new_clothes/Regular Fit Monotype Tommy Logo Polo (1) $94.50 CAD $37.80 CAD 60% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorDeep Indigo 1.webp',
+      'new_clothes/Regular Fit Monotype Tommy Logo Polo (1) $94.50 CAD $37.80 CAD 60% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorDeep Indigo 2.webp',
+    ],
+    description: 'Polo Tommy com monotype logo em deep indigo. Regular Fit com piqué de algodão e estampa exclusiva — a herança Tommy em tom sofisticado.',
+  },
+  {
+    id: 126, brand: 'Tommy Hilfiger', gender: 'masculino',
+    tags: ['polo'],
+    price: 199.90, originalPrice: 399.90,
+    name: 'Polo Smooth Cotton',
+    images: [
+      'new_clothes/Regular Fit Smooth Cotton Polo (25) $84.50 CAD $42.25 CAD 50% off 1.webp',
+      'new_clothes/Regular Fit Smooth Cotton Polo (25) $84.50 CAD $42.25 CAD 50% off 2.webp',
+    ],
+    description: 'Polo Tommy em algodão liso de toque macio. Regular Fit com construção precisa e logo bordado — o essencial do guarda-roupa masculino americano.',
+  },
+  {
+    id: 127, brand: 'Tommy Hilfiger', gender: 'masculino',
+    tags: ['polo'],
+    price: 209.90, originalPrice: 419.90,
+    name: 'Polo Smooth Cotton Navy',
+    images: [
+      'new_clothes/Regular Fit Smooth Cotton Polo (25) $89.50 CAD $44.99 CAD 49% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorNavy 1.webp',
+      'new_clothes/Regular Fit Smooth Cotton Polo (25) $89.50 CAD $44.99 CAD 49% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorNavy 2.webp',
+    ],
+    description: 'Polo Tommy Smooth Cotton em navy. Algodão premium de toque suave com corte regular — o polo definitivo para quem valoriza simplicidade e qualidade.',
+  },
+  {
+    id: 128, brand: 'Tommy Hilfiger', gender: 'masculino',
+    tags: ['polo'],
+    price: 209.90, originalPrice: 419.90,
+    name: 'Polo Wicking Fresh White',
+    images: [
+      'new_clothes/Regular Fit Tommy Wicking Polo (448) $89.50 CAD $44.99 CAD 49% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorFresh White   1.webp',
+      'new_clothes/Regular Fit Tommy Wicking Polo (448) $89.50 CAD $44.99 CAD 49% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorFresh White   2.webp',
+    ],
+    description: 'Polo Tommy com tecnologia wicking em fresh white. Tecido que absorve a umidade com corte regular — frescor e elegância para os dias mais quentes.',
+  },
+  {
+    id: 129, brand: 'Tommy Hilfiger', gender: 'masculino',
+    tags: ['polo'],
+    price: 209.90, originalPrice: 449.90,
+    name: 'Polo Wicking Pique Medium Red',
+    images: [
+      'new_clothes/Regular Fit Wicking Pique Polo $94.50 CAD $44.99 CAD 52% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorMedium Red. 1.webp',
+      'new_clothes/Regular Fit Wicking Pique Polo $94.50 CAD $44.99 CAD 52% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorMedium Red. 2.webp',
+    ],
+    description: 'Polo Tommy Wicking Pique em medium red. Tecido técnico de controle de umidade com piqué premium — cor vibrante com performance de alto nível.',
+  },
+  {
+    id: 130, brand: 'Tommy Hilfiger', gender: 'masculino',
+    tags: ['polo'],
+    price: 189.90, originalPrice: 399.90,
+    name: 'Polo Stretch Pique Branco',
+    images: [
+      'new_clothes/Slim Fit Stretch Pique Polo (143) $84.50 CAD $39.99 CAD 52% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors Color $84.50 CAD $39.99 CAD white 1.webp',
+      'new_clothes/Slim Fit Stretch Pique Polo (143) $84.50 CAD $39.99 CAD 52% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors Color $84.50 CAD $39.99 CAD white 2.webp',
+    ],
+    description: 'Polo Tommy Slim Fit Stretch em branco. Piqué com elastano para mobilidade total e corte afinado — o polo que se ajusta ao corpo com elegância.',
+  },
+  {
+    id: 131, brand: 'Tommy Hilfiger', gender: 'masculino',
+    tags: ['polo'],
+    price: 189.90, originalPrice: 399.90,
+    name: 'Polo Stretch Pique Preto',
+    images: [
+      'new_clothes/Slim Fit Stretch Pique Polo (143) $84.50 CAD $39.99 CAD 52% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorBlack  1.webp',
+    ],
+    description: 'Polo Tommy Stretch Pique em preto total. Slim Fit com tecido elástico de alta performance — versatilidade escura com a assinatura Tommy.',
+  },
 
   /* ══════════════════════════════════════════════════
      MOLETONS
@@ -409,6 +507,107 @@ const PRODUCTS = [
     ],
     description: 'Suéter em vermelho cardinal com logo bordado — presença cromática intensa com o refinamento têxtil que define a tradição Lacoste.',
   },
+  {
+    id: 111, brand: 'Nike', gender: 'masculino',
+    tags: ['moletom'],
+    price: 759.90,
+    name: 'Tech Fleece Hoodie Preto',
+    images: [
+      'new_clothes/Nike Tech Fleece Full-Zip Windrunner Hoodie Black : Black Explore Nike Sale price$160 1.webp',
+      'new_clothes/Nike Tech Fleece Full-Zip Windrunner Hoodie Black : Black Explore Nike Sale price$160 2.webp',
+      'new_clothes/Nike Tech Fleece Full-Zip Windrunner Hoodie Black : Black Explore Nike Sale price$160 3.webp',
+    ],
+    description: 'Nike Tech Fleece Full-Zip Windrunner em preto. Tecido de dupla camada para calor leve com zíper completo e capuz ajustável — a evolução do moletom para o guarda-roupa de luxo.',
+  },
+  {
+    id: 112, brand: 'Nike', gender: 'masculino',
+    tags: ['moletom'],
+    price: 519.90, originalPrice: 759.90,
+    name: 'Tech Fleece Hoodie Cave Stone',
+    images: [
+      'new_clothes/Nike Tech Fleece Full-Zip Windrunner Hoodie Cave Stone : Black Explore Nike Sale price$110 Regular price$160 1.webp',
+      'new_clothes/Nike Tech Fleece Full-Zip Windrunner Hoodie Cave Stone : Black Explore Nike Sale price$110 Regular price$160 2.webp',
+    ],
+    description: 'Tech Fleece em Cave Stone com capuz preto. Silhueta estruturada com tecnologia de isolamento térmico — o hoodie premium em tonalidade earth-tone.',
+  },
+  {
+    id: 113, brand: 'Nike', gender: 'masculino',
+    tags: ['moletom'],
+    price: 759.90,
+    name: 'Tech Fleece Hoodie Dark Grey Heather',
+    images: [
+      'new_clothes/Nike Tech Fleece Full-Zip Windrunner Hoodie Dark Grey Heather : Black Explore Nike Sale price$160 1.webp',
+      'new_clothes/Nike Tech Fleece Full-Zip Windrunner Hoodie Dark Grey Heather : Black Explore Nike Sale price$160 2.jpg',
+      'new_clothes/Nike Tech Fleece Full-Zip Windrunner Hoodie Dark Grey Heather : Black Explore Nike Sale price$160 3.webp',
+    ],
+    description: 'Tech Fleece em Dark Grey Heather com detalhes em preto. Construção premium com bolsos laterais e punhos ribbed — o clássico urbano em cinza melange.',
+  },
+  {
+    id: 114, brand: 'Nike', gender: 'masculino',
+    tags: ['moletom'],
+    price: 759.90,
+    name: 'Tech Fleece Hoodie Azul',
+    images: [
+      'new_clothes/Nike Tech Fleece Full-Zip Windrunner Hoodie Men\'s Explore Nike $160.00  1.webp',
+      'new_clothes/Nike Tech Fleece Full-Zip Windrunner Hoodie Men\'s Explore Nike $160.00  2.webp',
+    ],
+    description: 'Tech Fleece em azul com zíper completo. Silhueta moderna com capuz estruturado e bolsos laterais — conforto tech para quem se move com intenção.',
+  },
+  {
+    id: 115, brand: 'Nike', gender: 'masculino',
+    tags: ['moletom'],
+    price: 759.90,
+    name: 'Tech Fleece Hoodie Verde',
+    images: [
+      'new_clothes/Nike Tech Fleece Full-Zip Windrunner Hoodie Men\'s Explore Nike $160.00 green 1',
+      'new_clothes/Nike Tech Fleece Full-Zip Windrunner Hoodie Men\'s Explore Nike $160.00 green 2',
+    ],
+    description: 'Tech Fleece em verde com tecnologia de isolamento térmico de ponta. Zíper Windrunner, capuz ajustável e acabamento premium — a peça definitiva do streetwear de luxo.',
+  },
+  {
+    id: 116, brand: 'Nike', gender: 'masculino',
+    tags: ['moletom'],
+    price: 519.90, originalPrice: 759.90,
+    name: 'Tech Fleece Hoodie Promoção',
+    images: [
+      'new_clothes/Nike Tech Fleece Full-Zip Windrunner Hoodie Men\'s Explore Nike This item is on sale. Price dropped from $160.00 to $109.99 $109.99 $160.00 1',
+      'new_clothes/Nike Tech Fleece Full-Zip Windrunner Hoodie Men\'s Explore Nike This item is on sale. Price dropped from $160.00 to $109.99 $109.99 $160.00 2',
+    ],
+    description: 'Tech Fleece Windrunner em promoção. O mesmo hoodie premium com preço acessível — oportunidade imperdível para quem exige o melhor do streetwear.',
+  },
+  {
+    id: 117, brand: 'Tommy Hilfiger', gender: 'masculino',
+    tags: ['moletom'],
+    price: 299.90, originalPrice: 609.90,
+    name: 'Colorblock Fleece Hoodie Navy',
+    images: [
+      'new_clothes/Colorblock Brushed-Back Fleece Hoodie (13) $129.00 CAD $64.50 CAD 50% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorNavy 1.webp',
+      'new_clothes/Colorblock Brushed-Back Fleece Hoodie (13) $129.00 CAD $64.50 CAD 50% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorNavy 2.webp',
+    ],
+    description: 'Moletom Tommy Hilfiger com colorblock em navy. Fleece escovado macio com capuz e bolsos frontais — o casual premium com a assinatura tricolor icônica.',
+  },
+  {
+    id: 118, brand: 'Tommy Hilfiger', gender: 'masculino',
+    tags: ['moletom'],
+    price: 219.90, originalPrice: 569.90,
+    name: 'Varsity Logo Fleece Sweatstone Branco',
+    images: [
+      'new_clothes/Varsity Tommy Logo Fleece Sweatshirt (20) $119.00 CAD $47.60 CAD 60% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorOptic White 2.webp',
+      'new_clothes/Varsity Tommy Logo Fleece Sweatshirt (20) $119.00 CAD $47.60 CAD 60% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorOptic White. 1.webp',
+    ],
+    description: 'Sweatstone Tommy Hilfiger Varsity em branco óptico com logo bordado. Fleece premium com gola careca e punhos ribbed — o essencial do casual elevado.',
+  },
+  {
+    id: 119, brand: 'Tommy Hilfiger', gender: 'masculino',
+    tags: ['moletom'],
+    price: 219.90, originalPrice: 569.90,
+    name: 'Varsity Logo Fleece Sweatstone Stone',
+    images: [
+      'new_clothes/Varsity Tommy Logo Fleece Sweatshirt (20) $119.00 CAD $47.60 CAD 60% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorStone  1.webp',
+      'new_clothes/Varsity Tommy Logo Fleece Sweatshirt (20) $119.00 CAD $47.60 CAD 60% off Hilfiger Club Exclusive- Extra 20% off $175+ Sign in for this exclusive offer. Not a member? Sign up now! Compare colors ColorStone  2.webp',
+    ],
+    description: 'Sweatstone Tommy Hilfiger em stone com logo Varsity. Construção premium em fleece com acabamento macio — versatilidade Tommy para o dia a dia com estilo.',
+  },
 
   /* ══════════════════════════════════════════════════
      CALÇAS
@@ -476,6 +675,18 @@ const PRODUCTS = [
       'masculino/lacoste/lacoste-calca-verde-2.jpg',
     ],
     description: 'Calça jogger em verde sálvia com detalhes em contraste — conforto de alto padrão para quem não abre mão do estilo no dia a dia.',
+  },
+  {
+    id: 120, brand: 'Nike', gender: 'masculino',
+    tags: ['calca'],
+    price: 659.90,
+    name: 'Tech Fleece Jogger Dark Grey Heather',
+    images: [
+      'new_clothes/Nike Tech Fleece Joggers Dark Grey Heather : Black Explore Nike Sale price$140 1.jpg',
+      'new_clothes/Nike Tech Fleece Joggers Dark Grey Heather : Black Explore Nike Sale price$140 1.webp',
+      'new_clothes/Nike Tech Fleece Joggers Dark Grey Heather : Black Explore Nike Sale price$140 3.webp',
+    ],
+    description: 'Nike Tech Fleece Jogger em Dark Grey Heather com detalhes em preto. Tecido de dupla camada com cós elástico e punhos afunilados — a calça definitiva do streetwear contemporâneo.',
   },
 
   /* ══════════════════════════════════════════════════
@@ -792,6 +1003,28 @@ const PRODUCTS = [
     ],
     description: 'Camiseta da collab Lacoste × Novak Djokovic em verde tênis — leveza técnica e grafismo exclusivo da parceria mais icônica das quadras.',
   },
+  {
+    id: 121, brand: 'Nike', gender: 'masculino',
+    tags: ['camiseta'],
+    price: 159.90,
+    name: 'Pro Dri-FIT Slim T-Shirt',
+    images: [
+      'new_clothes/Nike Pro Men\'s Dri-FIT Slim T-Shirt#334150361 4.0 out of 5 stars, average rating value. Read 24 Reviews. Same page link. 4.0 (24) View Product Details View Similar Items $35.00 1',
+      'new_clothes/Nike Pro Men\'s Dri-FIT Slim T-Shirt#334150361 4.0 out of 5 stars, average rating value. Read 24 Reviews. Same page link. 4.0 (24) View Product Details View Similar Items $35.00 2',
+    ],
+    description: 'Nike Pro Dri-FIT Slim em tecido técnico de compressão. Silhueta ajustada com tecnologia de controle de umidade — performance atlética com o minimalismo Nike.',
+  },
+  {
+    id: 122, brand: 'Nike', gender: 'masculino',
+    tags: ['camiseta'],
+    price: 159.90,
+    name: 'Pro Dri-FIT Slim Tank Top',
+    images: [
+      'new_clothes/Nike Pro Men\'s Dri-FIT Slim Tank Top#334150339 4.9 out of 5 stars, average rating value. Read 8 Reviews. Same page link. 4.9 (8) View Product Details View Similar Items $35.00 1',
+      'new_clothes/Nike Pro Men\'s Dri-FIT Slim Tank Top#334150339 4.9 out of 5 stars, average rating value. Read 8 Reviews. Same page link. 4.9 (8) View Product Details View Similar Items $35.00 2',
+    ],
+    description: 'Tank top Nike Pro Dri-FIT Slim com tecido respirável de compressão. Liberdade de movimento total com tecnologia de secagem rápida — essencial para quem treina com intensidade.',
+  },
 
   /* ══════════════════════════════════════════════════
      TÊNIS
@@ -940,6 +1173,230 @@ const PRODUCTS = [
       'new_clothes/Men\'s Carnaby Golf Leather Golf Shoes C$ 101.99 Price after discount- C$ 101.99C$ 170.00Original price before discount- C$ 170.00 List of variations  NVY:WHT • 092 2.avif',
     ],
     description: 'Tênis Lacoste Carnaby Golf em couro azul marinho e branco. Elegância de fairway com construção premium e tração de performance — o golf shoe definitivo.',
+  },
+  /* ══════════════════════════════════════════════════
+     NIKE — TÊNIS NOVAS CHEGADAS
+  ══════════════════════════════════════════════════ */
+  {
+    id: 91, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 709.90,
+    name: 'Air Jordan 1 Low Preto',
+    images: [
+      'new_clothes/Air Jordan 1 Low Men\'s Shoes $150 black 1.avif',
+      'new_clothes/Air Jordan 1 Low Men\'s Shoes $150 black 2.avif',
+    ],
+    description: 'O icônico Air Jordan 1 Low em preto total. Couro premium com sola de borracha e swoosh em contraste — o clássico das quadras que transcendeu para as ruas.',
+  },
+  {
+    id: 92, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 569.90, originalPrice: 779.90,
+    name: 'Air Jordan 1 Low SE Roxo',
+    images: [
+      'new_clothes/Air Jordan 1 Low SE Men\'s Shoes $120.99 $165 26% off purple 1.avif',
+      'new_clothes/Air Jordan 1 Low SE Men\'s Shoes $120.99 $165 26% off purple 2.avif',
+    ],
+    description: 'Air Jordan 1 Low SE em roxo com detalhes premium. Edição limitada com construção em couro e sola Air — herança Jordan com atitude contemporânea.',
+  },
+  {
+    id: 93, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 569.90, originalPrice: 779.90,
+    name: 'Air Force 1 \'07 LV8 Preto',
+    images: [
+      'new_clothes/Nike Air Force 1 \'07 LV8 Men\'s Shoes $120.99 $165 26% off black 1.avif',
+      'new_clothes/Nike Air Force 1 \'07 LV8 Men\'s Shoes $120.99 $165 26% off black 2.avif',
+    ],
+    description: 'Nike Air Force 1 \'07 LV8 em preto com detalhes exclusivos. Couro premium com sola Air e swoosh em contraste — o ícone streetwear em sua forma mais refinada.',
+  },
+  {
+    id: 94, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 569.90, originalPrice: 779.90,
+    name: 'Air Force 1 \'07 LV8 Branco',
+    images: [
+      'new_clothes/Nike Air Force 1 \'07 LV8 Men\'s Shoes $120.99 $165 26% off white 1.avif',
+    ],
+    description: 'AF1 \'07 LV8 em branco imaculado com acabamentos premium. O tênis que definiu o streetwear de luxo — agora em versão limitada.',
+  },
+  {
+    id: 95, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 709.90,
+    name: 'Air Force 1 \'07 Preto',
+    images: [
+      'new_clothes/Nike Air Force 1 \'07 Men\'s Shoes $150 black 1.avif',
+      'new_clothes/Nike Air Force 1 \'07 Men\'s Shoes $150 black 2.avif',
+    ],
+    description: 'O lendário Air Force 1 \'07 em preto total. Couro liso com sola Air e swoosh tonal — a base de qualquer guarda-roupa masculino de excelência.',
+  },
+  {
+    id: 96, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 709.90,
+    name: 'Air Force 1 \'07 Branco',
+    images: [
+      'new_clothes/Nike Air Force 1 \'07 Men\'s Shoes $150 white 1.avif',
+      'new_clothes/Nike Air Force 1 \'07 Men\'s Shoes $150 white 2.avif',
+    ],
+    description: 'O AF1 \'07 em branco imaculado. O tênis mais versátil já criado — limpo, clássico e inegavelmente premium.',
+  },
+  {
+    id: 97, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 629.90, originalPrice: 899.90,
+    name: 'Air Max Phoenix Preto',
+    images: [
+      'new_clothes/Nike Air Max Phoenix Men\'s Shoes $133.99 $190 29% off black 1.avif',
+      'new_clothes/Nike Air Max Phoenix Men\'s Shoes $133.99 $190 29% off black 2.avif',
+    ],
+    description: 'Nike Air Max Phoenix em preto com unidade Air Max visível. Amortecimento responsivo com silhueta moderna — conforto e estilo em cada passada.',
+  },
+  {
+    id: 98, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 1169.90,
+    name: 'Air Max Plus 3 Preto',
+    images: [
+      'new_clothes/Nike Air Max Plus 3 Men\'s Shoes $245 black 1.avif',
+      'new_clothes/Nike Air Max Plus 3 Men\'s Shoes $245 black 2.avif',
+    ],
+    description: 'O Air Max Plus 3 em preto total com as icônicas barras Tuned Air. Design futurista com amortecimento de próxima geração — o TN que define tendências.',
+  },
+  {
+    id: 99, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 779.90, originalPrice: 1119.90,
+    name: 'Air Max Plus Azul Claro',
+    images: [
+      'new_clothes/Nike Air Max Plus Men\'s Shoes $164.99 $235 29% off blue light 2.avif',
+      'new_clothes/Nike Air Max Plus Men\'s Shoes $164.99 $235 29% off blue light 3.avif',
+      'new_clothes/Nike Air Max Plus Men\'s Shoes $164.99 $235 29% off blue light.avif',
+    ],
+    description: 'Nike Air Max Plus em azul claro com gradientes de cor nas barras laterais. Tuned Air com design ousado — onde a engenharia encontra a arte urbana.',
+  },
+  {
+    id: 100, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 819.90, originalPrice: 1169.90,
+    name: 'Air Max Plus Azul e Branco',
+    images: [
+      'new_clothes/Nike Air Max Plus Men\'s Shoes $171.99 $245 29% off blue white 1.avif',
+      'new_clothes/Nike Air Max Plus Men\'s Shoes $171.99 $245 29% off blue white 2.avif',
+    ],
+    description: 'Air Max Plus em azul e branco com barras Tuned Air em gradiente. A versão mais fresca e luminosa do clássico TN — para dias de sol com atitude.',
+  },
+  {
+    id: 101, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 1119.90,
+    name: 'Air Max Plus Preto e Azul',
+    images: [
+      'new_clothes/Nike Air Max Plus Men\'s Shoes $235 black blue 1.avif',
+      'new_clothes/Nike Air Max Plus Men\'s Shoes $235 black blue 2.avif',
+    ],
+    description: 'Air Max Plus em preto com detalhes em azul royal. Construção robusta com amortecimento Tuned Air — poder visual e conforto absoluto.',
+  },
+  {
+    id: 102, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 1119.90,
+    name: 'Air Max Plus Full Preto',
+    images: [
+      'new_clothes/Nike Air Max Plus Men\'s Shoes $235 full black 1.avif',
+      'new_clothes/Nike Air Max Plus Men\'s Shoes $235 full balck 2.avif',
+    ],
+    description: 'O TN em preto total — a versão mais stealth e dominante do Air Max Plus. Para quem prefere que o estilo fale em sussurros.',
+  },
+  {
+    id: 103, brand: 'Nike', gender: 'feminino',
+    tags: ['tenis'],
+    price: 1119.90,
+    name: 'Air Max Plus SE Feminino Preto e Prata',
+    images: [
+      'new_clothes/Nike Air Max Plus SE Women\'s Shoes $235 black silver 1.avif',
+      'new_clothes/Nike Air Max Plus SE Women\'s Shoes $235 black silver 2.avif',
+    ],
+    description: 'Air Max Plus SE feminino em preto e prata. Edição especial com detalhes metálicos e silhueta refinada — o TN que eleva qualquer look.',
+  },
+  {
+    id: 104, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 779.90, originalPrice: 1119.90,
+    name: 'Air Max Plus VII Preto e Laranja',
+    images: [
+      'new_clothes/Nike Air Max Plus VII Men\'s shoes $164.99 $235 29% off black orange 1.avif',
+      'new_clothes/Nike Air Max Plus VII Men\'s shoes $164.99 $235 29% off black orange 2.avif',
+    ],
+    description: 'Air Max Plus VII em preto com laranja vibrante. A sétima geração do ícone com amortecimento Tuned Air aprimorado — evolução contínua do design urbano.',
+  },
+  {
+    id: 105, brand: 'Nike', gender: 'feminino',
+    tags: ['tenis'],
+    price: 749.90, originalPrice: 1069.90,
+    name: 'Air Max Plus Feminino Rosa',
+    images: [
+      'new_clothes/Nike Air Max Plus Women\'s Shoe $157.99 $225 29% off pink 1.avif',
+      'new_clothes/Nike Air Max Plus Women\'s Shoe $157.99 $225 29% off pink 2.avif',
+    ],
+    description: 'Air Max Plus feminino em rosa com barras Tuned Air em gradiente. O ícone streetwear reinterpretado para o guarda-roupa feminino com ousadia e elegância.',
+  },
+  {
+    id: 106, brand: 'Nike', gender: 'feminino',
+    tags: ['tenis'],
+    price: 779.90, originalPrice: 1119.90,
+    name: 'Air Max Plus Feminino Full Preto',
+    images: [
+      'new_clothes/Nike Air Max Plus Women\'s Shoes $164.99 $235 29% off full black 2.avif',
+      'new_clothes/Nike Air Max Plus Women\'s Shoes $164.99 $235 29% off full black 3.avif',
+      'new_clothes/Nike Air Max Plus Women\'s Shoes $164.99 $235 29% off full black.avif',
+    ],
+    description: 'Air Max Plus feminino em preto total. Silhueta robusta com amortecimento de elite — o TN que domina as ruas com presença inconfundível.',
+  },
+  {
+    id: 107, brand: 'Nike', gender: 'feminino',
+    tags: ['tenis'],
+    price: 1239.90,
+    name: 'Air Max Plus Feminino Rosa e Preto',
+    images: [
+      'new_clothes/Nike Air Max Plus Women\'s Shoes $260   pink black 1.avif',
+      'new_clothes/Nike Air Max Plus Women\'s Shoes $260   pink black 2.avif',
+    ],
+    description: 'Air Max Plus feminino em rosa e preto. O contraste perfeito entre doçura e atitude — o TN mais exclusivo da coleção feminina.',
+  },
+  {
+    id: 108, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 629.90, originalPrice: 899.90,
+    name: 'Dunk Low GORE-TEX Cinza',
+    images: [
+      'new_clothes/Nike Dunk Low GORE-TEX Men\'s Shoes $133.99 $190 29% off gray 1 .avif',
+      'new_clothes/Nike Dunk Low GORE-TEX Men\'s Shoes $133.99 $190 29% off gray 2.avif',
+    ],
+    description: 'Nike Dunk Low com membrane GORE-TEX em cinza. Resistente à água com o perfil clássico do Dunk — estilo de quadra pronto para qualquer clima.',
+  },
+  {
+    id: 109, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 629.90, originalPrice: 899.90,
+    name: 'Shox R4 Branco e Preto',
+    images: [
+      'new_clothes/Nike Shox R4 Men\'s Shoes $133.99 $190 29% off white black 1.avif',
+      'new_clothes/Nike Shox R4 Men\'s Shoes $133.99 $190 29% off white black 2.avif',
+    ],
+    description: 'O futurista Nike Shox R4 em branco e preto. Colunas Shox para amortecimento responsivo — design que parece ter saído de 2030.',
+  },
+  {
+    id: 110, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 379.90,
+    name: 'Tiempo Maestro Chuteira Preto',
+    images: [
+      'new_clothes/Nike Tiempo Maestro Club Multi-Ground Low-Top Football Boots $80 black 1.avif',
+      'new_clothes/Nike Tiempo Maestro Club Multi-Ground Low-Top Football Boots $80 black 2.avif',
+    ],
+    description: 'Chuteira Nike Tiempo Maestro em couro preto com travas multi-ground. Toque clássico em couro com tecnologia moderna — para quem domina a bola com elegância.',
   },
 
   /* ══════════════════════════════════════════════════

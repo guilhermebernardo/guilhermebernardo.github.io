@@ -5,7 +5,11 @@
       "Bash(done)",
       "Bash(python3 *)",
       "Bash(node *)",
-      "Bash(kill *)"
+      "Bash(kill *)",
+      "Bash(ls *)",
+      "Bash(file *)",
+      "Bash(xargs *)",
+      "Bash(git add *)"
     ]
   },
   "$version": 3
