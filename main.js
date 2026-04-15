@@ -35,8 +35,8 @@ const PRODUCTS = [
     price: 979.90, originalPrice: 1489.90,
     name: 'Conjunto Tracksuit Djokovic Preto',
     images: [
-      'masculino/lacoste/lacoste-djokovic-tracksuit-preto-1.jpg',
       'masculino/lacoste/lacoste-djokovic-tracksuit-preto-2.jpg',
+      'masculino/lacoste/lacoste-djokovic-tracksuit-preto-1.jpg',
     ],
     description: 'Tracksuit Lacoste × Djokovic em preto total com detalhes brancos — a sofisticação das quadras Grand Slam em cada detalhe do tecido técnico.',
   },
@@ -70,14 +70,6 @@ const PRODUCTS = [
       'masculino/lacoste/lacoste-conjunto-branco-3.jpg',
     ],
     description: 'Conjunto branco de corte esportivo com acabamento impecável — a pureza do branco Lacoste em sua expressão mais completa.',
-  },
-  {
-    id: 5, brand: 'Nike', gender: 'masculino',
-    tags: ['conjunto'],
-    price: 389.90,
-    name: 'Conjunto Tech Fleece Cinza',
-    images: ['masculino/nike/nike-conjunto-tech-fleece-cinza.jpeg'],
-    description: 'Conjunto moletom e calça Nike Tech Fleece em cinza mesclado. Construção em duas camadas bonded para calor leve, com costuramento angular que define uma nova geração de luxo esportivo.',
   },
   {
     id: 6, brand: 'Lacoste', gender: 'masculino',
@@ -464,7 +456,7 @@ const PRODUCTS = [
   {
     id: 27, brand: 'Hugo Boss', gender: 'masculino',
     tags: ['moletom'],
-    price: 370.41, originalPrice: 389.90,
+    price: 670.41, originalPrice: 689.90,
     name: 'Moletom Zip Boss Cinza Escuro',
     images: ['masculino/hugo-boss/Moletom Zip Boss Green \u2014 Cinza.jpeg'],
     description: 'Moletom com zíper BOSS em cinza pedra com faixas contrastantes em relevo nos ombros. Interior escovado macio com puxador de zíper com marca — onde o DNA atlético encontra o artesanato de luxo.',
@@ -476,14 +468,6 @@ const PRODUCTS = [
     name: 'Moletom Zip Premium Verde',
     images: ['masculino/lacoste/lacoste-moletom-zip-verde.jpeg'],
     description: 'Moletom com zíper completo em verde sálvia de malha pesada escovada. Emblema do crocodilo Lacoste no punho, com ribana de precisão no cós e mangas — silhueta atlética refinada para o guarda-roupa contemporâneo.',
-  },
-  {
-    id: 29, brand: 'Nike', gender: 'masculino',
-    tags: ['moletom'],
-    price: 389.90,
-    name: 'Conjunto Tech Fleece Preto',
-    images: ['masculino/nike/nike-moletom-tech-fleece-preto.jpeg'],
-    description: 'Conjunto Nike Tech Fleece em preto com detalhes refletivos em prata. A versão mais elegante do clássico Tech Fleece — reinventado com tecnologia de ponta para quem exige conforto e estética urban luxury.',
   },
   {
     id: 30, brand: 'Lacoste', gender: 'masculino',
@@ -546,7 +530,7 @@ const PRODUCTS = [
     id: 114, brand: 'Nike', gender: 'masculino',
     tags: ['moletom'],
     price: 759.90,
-    name: 'Tech Fleece Hoodie Azul',
+    name: 'Tech Fleece Hoodie Vermelho',
     images: [
       'masculino/nike/nike-tech-fleece-hoodie-azul-1.jpg',
       'masculino/nike/nike-tech-fleece-hoodie-azul-2.jpg',
@@ -592,8 +576,8 @@ const PRODUCTS = [
     price: 219.90, originalPrice: 569.90,
     name: 'Varsity Logo Fleece Sweatstone Branco',
     images: [
-      'masculino/tommy-hilfiger/tommy-moletom-varsity-branco-2.jpg',
       'masculino/tommy-hilfiger/tommy-moletom-varsity-branco-1.jpg',
+      'masculino/tommy-hilfiger/tommy-moletom-varsity-branco-2.jpg',
     ],
     description: 'Sweatstone Tommy Hilfiger Varsity em branco óptico com logo bordado. Fleece premium com gola careca e punhos ribbed — o essencial do casual elevado.',
   },
@@ -682,8 +666,8 @@ const PRODUCTS = [
     price: 659.90,
     name: 'Tech Fleece Jogger Dark Grey Heather',
     images: [
-      'masculino/nike/nike-tech-fleece-jogger-cinza-1.jpg',
       'masculino/nike/nike-tech-fleece-jogger-cinza-2.jpg',
+      'masculino/nike/nike-tech-fleece-jogger-cinza-1.jpg',
       'masculino/nike/nike-tech-fleece-jogger-cinza-3.jpg',
     ],
     description: 'Nike Tech Fleece Jogger em Dark Grey Heather com detalhes em preto. Tecido de dupla camada com cós elástico e punhos afunilados — a calça definitiva do streetwear contemporâneo.',
@@ -983,7 +967,7 @@ const PRODUCTS = [
   {
     id: 48, brand: 'Louis Vuitton', gender: 'masculino',
     tags: ['camiseta'],
-    price: 389.90,
+    price: 589.90,
     name: 'Camisa Monograma Multicolorida Louis Vuitton',
     images: [
       'masculino/louis-vuitton/lv-look-completo-1.jpeg',
@@ -1270,9 +1254,9 @@ const PRODUCTS = [
     price: 779.90, originalPrice: 1119.90,
     name: 'Air Max Plus Azul Claro',
     images: [
-      'masculino/nike/nike-airmax-plus-azul-claro-2.jpg',
-      'masculino/nike/nike-airmax-plus-azul-claro-3.jpg',
       'masculino/nike/nike-airmax-plus-azul-claro-1.jpg',
+      'masculino/nike/nike-airmax-plus-azul-claro-3.jpg',
+      'masculino/nike/nike-airmax-plus-azul-claro-2.jpg',
     ],
     description: 'Nike Air Max Plus em azul claro com gradientes de cor nas barras laterais. Tuned Air com design ousado — onde a engenharia encontra a arte urbana.',
   },
