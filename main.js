@@ -1436,30 +1436,595 @@ const PRODUCTS = [
     ],
     description: 'Peça sport em verde com construção técnica de alto desempenho — onde a funcionalidade das quadras encontra o design de Maison.',
   },
+
+  /* ══════════════════════════════════════════════════
+     NIKE — NOVAS CHEGADAS
+  ══════════════════════════════════════════════════ */
+  {
+    id: 260, brand: 'Nike', gender: 'masculino',
+    tags: ['moletom'],
+    price: 289.90, originalPrice: 320.00,
+    name: 'Club Fleece Hoodie Azul Court',
+    images: [
+      'masculino/nike/nike-club-fleece-court-blue-1.webp',
+      'masculino/nike/nike-club-fleece-court-blue-2.webp',
+    ],
+    description: 'Moletom Nike Club Fleece em azul court com capuz e bolso canguru — o conforto definitivo do fleece premium com o Swoosh no peito.',
+  },
+  {
+    id: 261, brand: 'Nike', gender: 'masculino',
+    tags: ['moletom'],
+    price: 269.90, originalPrice: 320.00,
+    name: 'Club Fleece Hoodie Laranja',
+    images: [
+      'masculino/nike/nike-club-fleece-orange-1.webp',
+    ],
+    description: 'Moletom Nike Club Fleece em laranja vibrante com capuz e bolso canguru — cor de impacto com o conforto inconfundível do fleece Nike.',
+  },
+  {
+    id: 262, brand: 'Nike', gender: 'masculino',
+    tags: ['moletom'],
+    price: 269.90, originalPrice: 320.00,
+    name: 'Club Pullover Fleece Hoodie Vermelho',
+    images: [
+      'masculino/nike/nike-club-fleece-red-1.webp',
+      'masculino/nike/nike-club-fleece-red-2.webp',
+    ],
+    description: 'Moletom pullover Nike Club Fleece em vermelho intenso com capuz e bolso canguru — clássico reinventado com o calor e o estilo que a Nike entrega.',
+  },
+  {
+    id: 263, brand: 'Nike', gender: 'masculino',
+    tags: ['moletom'],
+    price: 289.90, originalPrice: 320.00,
+    name: 'Club Pullover Fleece Hoodie World Indigo',
+    images: [
+      'masculino/nike/nike-club-fleece-indigo-1.webp',
+      'masculino/nike/nike-club-fleece-indigo-2.webp',
+    ],
+    description: 'Moletom pullover Nike Club Fleece em World Indigo — azul profundo com toque suave de fleece premium e o icônico logo bordado.',
+  },
+  {
+    id: 264, brand: 'Nike', gender: 'masculino',
+    tags: ['calca'],
+    price: 269.90, originalPrice: 300.00,
+    name: 'Club Jogger Laranja',
+    images: [
+      'masculino/nike/nike-club-joggers-orange-1.webp',
+    ],
+    description: 'Calça jogger Nike Club em laranja com elástico e punhos afunilados — movimento sem restrições com a qualidade de construção que a Nike assina.',
+  },
+  {
+    id: 265, brand: 'Nike', gender: 'masculino',
+    tags: ['calca'],
+    price: 269.90, originalPrice: 300.00,
+    name: 'Club Jogger World Indigo',
+    images: [
+      'masculino/nike/nike-club-joggers-indigo-1.webp',
+      'masculino/nike/nike-club-joggers-indigo-2.webp',
+    ],
+    description: 'Calça jogger Nike Club em World Indigo com elástico e punhos afunilados — o azul profundo que combina com qualquer look casual.',
+  },
+  {
+    id: 266, brand: 'Nike', gender: 'masculino',
+    tags: ['moletom'],
+    price: 359.90, originalPrice: 400.00,
+    name: 'Solo Swoosh Hoodie Roxo',
+    images: [
+      'masculino/nike/nike-solo-swoosh-purple-1.webp',
+      'masculino/nike/nike-solo-swoosh-purple-2.webp',
+    ],
+    description: 'Moletom Nike Solo Swoosh em roxo com o grande Swoosh bordado na frente — declaração de estilo com fleece de alta gramatura e silhueta relaxada.',
+  },
+  {
+    id: 267, brand: 'Nike', gender: 'masculino',
+    tags: ['moletom'],
+    price: 359.90, originalPrice: 440.00,
+    name: 'Stranger Things 5 Vecna Oversized Hoodie',
+    images: [
+      'masculino/nike/nike-stranger-things-vecna-1.webp',
+      'masculino/nike/nike-stranger-things-vecna-2.webp',
+    ],
+    description: 'Collab exclusiva Nike × Stranger Things 5 — moletom oversized em cinza escuro com estampa do vilão Vecna. Edição limitada para quem domina o Mundo Invertido e as ruas.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     JORDAN — NOVAS CHEGADAS
+  ══════════════════════════════════════════════════ */
+  {
+    id: 270, brand: 'Jordan', gender: 'masculino',
+    tags: ['camiseta'],
+    price: 169.90,
+    name: 'Brooklyn Jumpman T-Shirt Gym Red',
+    images: [
+      'masculino/jordan/jordan-jumpman-tshirt-red-1.webp',
+      'masculino/jordan/jordan-jumpman-tshirt-red-2.webp',
+    ],
+    description: 'Camiseta Jordan Brooklyn Jumpman em vermelho gym com gráfico icônico — algodão premium com o DNA das quadras e o estilo das ruas de Brooklyn.',
+  },
+  {
+    id: 271, brand: 'Jordan', gender: 'masculino',
+    tags: ['calca'],
+    price: 339.90, originalPrice: 380.00,
+    name: 'Brooklyn Oversized Graphic Pants',
+    images: [
+      'masculino/jordan/jordan-graphic-pants-1.webp',
+      'masculino/jordan/jordan-graphic-pants-2.webp',
+    ],
+    description: 'Calça Jordan Brooklyn de corte oversized em preto com grafismo Gym Red — silhueta larga e arrojada com o estilo de quadra que define a cultura Jordan.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     HOODRICH
+  ══════════════════════════════════════════════════ */
+  {
+    id: 272, brand: 'Hoodrich', gender: 'masculino',
+    tags: ['moletom'],
+    price: 389.90, originalPrice: 600.00,
+    name: 'Dark Oversized Hoodie Glacier Lake',
+    images: [
+      'masculino/hoodrich/hoodrich-dark-hoodie-glacier-1.webp',
+      'masculino/hoodrich/hoodrich-dark-hoodie-glacier-2.webp',
+    ],
+    description: 'Moletom oversized Hoodrich em azul Glacier Lake — streetwear britânico de alto impacto com silhueta ampla e logo bordado. A estética das ruas de Londres em cada detalhe.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     SUPPLY & DEMAND
+  ══════════════════════════════════════════════════ */
+  {
+    id: 273, brand: 'Supply & Demand', gender: 'masculino',
+    tags: ['calca'],
+    price: 389.90, originalPrice: 440.00,
+    name: 'Slater Jeans Mid Wash Denim',
+    images: [
+      'masculino/supply-demand/sd-slater-jeans-midwash-1.webp',
+      'masculino/supply-demand/sd-slater-jeans-midwash-2.webp',
+    ],
+    description: 'Jeans Supply & Demand Slater em lavagem média — corte contemporâneo com desgastes sutis e tecido denim premium. O casual refinado que não abre mão do estilo.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     VICTORIA'S SECRET — FRAGRÂNCIAS (3 por R$ 189,90)
+  ══════════════════════════════════════════════════ */
+  {
+    id: 200, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Amber Romance',
+    images: [
+      'feminino/victorias-secret/vs-body-amber-romance-lotion.avif',
+      'feminino/victorias-secret/vs-body-amber-romance-shimmer-lotion.avif',
+      'feminino/victorias-secret/vs-body-amber-romance-shimmer-mist.avif',
+    ],
+    description: 'Fragrância floral almiscarada com notas de rosa, sândalo e baunilha âmbar. Disponível em Loção, Shimmer Loção e Shimmer Mist. R$129,90 a unidade — PROMOÇÃO: 3 quaisquer por R$189,90 (mix de produtos liberado).',
+  },
+  {
+    id: 201, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Aqua Kiss',
+    images: [
+      'feminino/victorias-secret/vs-body-aqua-kiss-lotion.avif',
+      'feminino/victorias-secret/vs-body-aqua-kiss-shimmer-mist.avif',
+    ],
+    description: 'Fragrância aquática e refrescante com notas de brisa marinha e flores brancas. Disponível em Loção e Shimmer Mist. R$129,90 a unidade — PROMOÇÃO: 3 quaisquer por R$189,90 (mix de produtos liberado).',
+  },
+  {
+    id: 202, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Bare Vanilla',
+    images: [
+      'feminino/victorias-secret/vs-body-bare-vanilla-lotion.avif',
+      'feminino/victorias-secret/vs-body-bare-vanilla-shimmer-lotion.avif',
+      'feminino/victorias-secret/vs-body-bare-vanilla-shimmer-mist.avif',
+    ],
+    description: 'Fragrância quente e sensual com notas de baunilha pura e sândalo cremoso — a favorita atemporal da Victoria\'s Secret. Disponível em Loção, Shimmer Loção e Shimmer Mist. R$129,90 a unidade — PROMOÇÃO: 3 quaisquer por R$189,90.',
+  },
+  {
+    id: 203, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Coconut Passion',
+    images: [
+      'feminino/victorias-secret/vs-body-coconut-passion-lotion.avif',
+      'feminino/victorias-secret/vs-body-coconut-passion-shimmer-lotion.avif',
+      'feminino/victorias-secret/vs-body-coconut-passion-shimmer-mist.avif',
+    ],
+    description: 'Fragrância tropical irresistível com notas de coco tostado e sândalo doce — pele hidratada e com aquele brilho dos dias de praia. Disponível em Loção, Shimmer Loção e Shimmer Mist. R$129,90 a unidade — PROMOÇÃO: 3 por R$189,90.',
+  },
+  {
+    id: 204, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Gelato Oasis',
+    images: [
+      'feminino/victorias-secret/vs-body-gelato-oasis-lotion.avif',
+      'feminino/victorias-secret/vs-body-gelato-oasis-mist.avif',
+    ],
+    description: 'Fragrância refrescante e adocicada inspirada num oásis de gelato — notas frutadas e florais que evocam verões perfeitos. Disponível em Loção e Body Mist. R$129,90 a unidade — PROMOÇÃO: 3 quaisquer por R$189,90.',
+  },
+  {
+    id: 205, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Isla Hibiscus',
+    images: [
+      'feminino/victorias-secret/vs-body-isla-hibiscus-lotion.avif',
+      'feminino/victorias-secret/vs-body-isla-hibiscus-mist.avif',
+    ],
+    description: 'Fragrância tropical e floral com hibisco vibrante e notas de água de coco — a leveza das ilhas em cada aplicação. Disponível em Loção e Body Mist. R$129,90 a unidade — PROMOÇÃO: 3 quaisquer por R$189,90.',
+  },
+  {
+    id: 206, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Love Spell',
+    images: [
+      'feminino/victorias-secret/vs-body-love-spell-lotion.avif',
+      'feminino/victorias-secret/vs-body-love-spell-shimmer-lotion.avif',
+      'feminino/victorias-secret/vs-body-love-spell-shimmer-mist.avif',
+    ],
+    description: 'Fragrância romántica e floral com pêssego e cereja sobre base de jasmim e sândalo — um encanto irresistível. Disponível em Loção, Shimmer Loção e Shimmer Mist. R$129,90 a unidade — PROMOÇÃO: 3 por R$189,90.',
+  },
+  {
+    id: 207, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Midnight Blooms',
+    images: [
+      'feminino/victorias-secret/vs-body-midnight-blooms-lotion.avif',
+      'feminino/victorias-secret/vs-body-midnight-bloom-shimmer-mist.avif',
+    ],
+    description: 'Fragrância misteriosa e floral com flores que desabrocham à meia-noite — pétalas escuras sobre base quente e almiscarada. Disponível em Loção e Shimmer Mist. R$129,90 a unidade — PROMOÇÃO: 3 por R$189,90.',
+  },
+  {
+    id: 208, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Piña Tropicale',
+    images: [
+      'feminino/victorias-secret/vs-body-pina-tropicale-lotion.avif',
+      'feminino/victorias-secret/vs-body-pina-tropicale-mist.avif',
+    ],
+    description: 'Fragrância tropical e efervescente com abacaxi suculento e notas de coco e baunilha — férias em cada spritz. Disponível em Loção e Body Mist. R$129,90 a unidade — PROMOÇÃO: 3 quaisquer por R$189,90.',
+  },
+  {
+    id: 209, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Pitaya Paradise',
+    images: [
+      'feminino/victorias-secret/vs-body-pitaya-paradise-lotion.avif',
+      'feminino/victorias-secret/vs-body-pitaya-paradise-mist.avif',
+    ],
+    description: 'Fragrância exótica e vibrante com pitaya, frutos tropicais e base floral — energia e frescor que duram o dia todo. Disponível em Loção e Body Mist. R$129,90 a unidade — PROMOÇÃO: 3 por R$189,90.',
+  },
+  {
+    id: 210, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Pure Seduction',
+    images: [
+      'feminino/victorias-secret/vs-body-pure-seduction-lotion.avif',
+      'feminino/victorias-secret/vs-body-pure-seduction-shimmer-lotion.avif',
+      'feminino/victorias-secret/vs-body-pure-seduction-shimmer-mist.avif',
+    ],
+    description: 'Fragrância sensual e frutada com ameixa vermelha e freesia — o perfume da sedução pura. Disponível em Loção, Shimmer Loção e Shimmer Mist. R$129,90 a unidade — PROMOÇÃO: 3 quaisquer por R$189,90.',
+  },
+  {
+    id: 211, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Velvet Petals',
+    images: [
+      'feminino/victorias-secret/vs-body-velvet-petals-lotion.avif',
+      'feminino/victorias-secret/vs-body-velvet-petals-shimmer-lotion.avif',
+      'feminino/victorias-secret/vs-body-velvet-petals-shimmer-mist.avif',
+    ],
+    description: 'Fragrância floral aveludada com pétalas de rosas sobre base quente de sândalo e almíscar — feminilidade em sua expressão mais pura. Disponível em Loção, Shimmer Loção e Shimmer Mist. R$129,90 a unidade — PROMOÇÃO: 3 por R$189,90.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     VICTORIA'S SECRET — CALCINHAS
+  ══════════════════════════════════════════════════ */
+  {
+    id: 220, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['calcinha'],
+    price: 84.90,
+    name: 'Cotton Exploded Logo Boyshort',
+    images: [
+      'feminino/victorias-secret/vs-calcinha-cotton-exploded-1.avif',
+      'feminino/victorias-secret/vs-calcinha-cotton-exploded-2.avif',
+    ],
+    description: 'Calcinha boyshort em algodão com logo explodido em relevo — conforto máximo e cobertura total com o estilo assinado VS. R$84,90 cada — PROMOÇÃO: 5 por R$209,90 (mix de modelos liberado).',
+  },
+  {
+    id: 221, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['calcinha'],
+    price: 99.90,
+    name: 'Cotton SoSoft Modal Boyshort',
+    images: [
+      'feminino/victorias-secret/vs-calcinha-sosoft-modal-1.avif',
+      'feminino/victorias-secret/vs-calcinha-sosoft-modal-2.avif',
+    ],
+    description: 'Calcinha boyshort em modal ultra-fino SoSoft™ — segunda pele incrivelmente macia com logo VS em relevo. R$99,90 cada — PROMOÇÃO: 5 por R$209,90 (mix de modelos liberado).',
+  },
+  {
+    id: 222, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['calcinha'],
+    price: 129.90,
+    name: 'Dream Angels Lace Brazilian',
+    images: [
+      'feminino/victorias-secret/vs-calcinha-dream-lace-660-1.avif',
+      'feminino/victorias-secret/vs-calcinha-dream-lace-660-2.avif',
+      'feminino/victorias-secret/vs-calcinha-dream-lace-937-1.avif',
+      'feminino/victorias-secret/vs-calcinha-dream-lace-937-2.avif',
+    ],
+    description: 'Calcinha brasileira Dream Angels em renda delicada — silhueta sensual com cobertura perfeita. Disponível em diferentes cores. R$129,90 cada — PROMOÇÃO: 3 por R$259,90 (mix de modelos liberado).',
+  },
+  {
+    id: 223, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['calcinha'],
+    price: 129.90,
+    name: 'Dream Angels Lace-Trim Brazilian',
+    images: [
+      'feminino/victorias-secret/vs-calcinha-dream-trim-22-1.avif',
+      'feminino/victorias-secret/vs-calcinha-dream-trim-22-2.avif',
+      'feminino/victorias-secret/vs-calcinha-dream-trim-25-1.avif',
+      'feminino/victorias-secret/vs-calcinha-dream-trim-25-2.avif',
+    ],
+    description: 'Calcinha brasileira Dream Angels com acabamento em renda — tecido leve com detalhe de renda na borda que eleva o look do dia a dia. Disponível em diferentes cores. R$129,90 cada — PROMOÇÃO: 3 por R$259,90.',
+  },
+  {
+    id: 224, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['calcinha'],
+    price: 129.90,
+    name: 'Dream Angels Sweet Melody Satin Flutter Brazilian',
+    images: [
+      'feminino/victorias-secret/vs-calcinha-dream-sweet-1.avif',
+      'feminino/victorias-secret/vs-calcinha-dream-sweet-2.avif',
+    ],
+    description: 'Calcinha brasileira Dream Angels em cetim com motivo Sweet Melody e acabamento flutter — romanticismo e leveza num único modelo. R$129,90 cada — PROMOÇÃO: 3 por R$259,90 (mix de modelos liberado).',
+  },
+  {
+    id: 225, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['calcinha'],
+    price: 169.90,
+    name: 'Shine Strap Brazilian Panty',
+    images: [
+      'feminino/victorias-secret/vs-calcinha-shine-strap-1.avif',
+      'feminino/victorias-secret/vs-calcinha-shine-strap-2.avif',
+    ],
+    description: 'Calcinha brasileira com alças brilhantes Shine Strap — detalhe metálico sofisticado que transforma o básico em peça de lingerie premium.',
+  },
+  {
+    id: 226, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['calcinha'],
+    price: 169.90,
+    name: 'Very Sexy Shine Strap Brazilian',
+    images: [
+      'feminino/victorias-secret/vs-calcinha-very-sexy-shine-1.avif',
+      'feminino/victorias-secret/vs-calcinha-very-sexy-shine-2.avif',
+    ],
+    description: 'Calcinha brasileira Very Sexy com alças metalizadas Shine Strap — corte sedutor com o acabamento brilhante que é marca da linha Very Sexy.',
+  },
+  {
+    id: 227, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['calcinha'],
+    price: 169.90,
+    name: 'Very Sexy Scattered Shine Strap Crotchless Brazilian',
+    images: [
+      'feminino/victorias-secret/vs-calcinha-very-sexy-scattered-1.avif',
+      'feminino/victorias-secret/vs-calcinha-very-sexy-scattered-2.avif',
+    ],
+    description: 'Calcinha brasileira crotchless Very Sexy com alças brilhantes espalhadas — ousadia máxima com o refinamento que só a Victoria\'s Secret entrega.',
+  },
+  {
+    id: 228, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['calcinha'],
+    price: 169.90,
+    name: 'Very Sexy Shine Strap Lace Crotchless Brazilian',
+    images: [
+      'feminino/victorias-secret/vs-calcinha-very-sexy-lace-crotchless-1.avif',
+      'feminino/victorias-secret/vs-calcinha-very-sexy-lace-crotchless-2.avif',
+    ],
+    description: 'Calcinha brasileira crotchless Very Sexy em renda com alças Shine Strap — a combinação perfeita entre a delicadeza da renda e o brilho sedutor da linha Very Sexy.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     VICTORIA'S SECRET — PIJAMAS & SLIP
+  ══════════════════════════════════════════════════ */
+  {
+    id: 230, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['pijama'],
+    price: 579.90,
+    name: 'Signature Satin Pajama Long Set Marzipan Leopard',
+    images: [
+      'feminino/victorias-secret/vs-pijama-satin-leopard-1.avif',
+      'feminino/victorias-secret/vs-pijama-satin-leopard-2.avif',
+    ],
+    description: 'Conjunto de pijama longo Signature Satin em estampa Marzipan Leopard — cetim macio e brilhante com botões perolados e calça de perna longa. Disponível em Short, Regular e Long.',
+  },
+  {
+    id: 231, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['pijama'],
+    price: 579.90,
+    name: 'Signature Satin Pajama Long Set',
+    images: [
+      'feminino/victorias-secret/vs-pijama-satin-longo-1.avif',
+      'feminino/victorias-secret/vs-pijama-satin-longo-2.avif',
+      'feminino/victorias-secret/vs-pijama-satin-longo-gola-preta.avif',
+      'feminino/victorias-secret/vs-pijama-satin-longo-p.avif',
+    ],
+    description: 'Conjunto de pijama longo Signature Satin — cetim de alta qualidade com botões perolados, gola clássica e calça de perna reta. Atemporalmente elegante para as noites mais sofisticadas.',
+  },
+  {
+    id: 232, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['pijama'],
+    price: 459.90,
+    name: 'SoSoft Modal Short Pajama Set',
+    images: [
+      'feminino/victorias-secret/vs-pijama-sosoft-805-1.avif',
+      'feminino/victorias-secret/vs-pijama-sosoft-805-2.avif',
+      'feminino/victorias-secret/vs-pijama-sosoft-240-1.avif',
+      'feminino/victorias-secret/vs-pijama-sosoft-240-2.avif',
+    ],
+    description: 'Conjunto de pijama curto SoSoft™ em modal ultra-fino — tecido incrivelmente macio que parece uma segunda pele. Blusa de manga curta e short coordenado. Disponível em diferentes cores.',
+  },
+  {
+    id: 233, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['pijama'],
+    price: 389.90,
+    name: 'Heritage Stripe Satin Mini Slip',
+    images: [
+      'feminino/victorias-secret/vs-slip-heritage-1.avif',
+      'feminino/victorias-secret/vs-slip-heritage-2.avif',
+    ],
+    description: 'Mini slip Heritage Stripe em cetim com listras icônicas da Victoria\'s Secret — feminilidade e elegância em cada detalhe. Perfeito para dentro ou fora do quarto.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     VICTORIA'S SECRET — BOLSA
+  ══════════════════════════════════════════════════ */
+  {
+    id: 234, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['acessorio'],
+    price: 389.90,
+    name: 'Mini Crossbody Tote Bag',
+    images: [
+      'feminino/victorias-secret/vs-bolsa-mini-crossbody-1.avif',
+      'feminino/victorias-secret/vs-bolsa-mini-crossbody-2.avif',
+    ],
+    description: 'Mini bolsa crossbody Victoria\'s Secret com logotipo assinado — compacta, elegante e com tira ajustável. O acessório perfeito para quem leva o estilo VS a qualquer lugar.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     GUESS — BOLSAS
+  ══════════════════════════════════════════════════ */
+  {
+    id: 240, brand: 'Guess', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 379.90, originalPrice: 520.00,
+    name: 'Atabey Quilted Convertible Crossbody Preta',
+    images: [
+      'feminino/guess/guess-atabey-1.avif',
+      'feminino/guess/guess-atabey-2.avif',
+    ],
+    description: 'Bolsa crossbody Guess Atabey em matelassê preto com alça removível — converte de clutch a crossbody em segundos. Ferragens douradas e logo G em relevo.',
+  },
+  {
+    id: 241, brand: 'Guess', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 389.90, originalPrice: 540.00,
+    name: 'Carrie Quattro G Shoulder Bag',
+    images: [
+      'feminino/guess/guess-carrie-1.avif',
+    ],
+    description: 'Bolsa de ombro Guess Carrie com o padrão Quattro G assinado — couro sintético premium com ferragens douradas e espaço interno generoso.',
+  },
+  {
+    id: 242, brand: 'Guess', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 519.90, originalPrice: 620.00,
+    name: 'Dita Multi Comp Debossed Peony Satchel',
+    images: [
+      'feminino/guess/guess-dita-1.avif',
+    ],
+    description: 'Satchel Guess Dita com relevo floral Peony e múltiplos compartimentos — estrutura sofisticada com o design fashion que a Guess domina.',
+  },
+  {
+    id: 243, brand: 'Guess', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 489.90, originalPrice: 580.00,
+    name: 'Evie Hobo Bag Preta',
+    images: [
+      'feminino/guess/guess-evie-1.avif',
+    ],
+    description: 'Hobo bag Guess Evie em preto com alça de ombro — silhueta meia-lua com fecho de pressão e interior forrado. O casual elegante da Guess.',
+  },
+  {
+    id: 244, brand: 'Guess', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 379.90, originalPrice: 520.00,
+    name: 'Isemay Quilted Shoulder Bag',
+    images: [
+      'feminino/guess/guess-isemay-1.avif',
+    ],
+    description: 'Bolsa de ombro Guess Isemay em matelassê — capitonê delicado com ferragens douradas e alça ajustável. Compacta e elegante para o dia a dia.',
+  },
+  {
+    id: 245, brand: 'Guess', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 539.90, originalPrice: 640.00,
+    name: 'Semay Quilted Shopper Preta',
+    images: [
+      'feminino/guess/guess-semay-shopper-1.avif',
+    ],
+    description: 'Shopper Guess Semay em matelassê preto — ampla, estruturada e com acabamento premium. A bolsa que eleva qualquer look com capacidade para o dia inteiro.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     MICHAEL KORS — BOLSAS
+  ══════════════════════════════════════════════════ */
+  {
+    id: 250, brand: 'Michael Kors', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 579.90, originalPrice: 1832.00,
+    name: 'Mercer Medium Logo Accordion Crossbody Powder Blush',
+    images: [
+      'feminino/michael-kors/mk-mercer-1.jpeg',
+    ],
+    description: 'Crossbody Michael Kors Mercer em couro com logo assinado na cor Powder Blush Multicolor — compartimentos em sanfona, alça ajustável e ferragens douradas. Peça icônica com desconto exclusivo.',
+  },
+  {
+    id: 251, brand: 'Michael Kors', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 579.90, originalPrice: 2112.00,
+    name: 'Soho Small Convertible Shoulder Bag Powder Blush',
+    images: [
+      'feminino/michael-kors/mk-soho-1.jpeg',
+      'feminino/michael-kors/mk-soho-2.jpeg',
+    ],
+    description: 'Bolsa transversal Michael Kors Soho Small em couro suave Powder Blush — converte de shoulder a crossbody. Fecho magnético, interior forrado e hardware dourado clássico.',
+  },
+  {
+    id: 252, brand: 'Michael Kors', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 719.90, originalPrice: 2232.00,
+    name: 'Voyager Large Color-Block Tote Powder Blush',
+    images: [
+      'feminino/michael-kors/mk-voyager-1.jpeg',
+    ],
+    description: 'Tote Michael Kors Voyager Large em couro bicolor Powder Blush Multicolor — espaçosa, estruturada e com logo Signature. A bolsa definitiva para quem vive com estilo e praticidade.',
+  },
 ];
 
 /* =====================================================
    BRAND & CATEGORY LISTS
    ===================================================== */
 const BRANDS_BY_GENDER = {
-  masculino: ['Lacoste', 'Louis Vuitton', 'Nike', 'Hugo Boss', 'Tommy Hilfiger', 'Hermès'],
-  feminino:  ['Lacoste', 'Christian Dior'],
+  masculino: ['Lacoste', 'Louis Vuitton', 'Nike', 'Jordan', 'Hugo Boss', 'Tommy Hilfiger', 'Hermès', 'Hoodrich', 'Supply & Demand'],
+  feminino:  ['Lacoste', 'Christian Dior', "Victoria's Secret", 'Guess', 'Michael Kors'],
 };
 
 const CATEGORIES = [
-  { id: 'polo',      label: 'Polos' },
-  { id: 'moletom',   label: 'Moletons' },
-  { id: 'conjunto',  label: 'Conjuntos' },
-  { id: 'calca',     label: 'Calças' },
-  { id: 'short',     label: 'Shorts' },
-  { id: 'tenis',     label: 'Tênis' },
-  { id: 'sport',     label: 'Lacoste Sport' },
-  { id: 'camiseta',  label: 'Camisetas' },
-  { id: 'acessorio', label: 'Acessórios' },
+  { id: 'polo',       label: 'Polos' },
+  { id: 'moletom',    label: 'Moletons' },
+  { id: 'conjunto',   label: 'Conjuntos' },
+  { id: 'calca',      label: 'Calças' },
+  { id: 'short',      label: 'Shorts' },
+  { id: 'tenis',      label: 'Tênis' },
+  { id: 'sport',      label: 'Lacoste Sport' },
+  { id: 'camiseta',   label: 'Camisetas' },
+  { id: 'acessorio',  label: 'Acessórios' },
+  { id: 'fragrance',  label: 'Fragrâncias' },
+  { id: 'calcinha',   label: 'Lingerie' },
+  { id: 'pijama',     label: 'Pijamas' },
 ];
 
 /* Ordem de agrupamento na aba "Todos" */
-const CATEGORY_ORDER = ['conjunto', 'polo', 'moletom', 'calca', 'short', 'camiseta', 'tenis', 'acessorio', 'sport'];
+const CATEGORY_ORDER = ['conjunto', 'polo', 'moletom', 'calca', 'short', 'camiseta', 'tenis', 'acessorio', 'fragrance', 'calcinha', 'pijama', 'sport'];
 
 function getPrimaryCategory(p) {
   for (const cat of CATEGORY_ORDER) {
