@@ -2023,14 +2023,25 @@ const CATEGORIES = [
   { id: 'pijama',     label: 'Pijamas' },
 ];
 
-/* Ordem de agrupamento na aba "Todos" */
+/* Ordem de agrupamento na aba "Todos" — varia por gênero */
 const CATEGORY_ORDER = ['conjunto', 'polo', 'moletom', 'calca', 'short', 'camiseta', 'tenis', 'acessorio', 'fragrance', 'calcinha', 'pijama', 'sport'];
+const FEMININE_CATEGORY_ORDER = ['pijama', 'fragrance', 'calcinha', 'acessorio', 'conjunto', 'polo', 'moletom', 'calca', 'short', 'camiseta', 'tenis', 'sport'];
+
+function getCategoryOrder() {
+  return activeGender === 'feminino' ? FEMININE_CATEGORY_ORDER : CATEGORY_ORDER;
+}
 
 function getPrimaryCategory(p) {
-  for (const cat of CATEGORY_ORDER) {
+  for (const cat of getCategoryOrder()) {
     if (p.tags.includes(cat)) return cat;
   }
   return 'sport';
+}
+
+function getPromoTag(p) {
+  if (p.tags.includes('fragrance')) return '3 por R$189,90';
+  if (p.id === 220 || p.id === 221)  return '5 por R$209,90';
+  return null;
 }
 
 /* =====================================================
@@ -2176,18 +2187,23 @@ function renderProducts() {
     list.sort((a, b) => b.price - a.price);
   } else {
     /* Destaque: agrupa por categoria (só em "Todas"), vendidos ao final,
-       depois maior desconto primeiro */
+       depois melhor custo/benefício: maior desconto % primeiro,
+       desempate pelo menor preço */
     list.sort((a, b) => {
       if (activeCategory === 'all') {
-        const catA = CATEGORY_ORDER.indexOf(getPrimaryCategory(a));
-        const catB = CATEGORY_ORDER.indexOf(getPrimaryCategory(b));
+        const order = getCategoryOrder();
+        const catA = order.indexOf(getPrimaryCategory(a));
+        const catB = order.indexOf(getPrimaryCategory(b));
         if (catA !== catB) return catA - catB;
       }
       /* Não-vendidos antes de vendidos */
       const soldDiff = (a.sold ? 1 : 0) - (b.sold ? 1 : 0);
       if (soldDiff !== 0) return soldDiff;
       /* Maior desconto primeiro */
-      return getDiscount(b) - getDiscount(a);
+      const discDiff = getDiscount(b) - getDiscount(a);
+      if (discDiff !== 0) return discDiff;
+      /* Desempate: menor preço primeiro */
+      return a.price - b.price;
     });
   }
 
@@ -2224,6 +2240,9 @@ function renderProducts() {
          </div>`
       : '';
 
+    const promoTag = getPromoTag(product);
+    const promoHTML = promoTag ? `<span class="promo-tag">★ ${promoTag}</span>` : '';
+
     const card = document.createElement('article');
     card.className = 'product-card' + (product.sold ? ' is-sold' : '');
     card.setAttribute('tabindex', '0');
@@ -2247,6 +2266,7 @@ function renderProducts() {
         <h3 class="card-name">${product.name}</h3>
         <p class="card-desc">${product.description}</p>
         ${priceHTML}
+        ${promoHTML}
         ${product.sold ? '<p class="card-sold-tag">— Peça esgotada —</p>' : ''}
       </div>
     `;
