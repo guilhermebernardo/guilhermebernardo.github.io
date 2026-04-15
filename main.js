@@ -298,8 +298,8 @@ const PRODUCTS = [
   {
     id: 21, brand: 'Tommy Hilfiger', gender: 'masculino',
     tags: ['polo'],
-    price: 389.90,
-    name: 'Polo Signature Stripe',
+    price: 189.90,
+    name: 'Polo Tommy Signature Stripe',
     images: ['masculino/tommy-hilfiger/tommy-polo-signature-stripe.jpeg'],
     description: 'Polo piqué clássico Tommy Hilfiger em azul marinho com icônica fita tricolor vermelha e branca nos ombros. Construção em algodão premium com logo bordado no peito — um ícone preppy reinventado para o homem moderno.',
   },
@@ -465,9 +465,9 @@ const PRODUCTS = [
     id: 27, brand: 'Hugo Boss', gender: 'masculino',
     tags: ['moletom'],
     price: 370.41, originalPrice: 389.90,
-    name: 'Moletom Zip Boss Green',
+    name: 'Moletom Zip Boss Cinza Escuro',
     images: ['masculino/hugo-boss/Moletom Zip Boss Green \u2014 Cinza.jpeg'],
-    description: 'Moletom com zíper BOSS Green em cinza pedra com faixas contrastantes em relevo nos ombros. Interior escovado macio com puxador de zíper com marca — onde o DNA atlético encontra o artesanato de luxo.',
+    description: 'Moletom com zíper BOSS em cinza pedra com faixas contrastantes em relevo nos ombros. Interior escovado macio com puxador de zíper com marca — onde o DNA atlético encontra o artesanato de luxo.',
   },
   {
     id: 28, brand: 'Lacoste', gender: 'masculino',
@@ -481,9 +481,9 @@ const PRODUCTS = [
     id: 29, brand: 'Nike', gender: 'masculino',
     tags: ['moletom'],
     price: 389.90,
-    name: 'Moletom Tech Fleece Preto',
+    name: 'Conjunto Tech Fleece Preto',
     images: ['masculino/nike/nike-moletom-tech-fleece-preto.jpeg'],
-    description: 'Moletom Nike Tech Fleece em preto com detalhes refletivos em prata. A versão mais elegante do clássico Tech Fleece — reinventado com tecnologia de ponta para quem exige conforto e estética urban luxury.',
+    description: 'Conjunto Nike Tech Fleece em preto com detalhes refletivos em prata. A versão mais elegante do clássico Tech Fleece — reinventado com tecnologia de ponta para quem exige conforto e estética urban luxury.',
   },
   {
     id: 30, brand: 'Lacoste', gender: 'masculino',
@@ -949,7 +949,7 @@ const PRODUCTS = [
   {
     id: 45, brand: 'Louis Vuitton', gender: 'masculino',
     tags: ['camiseta'],
-    price: 389.90,
+    price: 589.90,
     name: 'Camiseta LV Graffiti',
     images: [
       'masculino/louis-vuitton/lv-camiseta-graffiti-preta-3.jpeg',
@@ -961,18 +961,18 @@ const PRODUCTS = [
   {
     id: 46, brand: 'Louis Vuitton', gender: 'masculino',
     tags: ['camiseta'],
-    price: 389.90,
+    price: 589.90,
     name: 'Camiseta Louis Graffiti',
     images: [
-      'masculino/louis-vuitton/lv-camiseta-louis-graffiti-1.jpeg',
       'masculino/louis-vuitton/lv-camiseta-louis-graffiti-2.jpeg',
+      'masculino/louis-vuitton/lv-camiseta-louis-graffiti-1.jpeg',
     ],
     description: 'Camiseta "Louis Vuitton" Graffiti preta com lettering em gradiente azul-verde e fleurs de monograma multicoloridas. Detalhe e frente/verso em sequência — a dualidade entre artesanato de topo e atitude urbana que define a LV moderna.',
   },
   {
     id: 47, brand: 'Louis Vuitton', gender: 'masculino',
     tags: ['camiseta'],
-    price: 389.90,
+    price: 589.90,
     name: 'Camiseta Monograma Clássica LV',
     images: [
       'masculino/louis-vuitton/lv-camiseta-monograma-classica-2.jpeg',
@@ -984,13 +984,13 @@ const PRODUCTS = [
     id: 48, brand: 'Louis Vuitton', gender: 'masculino',
     tags: ['camiseta'],
     price: 389.90,
-    name: 'Look Completo Louis Vuitton',
+    name: 'Camisa Monograma Multicolorida Louis Vuitton',
     images: [
       'masculino/louis-vuitton/lv-look-completo-1.jpeg',
       'masculino/louis-vuitton/lv-look-completo-2.jpeg',
       'masculino/louis-vuitton/lv-camiseta-monograma-branca.jpeg',
     ],
-    description: 'Look completo Louis Vuitton: camiseta monograma branca com calça jeans oversized com patches em cruz em preto e branco. O equilíbrio perfeito entre o heritage da Maison e a atitude do estilo urbano de luxo.',
+    description: 'Camiseta monograma branca multicolorida. O equilíbrio perfeito entre o heritage da Maison e a atitude do estilo urbano de luxo.',
   },
   {
     id: 49, brand: 'Lacoste', gender: 'masculino',
@@ -1068,7 +1068,7 @@ const PRODUCTS = [
   {
     id: 53, brand: 'Louis Vuitton', gender: 'masculino',
     tags: ['tenis'],
-    price: 389.90,
+    price: 1389.90, 
     name: 'LV Trainer Preto e Branco',
     images: ['masculino/louis-vuitton/lv-trainer-preto-branco.jpeg'],
     description: 'O icônico LV Trainer em couro preto monograma em relevo com cadarço branco. Um tênis que redefine o luxo das ruas com a precisão artesanal da Maison Louis Vuitton — o objeto de desejo do streetwear de alto luxo.',
@@ -1076,7 +1076,7 @@ const PRODUCTS = [
   {
     id: 54, brand: 'Louis Vuitton', gender: 'masculino',
     tags: ['tenis'],
-    price: 389.90,
+    price: 1389.90,
     name: 'LV Trainer Denim Azul',
     images: ['masculino/louis-vuitton/lv-trainer-denim-azul.jpeg'],
     description: 'LV Trainer na coloração denim azul com monograma LV em relevo e detalhes brancos. Uma fusão da herança francesa centenária com a cultura streetwear contemporânea — para quem escreve suas próprias regras.',
@@ -1084,7 +1084,7 @@ const PRODUCTS = [
   {
     id: 55, brand: 'Louis Vuitton', gender: 'masculino',
     tags: ['tenis'],
-    price: 389.90,
+    price: 1389.90,
     name: 'LV Trainer — 5 Colorways',
     images: ['masculino/louis-vuitton/lv-trainer-4-colorways.jpeg'],
     description: 'Coleção completa do LV Trainer em cinco variações: azul denim, azul multicolorido, marrom camelo, preto total e branco com vermelho. A diversidade criativa que define o universo Louis Vuitton — escolha sua assinatura.',
@@ -1092,7 +1092,7 @@ const PRODUCTS = [
   {
     id: 56, brand: 'Louis Vuitton', gender: 'masculino',
     tags: ['tenis'],
-    price: 389.90,
+    price: 1389.90,
     name: 'LV Trainer — Coleção em Display',
     images: [
       'masculino/louis-vuitton/lv-trainer-display-1.jpeg',
@@ -1104,7 +1104,7 @@ const PRODUCTS = [
   {
     id: 57, brand: 'Louis Vuitton', gender: 'masculino',
     tags: ['tenis'],
-    price: 389.90,
+    price: 1389.90,
     name: 'LV Trainer Preto — Edição Completa',
     images: [
       'masculino/louis-vuitton/lv-trainer-preto-detalhe-2.jpeg',
@@ -1118,7 +1118,7 @@ const PRODUCTS = [
   {
     id: 58, brand: 'Louis Vuitton', gender: 'masculino',
     tags: ['tenis'],
-    price: 389.90,
+    price: 1389.90,
     name: 'LV Trainer — Boutique Display',
     images: ['masculino/louis-vuitton/lv-trainer-boutique-display.jpeg'],
     description: 'Vista da prateleira de boutique Louis Vuitton com LV Trainers em azul denim e preto monograma. A experiência de compra como extensão do luxo da peça — o ambiente que merece a coleção.',
@@ -1126,7 +1126,7 @@ const PRODUCTS = [
   {
     id: 59, brand: 'Hermès', gender: 'masculino',
     tags: ['tenis'],
-    price: 389.90,
+    price: 889.90,
     name: 'Sandália Chypre Preta',
     images: ['masculino/hermes/hermes-sandalia-chypre-preta.jpeg'],
     description: 'A icônica sandália Chypre da Hermès em couro negro mate com palmilha em couro goffrado. Silhueta de corte limpo com fivela ajustável — o calçado definitivo do luxo discreto, construído à mão por mestres artesãos em Paris.',
@@ -1478,10 +1478,10 @@ const PRODUCTS = [
   {
     id: 67, brand: 'Hugo Boss', gender: 'masculino',
     tags: ['sport'],
-    price: 389.90,
-    name: 'Corta-Vento Mapa Abstrato',
+    price: 719.90,
+    name: 'Moletom Zip Boss Cinza Claro',
     images: ['masculino/hugo-boss/Corta-Vento Boss Mapa Abstrato.jpeg'],
-    description: 'Jaqueta com capuz BOSS com estampa abstrata de mapa urbano em off-white e cinza. Shell leve premium com zíper preto e logo bordado no peito — onde a arte contemporânea encontra a utilidade executiva.',
+    description: 'Moletom com capuz BOSS com estampa abstrata de mapa urbano em off-white e cinza. Shell leve premium com zíper preto e logo bordado no peito — onde a arte contemporânea encontra a utilidade executiva.',
   },
   {
     id: 68, brand: 'Lacoste', gender: 'masculino',
