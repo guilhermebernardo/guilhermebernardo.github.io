@@ -2369,7 +2369,7 @@ payBtn.addEventListener('click', async () => {
   const qty = parseInt(qtyInput.value, 10) || 1;
 
   try {
-    const res = await fetch('/api/create-preference', {
+    const res  = await fetch('/api/create-preference', {
       method:  'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -2380,14 +2380,14 @@ payBtn.addEventListener('click', async () => {
       }),
     });
 
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
 
-    const { init_point } = await res.json();
-    window.location.href = init_point;
+    window.location.href = data.init_point;
 
   } catch (err) {
     console.error('[checkout]', err);
-    alert('Não foi possível iniciar o pagamento. Tente novamente ou use o WhatsApp.');
+    alert('Erro ao iniciar pagamento:\n' + err.message);
     payBtn.disabled   = false;
     payLabel.hidden   = false;
     paySpinner.hidden = true;
