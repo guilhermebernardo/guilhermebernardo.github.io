@@ -2186,25 +2186,40 @@ function renderProducts() {
   } else if (activeSort === 'price-desc') {
     list.sort((a, b) => b.price - a.price);
   } else {
-    /* Destaque: agrupa por categoria (só em "Todas"), vendidos ao final,
-       depois melhor custo/benefício: maior desconto % primeiro,
-       desempate pelo menor preço */
-    list.sort((a, b) => {
+    /* Destaque: ordena por custo/benefício dentro de cada grupo,
+       depois intercala vendidos a cada 3-5 disponíveis */
+    const sortFn = (a, b) => {
       if (activeCategory === 'all') {
         const order = getCategoryOrder();
         const catA = order.indexOf(getPrimaryCategory(a));
         const catB = order.indexOf(getPrimaryCategory(b));
         if (catA !== catB) return catA - catB;
       }
-      /* Não-vendidos antes de vendidos */
-      const soldDiff = (a.sold ? 1 : 0) - (b.sold ? 1 : 0);
-      if (soldDiff !== 0) return soldDiff;
       /* Maior desconto primeiro */
       const discDiff = getDiscount(b) - getDiscount(a);
       if (discDiff !== 0) return discDiff;
       /* Desempate: menor preço primeiro */
       return a.price - b.price;
-    });
+    };
+
+    const available = list.filter(p => !p.sold).sort(sortFn);
+    const sold      = list.filter(p =>  p.sold).sort(sortFn);
+
+    /* Intercala: 4, 3, 5, 4, 3, 5… disponíveis → 1 vendido */
+    if (sold.length === 0) {
+      list = available;
+    } else {
+      const gaps = [4, 3, 5];
+      list = [];
+      let ai = 0, si = 0, gi = 0;
+      while (ai < available.length || si < sold.length) {
+        const n = gaps[gi % gaps.length];
+        list.push(...available.slice(ai, ai + n));
+        ai += n;
+        gi++;
+        if (si < sold.length) list.push(sold[si++]);
+      }
+    }
   }
 
   if (!list.length) {
@@ -2313,9 +2328,82 @@ const modalDots    = document.getElementById('modalDots');
 let _mImages  = [];
 let _mCurrent = 0;
 
+/* =====================================================
+   CHECKOUT — PAGAMENTO ONLINE
+   ===================================================== */
+let _checkoutProduct = null;
+
+const qtyInput  = document.getElementById('modalQty');
+const qtyMinus  = document.getElementById('qtyMinus');
+const qtyPlus   = document.getElementById('qtyPlus');
+const payBtn    = document.getElementById('modalPayBtn');
+const payLabel  = document.getElementById('modalPayLabel');
+const payTotal  = document.getElementById('modalPayTotal');
+const paySpinner = document.getElementById('paySpinner');
+
+function updatePayTotal() {
+  if (!_checkoutProduct) return;
+  const qty   = parseInt(qtyInput.value, 10) || 1;
+  const total = (_checkoutProduct.price * qty).toFixed(2)
+    .replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  payTotal.textContent = 'R$ ' + total;
+}
+
+qtyMinus.addEventListener('click', () => {
+  const v = parseInt(qtyInput.value, 10) || 1;
+  if (v > 1) { qtyInput.value = v - 1; updatePayTotal(); }
+});
+qtyPlus.addEventListener('click', () => {
+  const v = parseInt(qtyInput.value, 10) || 1;
+  if (v < 99) { qtyInput.value = v + 1; updatePayTotal(); }
+});
+
+payBtn.addEventListener('click', async () => {
+  if (!_checkoutProduct || payBtn.disabled) return;
+
+  payBtn.disabled    = true;
+  payLabel.hidden    = true;
+  paySpinner.hidden  = false;
+
+  const qty = parseInt(qtyInput.value, 10) || 1;
+
+  try {
+    const res = await fetch('/api/create-preference', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name:     _checkoutProduct.name,
+        brand:    _checkoutProduct.brand,
+        price:    _checkoutProduct.price,
+        quantity: qty,
+      }),
+    });
+
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+    const { init_point } = await res.json();
+    window.location.href = init_point;
+
+  } catch (err) {
+    console.error('[checkout]', err);
+    alert('Não foi possível iniciar o pagamento. Tente novamente ou use o WhatsApp.');
+    payBtn.disabled   = false;
+    payLabel.hidden   = false;
+    paySpinner.hidden = true;
+  }
+});
+
 function openModal(product, startIdx = 0) {
   _mImages  = product.images;
   _mCurrent = startIdx;
+
+  /* reset checkout */
+  _checkoutProduct  = product;
+  qtyInput.value    = 1;
+  payBtn.disabled   = false;
+  payLabel.hidden   = false;
+  paySpinner.hidden = true;
+  updatePayTotal();
 
   modalBrand.textContent = product.brand;
   modalName.textContent  = product.name;

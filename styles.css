@@ -1035,6 +1035,86 @@ footer {
 .modal-body .btn-gold { animation: none; }
 
 /* =====================================================
+   MODAL — QUANTIDADE & PAGAMENTO
+   ===================================================== */
+.modal-qty-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 0 18px;
+}
+.qty-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+.qty-wrap {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gold-border);
+}
+.qty-btn {
+  background: none;
+  border: none;
+  color: var(--gold);
+  font-size: 18px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .15s;
+}
+.qty-btn:hover { background: var(--gold-dim); }
+.qty-input {
+  width: 38px;
+  text-align: center;
+  background: none;
+  border: none;
+  border-left: 1px solid var(--gold-border);
+  border-right: 1px solid var(--gold-border);
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  height: 34px;
+  -moz-appearance: textfield;
+}
+.qty-input::-webkit-outer-spin-button,
+.qty-input::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+.btn-pay {
+  flex: 1;
+  background: var(--gold);
+  color: var(--black);
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: opacity .2s;
+}
+.btn-pay:hover { opacity: .88; }
+.btn-pay:disabled { opacity: .5; cursor: not-allowed; }
+.pay-spinner { font-weight: 400; letter-spacing: 1px; }
+
+.modal-wa {
+  padding: 14px 18px;
+  font-size: 9.5px;
+  white-space: nowrap;
+  animation: none !important;
+}
+
+/* =====================================================
    REVEAL ANIMATION
    ===================================================== */
 .reveal {

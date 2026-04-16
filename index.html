@@ -228,7 +228,23 @@
         <p class="modal-desc" id="modalDesc"></p>
         <div class="modal-price" id="modalPrice"></div>
         <p class="modal-inquiry">Para disponibilidade e informações, fale conosco diretamente.</p>
-        <a href="#" class="btn-gold" id="modalCta" target="_blank" rel="noopener">Fazer Pedido via WhatsApp</a>
+
+        <div class="modal-qty-row">
+          <label class="qty-label" for="modalQty">Quantidade</label>
+          <div class="qty-wrap">
+            <button class="qty-btn" id="qtyMinus" aria-label="Diminuir">−</button>
+            <input  class="qty-input" id="modalQty" type="number" value="1" min="1" max="99" readonly />
+            <button class="qty-btn" id="qtyPlus"  aria-label="Aumentar">+</button>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn-pay" id="modalPayBtn">
+            <span id="modalPayLabel">Pagar · <span id="modalPayTotal"></span></span>
+            <span class="pay-spinner" id="paySpinner" hidden>Aguarde…</span>
+          </button>
+          <a href="#" class="btn-gold-outline modal-wa" id="modalCta" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
       </div>
     </div>
   </div>
