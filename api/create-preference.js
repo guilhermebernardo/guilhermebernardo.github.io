@@ -22,8 +22,8 @@ module.exports = async function handler(req, res) {
     if (!name || !brand || !price)
       return res.status(400).json({ error: 'name, brand e price são obrigatórios.' });
 
-    const qty        = Math.max(1, Math.floor(Number(quantity)));
-    const unitPrice  = Number(price);
+    const qty       = Math.max(1, Math.floor(Number(quantity)));
+    const unitPrice = Number(price);
 
     if (isNaN(unitPrice) || unitPrice <= 0)
       return res.status(400).json({ error: 'Preço inválido.' });
@@ -39,10 +39,15 @@ module.exports = async function handler(req, res) {
           currency_id: 'BRL',
           unit_price:  unitPrice,
         }],
+
+        /* PIX + cartão de crédito até 12x — nenhum método excluído */
         payment_methods: {
-          installments:         12,
-          default_installments: 1,
+          excluded_payment_types:   [],   /* nada excluído: mostra PIX, cartão, débito */
+          excluded_payment_methods: [],
+          installments:             12,   /* máximo de parcelas */
+          default_installments:     1,
         },
+
         back_urls: {
           success: `${SITE_URL}/sucesso.html`,
           failure: `${SITE_URL}`,
