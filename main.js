@@ -2369,7 +2369,12 @@ payBtn.addEventListener('click', async () => {
   const qty = parseInt(qtyInput.value, 10) || 1;
 
   try {
-    const res  = await fetch('/api/create-preference', {
+    /* Enquanto o DNS não aponta para Vercel, chama a URL da Vercel diretamente */
+    const apiBase = window.location.hostname === 'tolentimports.com.br'
+      ? 'https://guilhermebernardo-github-io.vercel.app'
+      : '';
+
+    const res  = await fetch(`${apiBase}/api/create-preference`, {
       method:  'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
