@@ -997,6 +997,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   overflow-y: auto;
+  min-height: 0;
+  -webkit-overflow-scrolling: touch;
 }
 .modal-brand {
   font-size: 9px;
