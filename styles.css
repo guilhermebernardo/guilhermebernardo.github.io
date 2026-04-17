@@ -952,6 +952,7 @@ footer {
   border: 1px solid var(--gold-border);
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   max-width: 960px;
   width: 100%;
   max-height: 92vh;
