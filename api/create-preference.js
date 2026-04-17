@@ -1,6 +1,13 @@
 const SITE_URL = process.env.SITE_URL || 'https://tolentimports.com.br';
 const MP_TOKEN  = process.env.MP_ACCESS_TOKEN;
 
+/* Vercel injeta VERCEL_URL automaticamente (sem https://). Usamos ela para
+   o notification_url para garantir que o MP sempre alcance a função certa,
+   independente de onde o DNS do domínio custom está apontando. */
+const VERCEL_BASE = process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
+  : SITE_URL;
+
 module.exports = async function handler(req, res) {
   const origin  = req.headers.origin || '';
   const allowed = origin === SITE_URL || origin.endsWith('.vercel.app');
@@ -55,7 +62,7 @@ module.exports = async function handler(req, res) {
         auto_return:          'approved',
         statement_descriptor: 'TOLENT IMPORTS',
         external_reference:   `order-${Date.now()}`,
-        notification_url:     `${SITE_URL}/api/webhook`,
+        notification_url:     `${VERCEL_BASE}/api/webhook`,
         ...(buyer.email && {
           payer: {
             name:  buyer.name  || undefined,
