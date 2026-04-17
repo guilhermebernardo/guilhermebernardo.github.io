@@ -61,7 +61,13 @@ module.exports = async function handler(req, res) {
         },
         auto_return:          'approved',
         statement_descriptor: 'TOLENT IMPORTS',
-        external_reference:   `order-${Date.now()}`,
+        /* buyer info encoded here so webhook can read it reliably */
+        external_reference:   JSON.stringify({
+          id:    `order-${Date.now()}`,
+          name:  buyer.name  || '',
+          email: buyer.email || '',
+          phone: buyer.phone || '',
+        }),
         notification_url:     `${VERCEL_BASE}/api/webhook`,
         ...(buyer.email && {
           payer: {

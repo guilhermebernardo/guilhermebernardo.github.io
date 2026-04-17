@@ -7,21 +7,38 @@ async function sendWhatsApp(message) {
     console.warn('[webhook] CALLMEBOT_APIKEY ou OWNER_PHONE não configurados.');
     return;
   }
-  const url = `https://api.callmebot.com/whatsapp.php?phone=${OWNER_PHONE}&text=${encodeURIComponent(message)}&apikey=${CALLMEBOT_KEY}`;
-  const r = await fetch(url);
-  console.log('[webhook] callmebot status:', r.status);
+  /* CallMeBot API: https://www.callmebot.com/blog/free-api-whatsapp-messages/
+     Mensagem deve ser URL-encoded; %0A = quebra de linha */
+  const url = `https://api.callmebot.com/whatsapp.php`
+    + `?phone=${encodeURIComponent(OWNER_PHONE)}`
+    + `&text=${encodeURIComponent(message)}`
+    + `&apikey=${encodeURIComponent(CALLMEBOT_KEY)}`;
+  try {
+    const r = await fetch(url);
+    console.log('[webhook] callmebot status:', r.status);
+  } catch (e) {
+    console.error('[webhook] callmebot error:', e.message);
+  }
+}
+
+function parseBuyer(external_reference) {
+  try {
+    return JSON.parse(external_reference || '{}');
+  } catch {
+    return {};
+  }
 }
 
 function formatPaymentType(info) {
-  const type = info.payment_type_id || '';
+  const type   = info.payment_type_id  || '';
   const method = info.payment_method_id || '';
+  const label  = method.charAt(0).toUpperCase() + method.slice(1);
   if (type === 'bank_transfer') return 'PIX';
   if (type === 'credit_card') {
     const inst = info.installments || 1;
-    const label = method.charAt(0).toUpperCase() + method.slice(1);
-    return inst > 1 ? `Cartão (${label}) — ${inst}x` : `Cartão (${label})`;
+    return inst > 1 ? `Cartão de crédito ${label} — ${inst}x` : `Cartão de crédito ${label}`;
   }
-  if (type === 'debit_card') return `Débito (${method})`;
+  if (type === 'debit_card') return `Cartão de débito ${label}`;
   return type || 'Não informado';
 }
 
@@ -39,27 +56,31 @@ module.exports = async function handler(req, res) {
       console.log(`[webhook] payment ${info.id} | status: ${info.status} | R$${info.transaction_amount}`);
 
       if (info.status === 'approved') {
+        /* buyer info que o comprador preencheu no formulário */
+        const buyer  = parseBuyer(info.external_reference);
+        const nome   = buyer.name  || info.payer?.first_name || 'Não informado';
+        const email  = buyer.email || info.payer?.email      || 'Não informado';
+        const cel    = buyer.phone || (info.payer?.phone?.number
+          ? `(${info.payer.phone.area_code}) ${info.payer.phone.number}`
+          : 'Não informado');
+
+        const pedido    = buyer.id || String(info.id);
         const produto   = info.description || 'Produto';
         const valor     = `R$ ${Number(info.transaction_amount).toFixed(2).replace('.', ',')}`;
-        const pedido    = info.external_reference || String(info.id);
         const pagamento = formatPaymentType(info);
-        const comprador = info.payer?.first_name
-          ? `${info.payer.first_name} ${info.payer.last_name || ''}`.trim()
-          : info.payer?.email || 'Cliente';
-        const email  = info.payer?.email || '-';
-        const phone  = info.payer?.phone?.number
-          ? `(${info.payer.phone.area_code}) ${info.payer.phone.number}`
-          : '-';
 
         const msg = [
-          '🛍️ *Nova compra confirmada!*',
-          `📦 Pedido: ${pedido}`,
-          `🛒 Produto: ${produto}`,
-          `💰 Valor: ${valor}`,
-          `💳 Pagamento: ${pagamento}`,
-          `👤 Cliente: ${comprador}`,
-          `📧 E-mail: ${email}`,
-          `📱 Celular: ${phone}`,
+          '🛍️ *Nova compra confirmada — Tolent Imports*',
+          '',
+          `📦 *Pedido:* ${pedido}`,
+          `🛒 *Produto:* ${produto}`,
+          `💰 *Valor:* ${valor}`,
+          `💳 *Pagamento:* ${pagamento}`,
+          '',
+          '👤 *Dados do comprador*',
+          `   Nome: ${nome}`,
+          `   E-mail: ${email}`,
+          `   Celular: ${cel}`,
         ].join('\n');
 
         await sendWhatsApp(msg);
