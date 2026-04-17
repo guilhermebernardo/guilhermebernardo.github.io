@@ -27,6 +27,18 @@ function getDiscount(p) {
 const PRODUCTS = [
 
   /* ══════════════════════════════════════════════════
+     TESTE DE PAGAMENTO — REMOVER APÓS VALIDAR
+  ══════════════════════════════════════════════════ */
+  {
+    id: 999, brand: 'Tolent Imports', gender: 'masculino',
+    tags: ['acessorio'],
+    price: 5.00,
+    name: 'TESTE — Produto de Validação',
+    images: ['new_logo.png'],
+    description: '⚠️ Produto de teste. Realize o pagamento para validar PIX e cartão de crédito. Remover após validação.',
+  },
+
+  /* ══════════════════════════════════════════════════
      CONJUNTOS
   ══════════════════════════════════════════════════ */
   {
