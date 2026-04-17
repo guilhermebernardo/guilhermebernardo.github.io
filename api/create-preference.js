@@ -1,14 +1,9 @@
 const SITE_URL = process.env.SITE_URL || 'https://tolentimports.com.br';
 const MP_TOKEN  = process.env.MP_ACCESS_TOKEN;
 
-/* VERCEL_PROJECT_PRODUCTION_URL = URL estável de produção (não muda por deploy).
-   VERCEL_URL muda a cada deploy — não usar para notification_url.
-   WEBHOOK_URL pode ser definido manualmente na Vercel como override. */
-const VERCEL_BASE =
-  process.env.WEBHOOK_BASE ||
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : SITE_URL);
+/* URL fixa da Vercel — usada no notification_url enviado ao Mercado Pago.
+   Não depende de env vars que mudam por deploy. */
+const VERCEL_BASE = 'https://guilhermebernardo-github-io.vercel.app';
 
 module.exports = async function handler(req, res) {
   const origin  = req.headers.origin || '';

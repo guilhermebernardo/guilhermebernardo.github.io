@@ -9,8 +9,10 @@ async function sendWhatsApp(message) {
   }
   /* CallMeBot API: https://www.callmebot.com/blog/free-api-whatsapp-messages/
      Mensagem deve ser URL-encoded; %0A = quebra de linha */
+  /* CallMeBot exige o + antes do código do país */
+  const phone = OWNER_PHONE.startsWith('+') ? OWNER_PHONE : `+${OWNER_PHONE}`;
   const url = `https://api.callmebot.com/whatsapp.php`
-    + `?phone=${encodeURIComponent(OWNER_PHONE)}`
+    + `?phone=${encodeURIComponent(phone)}`
     + `&text=${encodeURIComponent(message)}`
     + `&apikey=${encodeURIComponent(CALLMEBOT_KEY)}`;
   try {
