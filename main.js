@@ -2349,10 +2349,19 @@ let _checkoutProduct = null;
 const qtyInput  = document.getElementById('modalQty');
 const qtyMinus  = document.getElementById('qtyMinus');
 const qtyPlus   = document.getElementById('qtyPlus');
-const payBtn    = document.getElementById('modalPayBtn');
-const payLabel  = document.getElementById('modalPayLabel');
-const payTotal  = document.getElementById('modalPayTotal');
-const paySpinner = document.getElementById('paySpinner');
+const payBtn       = document.getElementById('modalPayBtn');
+const payLabel     = document.getElementById('modalPayLabel');
+const payTotal     = document.getElementById('modalPayTotal');
+const paySpinner   = document.getElementById('paySpinner');
+const modalStep1   = document.getElementById('modalStep1');
+const modalStep2   = document.getElementById('modalStep2');
+const checkoutBack = document.getElementById('checkoutBack');
+const checkoutConfirm  = document.getElementById('checkoutConfirm');
+const confirmLabel     = document.getElementById('confirmLabel');
+const confirmSpinner   = document.getElementById('confirmSpinner');
+const buyerName    = document.getElementById('buyerName');
+const buyerEmail   = document.getElementById('buyerEmail');
+const buyerPhone   = document.getElementById('buyerPhone');
 
 function updatePayTotal() {
   if (!_checkoutProduct) return;
@@ -2365,9 +2374,14 @@ function updatePayTotal() {
 /* Reabilita o botão se o usuário voltar do checkout pelo browser (bfcache) */
 window.addEventListener('pageshow', (e) => {
   if (e.persisted) {
-    payBtn.disabled   = false;
-    payLabel.hidden   = false;
-    paySpinner.hidden = true;
+    payBtn.disabled       = false;
+    payLabel.hidden       = false;
+    paySpinner.hidden     = true;
+    confirmLabel.hidden   = false;
+    confirmSpinner.hidden = true;
+    checkoutConfirm.disabled = false;
+    modalStep1.hidden = false;
+    modalStep2.hidden = true;
   }
 });
 
@@ -2380,22 +2394,40 @@ qtyPlus.addEventListener('click', () => {
   if (v < 99) { qtyInput.value = v + 1; updatePayTotal(); }
 });
 
-payBtn.addEventListener('click', async () => {
+/* Step 1 → Step 2: show buyer form */
+payBtn.addEventListener('click', () => {
   if (!_checkoutProduct || payBtn.disabled) return;
+  modalStep1.hidden = true;
+  modalStep2.hidden = false;
+  buyerName.focus();
+});
 
-  payBtn.disabled    = true;
-  payLabel.hidden    = true;
-  paySpinner.hidden  = false;
+checkoutBack.addEventListener('click', () => {
+  modalStep2.hidden = true;
+  modalStep1.hidden = false;
+});
+
+async function submitCheckout() {
+  const name  = buyerName.value.trim();
+  const email = buyerEmail.value.trim();
+  const phone = buyerPhone.value.trim();
+
+  if (!name)  { buyerName.focus();  return alert('Por favor informe seu nome.'); }
+  if (!email || !email.includes('@')) { buyerEmail.focus(); return alert('Por favor informe um e-mail válido.'); }
+  if (!phone || phone.replace(/\D/g, '').length < 10) { buyerPhone.focus(); return alert('Por favor informe seu celular com DDD.'); }
+
+  checkoutConfirm.disabled = true;
+  confirmLabel.hidden      = true;
+  confirmSpinner.hidden    = false;
 
   const qty = parseInt(qtyInput.value, 10) || 1;
 
   try {
-    /* Enquanto o DNS não aponta para Vercel, chama a URL da Vercel diretamente */
     const apiBase = window.location.hostname === 'tolentimports.com.br'
       ? 'https://guilhermebernardo-github-io.vercel.app'
       : '';
 
-    const res  = await fetch(`${apiBase}/api/create-preference`, {
+    const res = await fetch(`${apiBase}/api/create-preference`, {
       method:  'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -2403,6 +2435,7 @@ payBtn.addEventListener('click', async () => {
         brand:    _checkoutProduct.brand,
         price:    _checkoutProduct.price,
         quantity: qty,
+        buyer:    { name, email, phone },
       }),
     });
 
@@ -2414,22 +2447,32 @@ payBtn.addEventListener('click', async () => {
   } catch (err) {
     console.error('[checkout]', err);
     alert('Erro ao iniciar pagamento:\n' + err.message);
-    payBtn.disabled   = false;
-    payLabel.hidden   = false;
-    paySpinner.hidden = true;
+    checkoutConfirm.disabled = false;
+    confirmLabel.hidden      = false;
+    confirmSpinner.hidden    = true;
   }
-});
+}
+
+checkoutConfirm.addEventListener('click', submitCheckout);
 
 function openModal(product, startIdx = 0) {
   _mImages  = product.images;
   _mCurrent = startIdx;
 
   /* reset checkout */
-  _checkoutProduct  = product;
-  qtyInput.value    = 1;
-  payBtn.disabled   = false;
-  payLabel.hidden   = false;
-  paySpinner.hidden = true;
+  _checkoutProduct         = product;
+  qtyInput.value           = 1;
+  payBtn.disabled          = false;
+  payLabel.hidden          = false;
+  paySpinner.hidden        = true;
+  modalStep1.hidden        = false;
+  modalStep2.hidden        = true;
+  buyerName.value          = '';
+  buyerEmail.value         = '';
+  buyerPhone.value         = '';
+  checkoutConfirm.disabled = false;
+  confirmLabel.hidden      = false;
+  confirmSpinner.hidden    = true;
   updatePayTotal();
 
   modalBrand.textContent = product.brand;

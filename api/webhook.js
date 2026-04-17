@@ -1,4 +1,16 @@
-const MP_TOKEN = process.env.MP_ACCESS_TOKEN;
+const MP_TOKEN       = process.env.MP_ACCESS_TOKEN;
+const CALLMEBOT_KEY  = process.env.CALLMEBOT_APIKEY;
+const OWNER_PHONE    = process.env.OWNER_PHONE; // international format without +, e.g. 5512991510752
+
+async function sendWhatsApp(message) {
+  if (!CALLMEBOT_KEY || !OWNER_PHONE) return;
+  const url = `https://api.callmebot.com/whatsapp.php?phone=${OWNER_PHONE}&text=${encodeURIComponent(message)}&apikey=${CALLMEBOT_KEY}`;
+  try {
+    await fetch(url);
+  } catch (e) {
+    console.error('[webhook] whatsapp send failed:', e.message);
+  }
+}
 
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
@@ -12,6 +24,31 @@ module.exports = async function handler(req, res) {
       });
       const info = await mpRes.json();
       console.log(`[webhook] payment ${info.id} | status: ${info.status} | R$${info.transaction_amount}`);
+
+      if (info.status === 'approved') {
+        const produto  = info.description || 'Produto';
+        const valor    = `R$ ${Number(info.transaction_amount).toFixed(2).replace('.', ',')}`;
+        const pedido   = info.external_reference || info.id;
+        const comprador = info.payer?.first_name
+          ? `${info.payer.first_name} ${info.payer.last_name || ''}`.trim()
+          : info.payer?.email || 'Cliente';
+        const email    = info.payer?.email || '-';
+        const phone    = info.payer?.phone?.number
+          ? `(${info.payer.phone.area_code}) ${info.payer.phone.number}`
+          : '-';
+
+        const msg = [
+          '🛍️ *Nova compra confirmada!*',
+          `📦 Pedido: ${pedido}`,
+          `🛒 Produto: ${produto}`,
+          `💰 Valor: ${valor}`,
+          `👤 Cliente: ${comprador}`,
+          `📧 E-mail: ${email}`,
+          `📱 Celular: ${phone}`,
+        ].join('\n');
+
+        await sendWhatsApp(msg);
+      }
     }
 
     return res.status(200).json({ received: true });

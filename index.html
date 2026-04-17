@@ -238,12 +238,35 @@
           </div>
         </div>
 
-        <div class="modal-actions">
+        <div class="modal-actions" id="modalStep1">
           <button class="btn-pay" id="modalPayBtn">
             <span id="modalPayLabel">Pagar · <span id="modalPayTotal"></span></span>
             <span class="pay-spinner" id="paySpinner" hidden>Aguarde…</span>
           </button>
           <a href="#" class="btn-gold-outline modal-wa" id="modalCta" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+
+        <div class="checkout-form" id="modalStep2" hidden>
+          <p class="checkout-form-title">Seus dados para o pedido</p>
+          <div class="checkout-field">
+            <label for="buyerName">Nome completo</label>
+            <input type="text" id="buyerName" placeholder="Ex: Maria Silva" autocomplete="name" />
+          </div>
+          <div class="checkout-field">
+            <label for="buyerEmail">E-mail</label>
+            <input type="email" id="buyerEmail" placeholder="Ex: maria@email.com" autocomplete="email" />
+          </div>
+          <div class="checkout-field">
+            <label for="buyerPhone">Celular (WhatsApp)</label>
+            <input type="tel" id="buyerPhone" placeholder="Ex: 11999999999" autocomplete="tel" />
+          </div>
+          <div class="checkout-form-actions">
+            <button class="btn-back" id="checkoutBack">← Voltar</button>
+            <button class="btn-pay" id="checkoutConfirm">
+              <span id="confirmLabel">Confirmar e Pagar</span>
+              <span class="pay-spinner" id="confirmSpinner" hidden>Aguarde…</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>

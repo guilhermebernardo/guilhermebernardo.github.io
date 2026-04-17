@@ -17,7 +17,7 @@ module.exports = async function handler(req, res) {
     });
   }
 
-  const { name, brand, price, quantity = 1 } = req.body || {};
+  const { name, brand, price, quantity = 1, buyer = {} } = req.body || {};
   if (!name || !brand || !price)
     return res.status(400).json({ error: 'name, brand e price são obrigatórios.' });
 
@@ -56,6 +56,13 @@ module.exports = async function handler(req, res) {
         statement_descriptor: 'TOLENT IMPORTS',
         external_reference:   `order-${Date.now()}`,
         notification_url:     `${SITE_URL}/api/webhook`,
+        ...(buyer.email && {
+          payer: {
+            name:  buyer.name  || undefined,
+            email: buyer.email,
+            phone: buyer.phone ? { area_code: buyer.phone.replace(/\D/g,'').slice(0,2), number: buyer.phone.replace(/\D/g,'').slice(2) } : undefined,
+          },
+        }),
       }),
     });
 
