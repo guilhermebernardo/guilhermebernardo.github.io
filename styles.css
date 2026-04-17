@@ -1087,7 +1087,6 @@ footer {
 .modal-actions {
   display: flex;
   gap: 12px;
-  align-items: stretch;
 }
 .btn-pay {
   flex: 1;
@@ -1108,6 +1107,10 @@ footer {
 .pay-spinner { font-weight: 400; letter-spacing: 1px; }
 
 .modal-wa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
   padding: 14px 18px;
   font-size: 9.5px;
   white-space: nowrap;
@@ -1125,6 +1128,7 @@ footer {
   border-top: 1px solid #2a2a2a;
   padding-top: 20px;
 }
+.checkout-form[hidden] { display: none !important; }
 .checkout-form-title {
   font-size: 11px;
   letter-spacing: .12em;
@@ -1317,9 +1321,16 @@ footer {
 @media (max-width: 700px) {
   .product-grid { grid-template-columns: 1fr; gap: 14px; }
   .brands-grid  { grid-template-columns: 1fr; }
-  .modal-card   { grid-template-columns: 1fr; }
-  .modal-img-wrap { min-height: 260px; max-height: 38vh; }
-  .modal-body { padding: 32px 28px; }
+  .modal-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+  .modal-img-wrap { min-height: 220px; max-height: 32vh; }
+  .modal-body {
+    padding: 28px 22px 36px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
   .hero-logo { width: 210px; }
   .about-accent { flex-direction: column; }
   .about-stat { border-right: none; border-bottom: 1px solid var(--gold-border); }
