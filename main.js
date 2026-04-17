@@ -2362,6 +2362,15 @@ function updatePayTotal() {
   payTotal.textContent = 'R$ ' + total;
 }
 
+/* Reabilita o botão se o usuário voltar do checkout pelo browser (bfcache) */
+window.addEventListener('pageshow', (e) => {
+  if (e.persisted) {
+    payBtn.disabled   = false;
+    payLabel.hidden   = false;
+    paySpinner.hidden = true;
+  }
+});
+
 qtyMinus.addEventListener('click', () => {
   const v = parseInt(qtyInput.value, 10) || 1;
   if (v > 1) { qtyInput.value = v - 1; updatePayTotal(); }
