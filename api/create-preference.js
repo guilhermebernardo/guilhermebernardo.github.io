@@ -1,12 +1,14 @@
 const SITE_URL = process.env.SITE_URL || 'https://tolentimports.com.br';
 const MP_TOKEN  = process.env.MP_ACCESS_TOKEN;
 
-/* Vercel injeta VERCEL_URL automaticamente (sem https://). Usamos ela para
-   o notification_url para garantir que o MP sempre alcance a função certa,
-   independente de onde o DNS do domínio custom está apontando. */
-const VERCEL_BASE = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : SITE_URL;
+/* VERCEL_PROJECT_PRODUCTION_URL = URL estável de produção (não muda por deploy).
+   VERCEL_URL muda a cada deploy — não usar para notification_url.
+   WEBHOOK_URL pode ser definido manualmente na Vercel como override. */
+const VERCEL_BASE =
+  process.env.WEBHOOK_BASE ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : SITE_URL);
 
 module.exports = async function handler(req, res) {
   const origin  = req.headers.origin || '';

@@ -43,6 +43,12 @@ function formatPaymentType(info) {
 }
 
 module.exports = async function handler(req, res) {
+  /* Endpoint de teste: GET /api/webhook?test=1 */
+  if (req.method === 'GET' && req.query?.test === '1') {
+    await sendWhatsApp('✅ Tolent Imports — teste de notificação funcionando!');
+    return res.status(200).send('Mensagem de teste enviada para o WhatsApp.');
+  }
+
   if (req.method !== 'POST') return res.status(405).end();
 
   try {
