@@ -1121,13 +1121,16 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  margin-top: 20px;
+  border-top: 1px solid #2a2a2a;
+  padding-top: 20px;
 }
 .checkout-form-title {
   font-size: 11px;
   letter-spacing: .12em;
   text-transform: uppercase;
   color: var(--gold);
-  margin: 0 0 2px;
+  margin: 0 0 4px;
 }
 .checkout-field {
   display: flex;
@@ -1150,29 +1153,12 @@ footer {
   outline: none;
   transition: border-color .2s;
 }
-.checkout-field input:focus {
-  border-color: var(--gold);
-}
+.checkout-field input:focus { border-color: var(--gold); }
+.checkout-field input.field-error { border-color: #c0392b; }
+.checkout-field input.field-error:focus { border-color: #e74c3c; }
 .checkout-field input::placeholder { color: #555; }
-.checkout-form-actions {
-  display: flex;
-  gap: 10px;
-  margin-top: 4px;
-}
-.btn-back {
-  flex: 0 0 auto;
-  background: transparent;
-  border: 1px solid #444;
-  color: #aaa;
-  font-size: 10px;
-  letter-spacing: .08em;
-  padding: 12px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: border-color .2s, color .2s;
-}
-.btn-back:hover { border-color: #888; color: #fff; }
-.checkout-form-actions .btn-pay { flex: 1; }
+.checkout-form-actions { margin-top: 4px; }
+.checkout-form-actions .btn-pay { width: 100%; }
 
 /* =====================================================
    REVEAL ANIMATION
