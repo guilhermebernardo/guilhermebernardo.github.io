@@ -398,10 +398,15 @@ button { font-family: inherit; cursor: pointer; }
 .category-bar {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
   gap: 8px;
-  margin-bottom: 48px;
+  margin-bottom: 0;
+  padding-bottom: 14px;
 }
+.category-bar::-webkit-scrollbar { display: none; }
 .category-bar .filter-btn {
   border-color: rgba(201,169,110,0.14);
   font-size: 9px;
@@ -421,10 +426,15 @@ button { font-family: inherit; cursor: pointer; }
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
   gap: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 0;
+  padding-bottom: 14px;
 }
+.sort-bar::-webkit-scrollbar { display: none; }
 .sort-label {
   font-family: 'Montserrat', sans-serif;
   font-size: 8.5px;
@@ -611,14 +621,35 @@ button { font-family: inherit; cursor: pointer; }
 
 .section-header { text-align: center; margin-bottom: 60px; }
 
+/* ── Sticky controls wrapper ── */
+.catalog-controls {
+  position: sticky;
+  top: var(--nav-h, 66px);
+  z-index: 200;
+  background: var(--black);
+  border-bottom: 1px solid rgba(201,169,110,0.15);
+  padding: 20px 0 0;
+  margin-bottom: 40px;
+}
+
+/* gender-tabs inside sticky — tighten bottom gap */
+.catalog-controls .gender-tabs {
+  margin-bottom: 20px;
+}
+
 /* Filters */
 .filter-bar {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
   gap: 10px;
-  margin-bottom: 64px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
 }
+.filter-bar::-webkit-scrollbar { display: none; }
 .filter-btn {
   padding: 10px 30px;
   background: transparent;

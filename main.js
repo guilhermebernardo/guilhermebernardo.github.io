@@ -2573,7 +2573,6 @@ function buildBrandFilters(gender) {
     btn.classList.add('active');
     activeBrand = btn.dataset.filter;
     renderProducts();
-    scrollToCollection();
   };
 
   attachScrollAwareFilter(
@@ -2604,7 +2603,6 @@ function buildCategoryFilters() {
     btn.classList.add('active');
     activeCategory = btn.dataset.cat;
     renderProducts();
-    scrollToCollection();
   };
 
   attachScrollAwareFilter(
@@ -2655,7 +2653,8 @@ document.querySelectorAll('.gender-tab').forEach(tab => {
     buildBrandFilters(activeGender);
     buildCategoryFilters();
     renderProducts();
-    scrollToCollection();
+    const grid = document.getElementById('productGrid');
+    if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
 
@@ -3049,8 +3048,14 @@ const navbar     = document.getElementById('navbar');
 const hamburger  = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
 
+function updateNavH() {
+  document.documentElement.style.setProperty('--nav-h', navbar.offsetHeight + 'px');
+}
+updateNavH();
+
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 70);
+  updateNavH();
 }, { passive: true });
 
 hamburger.addEventListener('click', () => {
