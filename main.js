@@ -2447,6 +2447,86 @@ const PRODUCTS = [
     images: ['feminino/victorias-secret/vs-body-pure-seduction-mist.jpg'],
     description: 'Body splash Victoria\'s Secret Pure Seduction — ameixa vermelha e fresia sedutora em mist leve e irresistível. R$129,90 a unidade — PROMOÇÃO: 3 quaisquer por R$189,90.',
   },
+
+  /* ══════════════════════════════════════════════════
+     LACOSTE MONOGRAM — AZUL
+  ══════════════════════════════════════════════════ */
+  {
+    id: 297, brand: 'Lacoste', gender: 'masculino',
+    tags: ['polo', 'sport'],
+    price: 840.00,
+    name: 'Polo Monogram Lacoste Azul',
+    images: ['masculino/lacoste/lacoste-monogram-polo-azul.jpg'],
+    description: 'Polo Lacoste Monogram em azul — malha premium com padrão monograma all-over, acabamento refinado e o DNA esportivo das quadras de Roland Garros.',
+  },
+  {
+    id: 298, brand: 'Lacoste', gender: 'masculino',
+    tags: ['moletom', 'sport'],
+    price: 1080.00,
+    name: 'Jaqueta Monogram Lacoste Azul',
+    images: ['masculino/lacoste/lacoste-monogram-jaqueta-azul.jpg'],
+    description: 'Jaqueta Lacoste Monogram em azul — corte track jacket com padrão monograma jacquard, zíper metálico e silhueta atlética de alto padrão.',
+  },
+  {
+    id: 299, brand: 'Lacoste', gender: 'masculino',
+    tags: ['calca', 'sport'],
+    price: 1032.00,
+    name: 'Calça Monogram Lacoste Azul',
+    images: ['masculino/lacoste/lacoste-monogram-calca-azul.jpg'],
+    description: 'Calça Lacoste Monogram em azul — tecido técnico com padrão monograma all-over, elástico ajustável e corte moderno para uso esportivo e casual.',
+  },
+  {
+    id: 300, brand: 'Lacoste', gender: 'masculino',
+    tags: ['conjunto', 'sport'],
+    price: 2889.90, originalPrice: 2952.00,
+    name: 'Conjunto Monogram Lacoste Azul',
+    images: [
+      'masculino/lacoste/lacoste-monogram-polo-azul.jpg',
+      'masculino/lacoste/lacoste-monogram-jaqueta-azul.jpg',
+      'masculino/lacoste/lacoste-monogram-calca-azul.jpg',
+    ],
+    description: 'Conjunto completo Lacoste Monogram Azul — polo, jaqueta track e calça coordenadas em padrão monograma all-over. Três peças com identidade visual única, artesanato Lacoste e desconto exclusivo na compra do conjunto.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     LACOSTE MONOGRAM — BEGE
+  ══════════════════════════════════════════════════ */
+  {
+    id: 301, brand: 'Lacoste', gender: 'masculino',
+    tags: ['polo', 'sport'],
+    price: 840.00,
+    name: 'Polo Monogram Lacoste Bege',
+    images: ['masculino/lacoste/lacoste-monogram-polo-bege.jpg'],
+    description: 'Polo Lacoste Monogram em bege — malha premium com padrão monograma all-over em tons neutros e sofisticados, acabamento impecável da Maison francesa.',
+  },
+  {
+    id: 302, brand: 'Lacoste', gender: 'masculino',
+    tags: ['moletom', 'sport'],
+    price: 1080.00,
+    name: 'Jaqueta Monogram Lacoste Bege',
+    images: ['masculino/lacoste/lacoste-monogram-jaqueta-bege.jpg'],
+    description: 'Jaqueta Lacoste Monogram em bege — track jacket com padrão monograma jacquard, zíper metálico e paleta de tons creme que eleva qualquer look.',
+  },
+  {
+    id: 303, brand: 'Lacoste', gender: 'masculino',
+    tags: ['calca', 'sport'],
+    price: 1032.00,
+    name: 'Calça Monogram Lacoste Bege',
+    images: ['masculino/lacoste/lacoste-monogram-calca-bege.jpg'],
+    description: 'Calça Lacoste Monogram em bege — tecido técnico com padrão monograma all-over em creme neutro, elástico ajustável e corte moderno para o dia a dia refinado.',
+  },
+  {
+    id: 304, brand: 'Lacoste', gender: 'masculino',
+    tags: ['conjunto', 'sport'],
+    price: 2889.90, originalPrice: 2952.00,
+    name: 'Conjunto Monogram Lacoste Bege',
+    images: [
+      'masculino/lacoste/lacoste-monogram-polo-bege.jpg',
+      'masculino/lacoste/lacoste-monogram-jaqueta-bege.jpg',
+      'masculino/lacoste/lacoste-monogram-calca-bege.jpg',
+    ],
+    description: 'Conjunto completo Lacoste Monogram Bege — polo, jaqueta track e calça coordenadas em padrão monograma all-over em tons creme e bege. Três peças com identidade visual única e desconto exclusivo na compra do conjunto.',
+  },
 ];
 
 /* =====================================================
