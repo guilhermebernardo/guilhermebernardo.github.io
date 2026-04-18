@@ -2011,14 +2011,346 @@ const PRODUCTS = [
     ],
     description: 'Tote Michael Kors Voyager Large em couro bicolor Powder Blush Multicolor — espaçosa, estruturada e com logo Signature. A bolsa definitiva para quem vive com estilo e praticidade.',
   },
+
+  /* ══════════════════════════════════════════════════
+     CHRISTIAN DIOR — BELEZA
+  ══════════════════════════════════════════════════ */
+  {
+    id: 253, brand: 'Christian Dior', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 316.80,
+    name: 'Hypnotic Poison Roller-Pearl',
+    images: ['feminino/dior/dior-hypnotic-poison-roller-pearl.jpg'],
+    description: 'Perfume Dior Hypnotic Poison em roller-pearl — fragrância sensual de amêndoa e baunilha com aplicador esférico para pontos de pulso. Ícone da maison em formato de bolso.',
+  },
+  {
+    id: 254, brand: 'Christian Dior', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 259.20,
+    name: 'Lip Glow Oil Hydrating High-Shine Gloss',
+    images: ['feminino/dior/dior-lip-glow-oil-1.jpg', 'feminino/dior/dior-lip-glow-oil-2.jpg'],
+    description: 'Óleo labial Dior Lip Glow Oil de alto brilho com fórmula hidratante — realça a cor natural dos lábios com efeito glossy sofisticado. Disponível nos acabamentos clássico e shimmer.',
+  },
+  {
+    id: 255, brand: 'Christian Dior', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 264.00,
+    name: 'Rosy Glow Powder Blush',
+    images: ['feminino/dior/dior-rosy-glow-blush-pink.jpg', 'feminino/dior/dior-rosy-glow-blush-toffee.jpg'],
+    description: 'Blush Dior Rosy Glow em pó com tecnologia que reage à temperatura da pele — realça o frescor natural nas tonalidades Pink e Toffee. Acabamento luminoso de longa duração.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     VICTORIA'S SECRET — BOLSAS
+  ══════════════════════════════════════════════════ */
+  {
+    id: 256, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['acessorio'],
+    price: 192.00, originalPrice: 384.00,
+    name: 'Curve Mini Top-Handle Crossbody Bag Preta',
+    images: ['feminino/victorias-secret/vs-curve-mini-tophandle-black.jpg'],
+    description: 'Mini bolsa Victoria\'s Secret Curve com alça de mão e transversal em preto — estrutura compacta com fecho metálico dourado, perfeita para o dia a dia com estilo.',
+  },
+  {
+    id: 257, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['acessorio'],
+    price: 225.55, originalPrice: 383.76,
+    name: 'Curve Mini Top-Handle Crossbody Bag Winter Wine',
+    images: ['feminino/victorias-secret/vs-curve-mini-tophandle-winter-wine-1.jpg', 'feminino/victorias-secret/vs-curve-mini-tophandle-winter-wine-2.jpg'],
+    description: 'Mini bolsa Victoria\'s Secret Curve em nylon Winter Wine — cor vinho exclusiva de inverno com alça dupla e acabamento metálico. Compacta, elegante e com ótimo desconto.',
+  },
+  {
+    id: 258, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['acessorio'],
+    price: 225.55, originalPrice: 455.76,
+    name: 'Hat Box Crossbody Bag',
+    images: ['feminino/victorias-secret/vs-hat-box-crossbody-1.jpg', 'feminino/victorias-secret/vs-hat-box-crossbody-2.jpg'],
+    description: 'Bolsa crossbody Victoria\'s Secret Hat Box de formato circular — design icônico com alça ajustável e fecho de pressão. Silhueta retrô chic com preço de liquidação.',
+  },
+  {
+    id: 259, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['acessorio'],
+    price: 191.95, originalPrice: 455.76,
+    name: 'Mini Bucket Crossbody Bag Red Lacquer',
+    images: ['feminino/victorias-secret/vs-mini-bucket-crossbody-red-1.jpg', 'feminino/victorias-secret/vs-mini-bucket-crossbody-red-2.jpg'],
+    description: 'Mini bucket bag Victoria\'s Secret em Red Lacquer — vermelho lacado vibrante com alça de corrente e fecho de cordão. O acessório statement da temporada com desconto imperdível.',
+  },
+  {
+    id: 260, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['acessorio'],
+    price: 139.20, originalPrice: 187.20,
+    name: 'Shoulder Chain Strap Gold',
+    images: ['feminino/victorias-secret/vs-shoulder-chain-strap-gold.jpg'],
+    description: 'Alça de corrente dourada Victoria\'s Secret — intercambiável com diversas bolsas da marca para um toque glam instantâneo. Acabamento gold de alta qualidade.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     MICHAEL KORS — BOLSAS (CONTINUAÇÃO)
+  ══════════════════════════════════════════════════ */
+  {
+    id: 261, brand: 'Michael Kors', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 478.08, originalPrice: 2390.40,
+    name: 'Avril Small Pebbled Leather Satchel Powder Blush',
+    images: [
+      'feminino/michael-kors/mk-avril-satchel-powder-blush-1.jpg',
+      'feminino/michael-kors/mk-avril-satchel-powder-blush-2.jpg',
+      'feminino/michael-kors/mk-avril-satchel-powder-blush-3.jpg',
+    ],
+    description: 'Satchel Michael Kors Outlet Avril em couro pebbled Powder Blush — estrutura compacta com alça de mão e ombro, múltiplos compartimentos e ferragens douradas. Desconto extraordinário de outlet.',
+  },
+  {
+    id: 262, brand: 'Michael Kors', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 417.55, originalPrice: 1910.40,
+    name: 'Camille Large Satchel',
+    images: ['feminino/michael-kors/mk-camille-large-satchel-1.jpg', 'feminino/michael-kors/mk-camille-large-satchel-2.jpg'],
+    description: 'Satchel Michael Kors Camille Large — estrutura espaçosa em couro macio com alça de ombro ajustável e ferragens premium. A bolsa de trabalho com desconto exclusivo de outlet.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     CAROLINA HERRERA — FRAGRÂNCIAS
+  ══════════════════════════════════════════════════ */
+  {
+    id: 263, brand: 'Carolina Herrera', gender: 'feminino',
+    tags: ['fragrance'],
+    price: 600.00,
+    name: 'Good Girl Eau de Parfum with Jasmine',
+    images: ['feminino/carolina-herrera/ch-good-girl.jpg'],
+    description: 'Eau de Parfum Carolina Herrera Good Girl com Jasmin — fragrância feminina de contraste entre flores brancas sensuais e notas de cacau. No icônico frasco stiletto preto dourado.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     PRADA — FRAGRÂNCIAS
+  ══════════════════════════════════════════════════ */
+  {
+    id: 264, brand: 'Prada', gender: 'feminino',
+    tags: ['fragrance'],
+    price: 609.60,
+    name: 'Paradoxe Eau de Parfum',
+    images: ['feminino/prada/prada-paradoxe.jpg'],
+    description: 'Eau de Parfum Prada Paradoxe com White Musk & Amber — fragrância intensa e contemporânea que celebra a mulher multifacetada. Notas de neroli, musgo branco e âmbar seco.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     VERSACE — FRAGRÂNCIAS
+  ══════════════════════════════════════════════════ */
+  {
+    id: 265, brand: 'Versace', gender: 'feminino',
+    tags: ['fragrance'],
+    price: 124.80, originalPrice: 192.00,
+    name: 'Crystal Duo Mini Set',
+    images: ['feminino/versace/versace-crystal-duo.jpg'],
+    description: 'Set duo Versace Crystal com dois miniatures exclusivos — as fragrâncias Versace Crystal em formato presenteável. Edição limitada com desconto especial.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     YSL — BELEZA E FRAGRÂNCIAS
+  ══════════════════════════════════════════════════ */
+  {
+    id: 266, brand: 'YSL', gender: 'feminino',
+    tags: ['fragrance'],
+    price: 216.00, originalPrice: 432.00,
+    name: 'Mini Libre Duo Gift Set',
+    images: ['feminino/ysl/ysl-mini-libre-duo.jpg'],
+    description: 'Gift set duo YSL Libre em tamanho travel — dois miniatures do icônico perfume feminino com lavanda e laranja blossom. Presente luxuoso com desconto de 50%.',
+  },
+  {
+    id: 267, brand: 'YSL', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 259.20,
+    name: 'Loveshine Plumping Lip Oil Gloss Dourado',
+    images: ['feminino/ysl/ysl-loveshine-lip-oil-gold.jpg'],
+    description: 'Lip oil YSL Loveshine com ácido hialurônico — fórmula volumizadora em tom dourado shimmer que hidrata e realça os lábios com alto brilho sofisticado.',
+  },
+  {
+    id: 268, brand: 'YSL', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 259.20,
+    name: 'Loveshine Plumping Lip Oil Gloss',
+    images: ['feminino/ysl/ysl-loveshine-lip-oil.jpg'],
+    description: 'Lip oil YSL Loveshine com ácido hialurônico — fórmula volumizadora transparente que hidrata e realça os lábios com brilho natural de alta costura.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     KÉRASTASE — CUIDADOS CAPILARES
+  ══════════════════════════════════════════════════ */
+  {
+    id: 269, brand: 'Kérastase', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 355.20,
+    name: 'Genesis Discovery Set',
+    images: ['feminino/kerastase/kerastase-genesis-discovery.jpg'],
+    description: 'Kit Kérastase Genesis Discovery contra a queda capilar — conjunto de produtos premium para fortalecer e revitalizar cabelos fragilizados. Rotina completa da maison francesa.',
+  },
+  {
+    id: 270, brand: 'Kérastase', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 220.80,
+    name: 'Mini Elixir Ultime Hydrating Hair Oil',
+    images: ['feminino/kerastase/kerastase-mini-elixir.jpg'],
+    description: 'Óleo capilar Kérastase Elixir Ultime mini — blend de óleos preciosos que nutre e adiciona brilho intenso sem pesar. Formato travel ideal para manutenção diária.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     THE ORDINARY — SKINCARE
+  ══════════════════════════════════════════════════ */
+  {
+    id: 271, brand: 'The Ordinary', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 100.80,
+    name: 'The Acne Set',
+    images: ['feminino/the-ordinary/the-ordinary-acne-set.jpg'],
+    description: 'Kit The Ordinary para acne — conjunto de ativos clínicos selecionados para tratar e prevenir imperfeições: niacinamida, ácido salicílico e zinco. Skincare eficaz e acessível.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     KATE SPADE — BOLSAS
+  ══════════════════════════════════════════════════ */
+  {
+    id: 272, brand: 'Kate Spade', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 414.72, originalPrice: 696.00,
+    name: 'Noelle Saffiano Leather Satchel Verde Claro',
+    images: ['feminino/kate-spade/kate-spade-noelle-saffiano-1.jpg', 'feminino/kate-spade/kate-spade-noelle-saffiano-2.jpg'],
+    description: 'Satchel Kate Spade Noelle em couro saffiano verde claro — estrutura elegante com alça dupla, acabamento metálico dourado e logo spade embossed. O charme Nova-iorquino da maison.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     LULULEMON — ACESSÓRIOS
+  ══════════════════════════════════════════════════ */
+  {
+    id: 273, brand: 'Lululemon', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 163.20,
+    name: 'City Essentials Nano Shoulder Bag',
+    images: ['feminino/lululemon/lululemon-city-essentials-nano-black.jpg', 'feminino/lululemon/lululemon-city-essentials-nano-ivory.jpg'],
+    description: 'Mini bolsa de ombro Lululemon City Essentials Nano — compacta e versátil para o dia a dia ativo. Disponível em Black/Silver e Light Ivory/Gold com alça ajustável.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     FENTY BEAUTY — BELEZA
+  ══════════════════════════════════════════════════ */
+  {
+    id: 274, brand: 'Fenty Beauty', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 91.20, originalPrice: 182.40,
+    name: 'Bright Fix Eye Brightener Concealer',
+    images: ['feminino/fenty-beauty/fenty-bright-fix-concealer.jpg'],
+    description: 'Corretivo iluminador Fenty Beauty Bright Fix by Rihanna — fórmula de longa duração que ilumina e cobre imperfeições. Ampla gama de tons com acabamento natural luminoso.',
+  },
+  {
+    id: 275, brand: 'Fenty Beauty', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 86.40, originalPrice: 172.80,
+    name: 'Gloss Bomb Stix High-Shine Gloss Stick Vermelho',
+    images: ['feminino/fenty-beauty/fenty-gloss-bomb-stix.jpg'],
+    description: 'Gloss labial sólido Fenty Beauty Gloss Bomb Stix em vermelho — fórmula em stick de aplicação prática com brilho intenso e hidratação. O hit de beleza de Rihanna.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     GIVENCHY — BELEZA
+  ══════════════════════════════════════════════════ */
+  {
+    id: 276, brand: 'Givenchy', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 216.00, originalPrice: 432.00,
+    name: 'Rouge Interdit Intense Silk Satin Matte Lipstick',
+    images: ['feminino/givenchy/givenchy-rouge-interdit-45.jpg'],
+    description: 'Batom Givenchy Rouge Interdit Intense Silk Satin Matte — acabamento acetinado-matte de alta cobertura com partículas de seda. Cor intensa de longa duração da maison parisiense.',
+  },
+  {
+    id: 277, brand: 'Givenchy', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 182.40, originalPrice: 240.00,
+    name: 'Rouge Interdit Intense Silk Lipstick Red Light',
+    images: ['feminino/givenchy/givenchy-rouge-interdit-red-light.jpg'],
+    description: 'Batom Givenchy Rouge Interdit em Red Light — vermelho translúcido que realça a cor natural dos lábios com acabamento acetinado brilhante. Sofisticação francesa em promoção.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     VALENTINO — FRAGRÂNCIAS (MASCULINO)
+  ══════════════════════════════════════════════════ */
+  {
+    id: 278, brand: 'Valentino', gender: 'masculino',
+    tags: ['fragrance'],
+    price: 220.80,
+    name: 'Born In Roma Uomo Discovery Duo',
+    images: ['masculino/valentino/valentino-born-in-roma-uomo.jpg'],
+    description: 'Discovery duo Valentino Born In Roma Uomo — dois miniatures da fragrância masculina com notas de couro, madeira e especiarias. O espírito rebelde e romântico de Roma.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     JORDAN — MODA ESPORTIVA (MASCULINO)
+  ══════════════════════════════════════════════════ */
+  {
+    id: 279, brand: 'Jordan', gender: 'masculino',
+    tags: ['camiseta'],
+    price: 648.00,
+    name: 'Brasil 2026 Away Replica Jersey Old Royal',
+    images: ['masculino/jordan/jordan-brasil-away-jersey.jpg'],
+    description: 'Camisa réplica Jordan × Seleção Brasileira Away 2026 em Old Royal e preto — edição especial Copa do Mundo com tecnologia Dri-FIT e detalhes em dourado. Para os apaixonados pelo Brasil.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     NIKE — TÊNIS (MASCULINO)
+  ══════════════════════════════════════════════════ */
+  {
+    id: 280, brand: 'Nike', gender: 'masculino',
+    tags: ['tenis'],
+    price: 1022.35,
+    name: 'Brazil National Team 2026 Shox R4',
+    images: ['masculino/nike/nike-brazil-shox-r4.jpg'],
+    description: 'Tênis Nike Shox R4 edição Seleção Brasileira 2026 em preto — amortecimento Shox com colunas de mola e visual exclusivo Copa do Mundo. Estilo e performance com orgulho nacional.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     DYSON — ELETRODOMÉSTICOS
+  ══════════════════════════════════════════════════ */
+  {
+    id: 281, brand: 'Dyson', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 2880.00,
+    name: 'Airstrait™ Dryer & Straightener Prussian Blue',
+    images: ['feminino/dyson/dyson-airstrait.jpg'],
+    description: 'Secador e chapinha Dyson Airstrait™ em Prussian Blue/Copper — seca e alisa simultaneamente sem calor extremo. Tecnologia Dyson para cabelos lisos e sedosos com proteção máxima.',
+  },
+  {
+    id: 282, brand: 'Dyson', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 3115.20,
+    name: 'Airwrap i.d.™ Multi-Styler Prussian Blue',
+    images: ['feminino/dyson/dyson-airwrap.jpg'],
+    description: 'Multi-styler Dyson Airwrap i.d.™ em Prussian Blue/Rich Copper — molda, ondula e alisa com fluxo de ar Coanda sem calor extremo. O aparelho mais desejado de cabelo do mundo.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     APPLE — TECNOLOGIA
+  ══════════════════════════════════════════════════ */
+  {
+    id: 283, brand: 'Apple', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 5275.20,
+    name: 'iPhone 16 Pro Max 256GB Desert Titanium (Recondicionado)',
+    images: ['feminino/apple/iphone-16-pro-max.jpg'],
+    description: 'Apple iPhone 16 Pro Max 256GB em Desert Titanium desbloqueado — recondicionado em condição excelente. Chip A18 Pro, câmera 48MP ProRAW, tela Super Retina XDR de 6,9".',
+  },
+  {
+    id: 284, brand: 'Apple', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 8399.95,
+    name: 'iPhone 17 Pro Max 256GB Cosmic Orange',
+    images: ['feminino/apple/iphone-17-pro-max.jpg'],
+    description: 'Apple iPhone 17 Pro Max 256GB Cosmic Orange desbloqueado — o topo de linha Apple com câmera profissional de nova geração, chip A19 Pro e design em titânio cor exclusiva.',
+  },
 ];
 
 /* =====================================================
    BRAND & CATEGORY LISTS
    ===================================================== */
 const BRANDS_BY_GENDER = {
-  masculino: ['Lacoste', 'Louis Vuitton', 'Nike', 'Jordan', 'Hugo Boss', 'Tommy Hilfiger', 'Hermès', 'Hoodrich', 'Supply & Demand'],
-  feminino:  ['Lacoste', 'Christian Dior', "Victoria's Secret", 'Guess', 'Michael Kors'],
+  masculino: ['Lacoste', 'Louis Vuitton', 'Nike', 'Jordan', 'Hugo Boss', 'Tommy Hilfiger', 'Hermès', 'Hoodrich', 'Supply & Demand', 'Valentino'],
+  feminino:  ['Lacoste', 'Christian Dior', "Victoria's Secret", 'Guess', 'Michael Kors', 'Carolina Herrera', 'Prada', 'Versace', 'YSL', 'Kérastase', 'The Ordinary', 'Kate Spade', 'Lululemon', 'Fenty Beauty', 'Givenchy', 'Dyson', 'Apple'],
 };
 
 const CATEGORIES = [
