@@ -2027,17 +2027,33 @@ const PRODUCTS = [
     id: 254, brand: 'Christian Dior', gender: 'feminino',
     tags: ['acessorio'],
     price: 259.20,
-    name: 'Lip Glow Oil Hydrating High-Shine Gloss',
-    images: ['feminino/dior/dior-lip-glow-oil-1.jpg', 'feminino/dior/dior-lip-glow-oil-2.jpg'],
-    description: 'Óleo labial Dior Lip Glow Oil de alto brilho com fórmula hidratante — realça a cor natural dos lábios com efeito glossy sofisticado. Disponível nos acabamentos clássico e shimmer.',
+    name: 'Lip Glow Oil Hydrating High-Shine Gloss Rosa',
+    images: ['feminino/dior/dior-lip-glow-oil-1.jpg'],
+    description: 'Óleo labial Dior Lip Glow Oil de alto brilho em Rosa — fórmula hidratante que realça a cor natural dos lábios com efeito glossy rosado e luminoso. Ícone de beleza da maison.',
+  },
+  {
+    id: 285, brand: 'Christian Dior', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 259.20,
+    name: 'Lip Glow Oil Hydrating High-Shine Gloss Mocha Brilhante',
+    images: ['feminino/dior/dior-lip-glow-oil-2.jpg'],
+    description: 'Óleo labial Dior Lip Glow Oil em Mocha Brilhante — acabamento shimmer com brilho intenso e toque nudes quente. Hidratação luxuosa com a sofisticação da maison parisiense.',
   },
   {
     id: 255, brand: 'Christian Dior', gender: 'feminino',
     tags: ['acessorio'],
     price: 264.00,
-    name: 'Rosy Glow Powder Blush',
-    images: ['feminino/dior/dior-rosy-glow-blush-pink.jpg', 'feminino/dior/dior-rosy-glow-blush-toffee.jpg'],
-    description: 'Blush Dior Rosy Glow em pó com tecnologia que reage à temperatura da pele — realça o frescor natural nas tonalidades Pink e Toffee. Acabamento luminoso de longa duração.',
+    name: 'Rosy Glow Powder Blush Rosa',
+    images: ['feminino/dior/dior-rosy-glow-blush-pink.jpg'],
+    description: 'Blush Dior Rosy Glow em pó na tonalidade Rosa — tecnologia que reage à temperatura da pele e realça o frescor natural. Acabamento luminoso duradouro da maison.',
+  },
+  {
+    id: 286, brand: 'Christian Dior', gender: 'feminino',
+    tags: ['acessorio'],
+    price: 264.00,
+    name: 'Rosy Glow Powder Blush Toffee',
+    images: ['feminino/dior/dior-rosy-glow-blush-toffee.jpg'],
+    description: 'Blush Dior Rosy Glow em pó na tonalidade Toffee — dourado quente que realça o frescor natural da pele com acabamento luminoso sofisticado. Tecnologia exclusiva Dior.',
   },
 
   /* ══════════════════════════════════════════════════
@@ -2159,17 +2175,17 @@ const PRODUCTS = [
     id: 267, brand: 'YSL', gender: 'feminino',
     tags: ['acessorio'],
     price: 259.20,
-    name: 'Loveshine Plumping Lip Oil Gloss Dourado',
-    images: ['feminino/ysl/ysl-loveshine-lip-oil-gold.jpg'],
-    description: 'Lip oil YSL Loveshine com ácido hialurônico — fórmula volumizadora em tom dourado shimmer que hidrata e realça os lábios com alto brilho sofisticado.',
+    name: 'Loveshine Plumping Lip Oil Gloss California Sunshine',
+    images: ['feminino/ysl/ysl-loveshine-lip-oil-california-sunshine.jpg'],
+    description: 'Lip oil YSL Loveshine com ácido hialurônico em California Sunshine — tom laranja vibrante e luminoso que volumiza e hidrata os lábios com alto brilho de alta costura.',
   },
   {
     id: 268, brand: 'YSL', gender: 'feminino',
     tags: ['acessorio'],
     price: 259.20,
-    name: 'Loveshine Plumping Lip Oil Gloss',
-    images: ['feminino/ysl/ysl-loveshine-lip-oil.jpg'],
-    description: 'Lip oil YSL Loveshine com ácido hialurônico — fórmula volumizadora transparente que hidrata e realça os lábios com brilho natural de alta costura.',
+    name: 'Loveshine Plumping Lip Oil Gloss Lucky Moonstone',
+    images: ['feminino/ysl/ysl-loveshine-lip-oil-lucky-moonstone.jpg'],
+    description: 'Lip oil YSL Loveshine com ácido hialurônico em Lucky Moonstone — pérola rosada translúcida que ilumina e volumiza os lábios com o brilho iridescente da maison.',
   },
 
   /* ══════════════════════════════════════════════════
@@ -2236,15 +2252,19 @@ const PRODUCTS = [
     tags: ['acessorio'],
     price: 91.20, originalPrice: 182.40,
     name: 'Bright Fix Eye Brightener Concealer',
-    images: ['feminino/fenty-beauty/fenty-bright-fix-concealer.jpg'],
-    description: 'Corretivo iluminador Fenty Beauty Bright Fix by Rihanna — fórmula de longa duração que ilumina e cobre imperfeições. Ampla gama de tons com acabamento natural luminoso.',
+    images: [
+      'feminino/fenty-beauty/fenty-bright-fix-golden-ivory.jpg',
+      'feminino/fenty-beauty/fenty-bright-fix-honey.jpg',
+      'feminino/fenty-beauty/fenty-bright-fix-toffee.jpg',
+    ],
+    description: 'Corretivo iluminador Fenty Beauty Bright Fix by Rihanna — fórmula de longa duração que ilumina e cobre imperfeições. Disponível nos tons Golden Ivory, Honey e Toffee.',
   },
   {
     id: 275, brand: 'Fenty Beauty', gender: 'feminino',
     tags: ['acessorio'],
     price: 86.40, originalPrice: 172.80,
     name: 'Gloss Bomb Stix High-Shine Gloss Stick Vermelho',
-    images: ['feminino/fenty-beauty/fenty-gloss-bomb-stix.jpg'],
+    images: ['feminino/fenty-beauty/fenty-gloss-bomb-stix-red.jpg'],
     description: 'Gloss labial sólido Fenty Beauty Gloss Bomb Stix em vermelho — fórmula em stick de aplicação prática com brilho intenso e hidratação. O hit de beleza de Rihanna.',
   },
 
@@ -2254,18 +2274,18 @@ const PRODUCTS = [
   {
     id: 276, brand: 'Givenchy', gender: 'feminino',
     tags: ['acessorio'],
-    price: 216.00, originalPrice: 432.00,
-    name: 'Rouge Interdit Intense Silk Satin Matte Lipstick',
-    images: ['feminino/givenchy/givenchy-rouge-interdit-45.jpg'],
-    description: 'Batom Givenchy Rouge Interdit Intense Silk Satin Matte — acabamento acetinado-matte de alta cobertura com partículas de seda. Cor intensa de longa duração da maison parisiense.',
+    price: 216.00, originalPrice: 288.00,
+    name: 'Le Rouge Sheer Velvet Matte Lipstick Rouge Graine',
+    images: ['feminino/givenchy/givenchy-le-rouge-sheer-velvet-rouge-graine.jpg', 'feminino/givenchy/givenchy-le-rouge-sheer-velvet.jpg'],
+    description: 'Batom Givenchy Le Rouge Sheer Velvet Matte em Rouge Graine — textura aveludada levíssima com cobertura matte e alta pigmentação. A elegância parisiense em vermelho intenso.',
   },
   {
     id: 277, brand: 'Givenchy', gender: 'feminino',
     tags: ['acessorio'],
-    price: 182.40, originalPrice: 240.00,
-    name: 'Rouge Interdit Intense Silk Lipstick Red Light',
-    images: ['feminino/givenchy/givenchy-rouge-interdit-red-light.jpg'],
-    description: 'Batom Givenchy Rouge Interdit em Red Light — vermelho translúcido que realça a cor natural dos lábios com acabamento acetinado brilhante. Sofisticação francesa em promoção.',
+    price: 216.00, originalPrice: 288.00,
+    name: 'Le Rouge Sheer Velvet Matte Lipstick Beige Sable',
+    images: ['feminino/givenchy/givenchy-le-rouge-sheer-velvet-beige-sable.jpg'],
+    description: 'Batom Givenchy Le Rouge Sheer Velvet Matte em Beige Sablé — nude sofisticado com textura velvet de longa duração. O beige perfeito da maison parisiense para todos os tons de pele.',
   },
 
   /* ══════════════════════════════════════════════════
@@ -2287,9 +2307,9 @@ const PRODUCTS = [
     id: 279, brand: 'Jordan', gender: 'masculino',
     tags: ['camiseta'],
     price: 648.00,
-    name: 'Brasil 2026 Away Replica Jersey Old Royal',
+    name: 'Brasil 2026 Away Jersey Old Royal',
     images: ['masculino/jordan/jordan-brasil-away-jersey.jpg'],
-    description: 'Camisa réplica Jordan × Seleção Brasileira Away 2026 em Old Royal e preto — edição especial Copa do Mundo com tecnologia Dri-FIT e detalhes em dourado. Para os apaixonados pelo Brasil.',
+    description: 'Camisa Jordan × Seleção Brasileira Away 2026 em Old Royal e preto — edição especial Copa do Mundo com tecnologia Dri-FIT e detalhes em dourado. Para os apaixonados pelo Brasil.',
   },
 
   /* ══════════════════════════════════════════════════
@@ -2310,7 +2330,7 @@ const PRODUCTS = [
   {
     id: 281, brand: 'Dyson', gender: 'feminino',
     tags: ['acessorio'],
-    price: 2880.00,
+    price: 2979.90,
     name: 'Airstrait™ Dryer & Straightener Prussian Blue',
     images: ['feminino/dyson/dyson-airstrait.jpg'],
     description: 'Secador e chapinha Dyson Airstrait™ em Prussian Blue/Copper — seca e alisa simultaneamente sem calor extremo. Tecnologia Dyson para cabelos lisos e sedosos com proteção máxima.',
@@ -2318,7 +2338,7 @@ const PRODUCTS = [
   {
     id: 282, brand: 'Dyson', gender: 'feminino',
     tags: ['acessorio'],
-    price: 3115.20,
+    price: 3275.20,
     name: 'Airwrap i.d.™ Multi-Styler Prussian Blue',
     images: ['feminino/dyson/dyson-airwrap.jpg'],
     description: 'Multi-styler Dyson Airwrap i.d.™ em Prussian Blue/Rich Copper — molda, ondula e alisa com fluxo de ar Coanda sem calor extremo. O aparelho mais desejado de cabelo do mundo.',
@@ -2338,10 +2358,94 @@ const PRODUCTS = [
   {
     id: 284, brand: 'Apple', gender: 'feminino',
     tags: ['acessorio'],
-    price: 8399.95,
+    price: 7789.90,
     name: 'iPhone 17 Pro Max 256GB Cosmic Orange',
     images: ['feminino/apple/iphone-17-pro-max.jpg'],
     description: 'Apple iPhone 17 Pro Max 256GB Cosmic Orange desbloqueado — o topo de linha Apple com câmera profissional de nova geração, chip A19 Pro e design em titânio cor exclusiva.',
+  },
+  {
+    id: 287, brand: 'Apple', gender: 'masculino',
+    tags: ['acessorio'],
+    price: 5275.20,
+    name: 'iPhone 16 Pro Max 256GB Desert Titanium (Recondicionado)',
+    images: ['feminino/apple/iphone-16-pro-max.jpg'],
+    description: 'Apple iPhone 16 Pro Max 256GB em Desert Titanium desbloqueado — recondicionado em condição excelente. Chip A18 Pro, câmera 48MP ProRAW, tela Super Retina XDR de 6,9".',
+  },
+  {
+    id: 288, brand: 'Apple', gender: 'masculino',
+    tags: ['acessorio'],
+    price: 7789.90,
+    name: 'iPhone 17 Pro Max 256GB Cosmic Orange',
+    images: ['feminino/apple/iphone-17-pro-max.jpg'],
+    description: 'Apple iPhone 17 Pro Max 256GB Cosmic Orange desbloqueado — o topo de linha Apple com câmera profissional de nova geração, chip A19 Pro e design em titânio cor exclusiva.',
+  },
+
+  /* ══════════════════════════════════════════════════
+     VICTORIA'S SECRET — BODY SPLASH (MIST)
+  ══════════════════════════════════════════════════ */
+  {
+    id: 289, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Bare Vanilla Fragrance Mist',
+    images: ['feminino/victorias-secret/vs-body-bare-vanilla-mist.jpg'],
+    description: 'Body splash Victoria\'s Secret Bare Vanilla — fragrância quente de baunilha pura em formato mist de longa duração. R$129,90 a unidade — PROMOÇÃO: 3 quaisquer por R$189,90.',
+  },
+  {
+    id: 290, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Coconut Passion Fragrance Mist',
+    images: ['feminino/victorias-secret/vs-body-coconut-passion-mist.jpg'],
+    description: 'Body splash Victoria\'s Secret Coconut Passion — aroma tropical de coco tostado e sândalo em mist refrescante. R$129,90 a unidade — PROMOÇÃO: 3 quaisquer por R$189,90.',
+  },
+  {
+    id: 291, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Gelato Oasis Fragrance Mist',
+    images: ['feminino/victorias-secret/vs-body-gelato-oasis-mist.jpg'],
+    description: 'Body splash Victoria\'s Secret Gelato Oasis — fragrância adocicada e frutada inspirada em oásis de verão, em spray refrescante. R$129,90 — PROMOÇÃO: 3 por R$189,90.',
+  },
+  {
+    id: 292, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Isla Hibiscus Fragrance Mist',
+    images: ['feminino/victorias-secret/vs-body-isla-hibiscus-mist.jpg'],
+    description: 'Body splash Victoria\'s Secret Isla Hibiscus — floral tropical com hibisco vibrante e água de coco em mist leve e duradouro. R$129,90 — PROMOÇÃO: 3 por R$189,90.',
+  },
+  {
+    id: 293, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Love Spell Fragrance Mist',
+    images: ['feminino/victorias-secret/vs-body-love-spell-mist.jpg'],
+    description: 'Body splash Victoria\'s Secret Love Spell — romântico floral de pêssego e jasmim em spray irresistível. R$129,90 a unidade — PROMOÇÃO: 3 quaisquer por R$189,90.',
+  },
+  {
+    id: 294, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Midnight Blooms Fragrance Mist',
+    images: ['feminino/victorias-secret/vs-body-midnight-blooms-mist.jpg'],
+    description: 'Body splash Victoria\'s Secret Midnight Blooms — flores noturnas misteriosas sobre base almiscarada quente em mist de longa duração. R$129,90 — PROMOÇÃO: 3 por R$189,90.',
+  },
+  {
+    id: 295, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Pina Tropicale Fragrance Mist',
+    images: ['feminino/victorias-secret/vs-body-pina-tropicale-mist.jpg'],
+    description: 'Body splash Victoria\'s Secret Piña Tropicale — abacaxi fresco e tropical em spray vibrante e duradouro. R$129,90 a unidade — PROMOÇÃO: 3 quaisquer por R$189,90.',
+  },
+  {
+    id: 296, brand: "Victoria's Secret", gender: 'feminino',
+    tags: ['fragrance'],
+    price: 129.90,
+    name: 'Body Splash Pure Seduction Fragrance Mist',
+    images: ['feminino/victorias-secret/vs-body-pure-seduction-mist.jpg'],
+    description: 'Body splash Victoria\'s Secret Pure Seduction — ameixa vermelha e fresia sedutora em mist leve e irresistível. R$129,90 a unidade — PROMOÇÃO: 3 quaisquer por R$189,90.',
   },
 ];
 
@@ -2349,7 +2453,7 @@ const PRODUCTS = [
    BRAND & CATEGORY LISTS
    ===================================================== */
 const BRANDS_BY_GENDER = {
-  masculino: ['Lacoste', 'Louis Vuitton', 'Nike', 'Jordan', 'Hugo Boss', 'Tommy Hilfiger', 'Hermès', 'Hoodrich', 'Supply & Demand', 'Valentino'],
+  masculino: ['Lacoste', 'Louis Vuitton', 'Nike', 'Jordan', 'Hugo Boss', 'Tommy Hilfiger', 'Hermès', 'Hoodrich', 'Supply & Demand', 'Valentino', 'Apple'],
   feminino:  ['Lacoste', 'Christian Dior', "Victoria's Secret", 'Guess', 'Michael Kors', 'Carolina Herrera', 'Prada', 'Versace', 'YSL', 'Kérastase', 'The Ordinary', 'Kate Spade', 'Lululemon', 'Fenty Beauty', 'Givenchy', 'Dyson', 'Apple'],
 };
 
@@ -2384,8 +2488,8 @@ function getPrimaryCategory(p) {
 }
 
 function getPromoTag(p) {
-  if (p.tags.includes('fragrance')) return '3 por R$189,90';
-  if (p.id === 220 || p.id === 221)  return '5 por R$209,90';
+  if (p.brand === "Victoria's Secret" && p.tags.includes('fragrance')) return '3 por R$189,90';
+  if (p.id === 220 || p.id === 221) return '5 por R$209,90';
   return null;
 }
 
