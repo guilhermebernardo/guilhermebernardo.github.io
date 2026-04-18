@@ -2451,14 +2451,7 @@ const PRODUCTS = [
   /* ══════════════════════════════════════════════════
      LACOSTE MONOGRAM — AZUL
   ══════════════════════════════════════════════════ */
-  {
-    id: 297, brand: 'Lacoste', gender: 'masculino',
-    tags: ['polo', 'sport'],
-    price: 840.00,
-    name: 'Polo Monogram Lacoste Azul',
-    images: ['masculino/lacoste/lacoste-monogram-polo-azul.jpg'],
-    description: 'Polo Lacoste Monogram em azul — malha premium com padrão monograma all-over, acabamento refinado e o DNA esportivo das quadras de Roland Garros.',
-  },
+
   {
     id: 298, brand: 'Lacoste', gender: 'masculino',
     tags: ['moletom', 'sport'],
@@ -2494,7 +2487,7 @@ const PRODUCTS = [
   {
     id: 301, brand: 'Lacoste', gender: 'masculino',
     tags: ['polo', 'sport'],
-    price: 840.00,
+    price: 839.90, originalPrice: 1019.90,
     name: 'Polo Monogram Lacoste Bege',
     images: ['masculino/lacoste/lacoste-monogram-polo-bege.jpg'],
     description: 'Polo Lacoste Monogram em bege — malha premium com padrão monograma all-over em tons neutros e sofisticados, acabamento impecável da Maison francesa.',
@@ -2502,7 +2495,7 @@ const PRODUCTS = [
   {
     id: 302, brand: 'Lacoste', gender: 'masculino',
     tags: ['moletom', 'sport'],
-    price: 1080.00,
+    price: 1079.90,
     name: 'Jaqueta Monogram Lacoste Bege',
     images: ['masculino/lacoste/lacoste-monogram-jaqueta-bege.jpg'],
     description: 'Jaqueta Lacoste Monogram em bege — track jacket com padrão monograma jacquard, zíper metálico e paleta de tons creme que eleva qualquer look.',
@@ -2510,7 +2503,7 @@ const PRODUCTS = [
   {
     id: 303, brand: 'Lacoste', gender: 'masculino',
     tags: ['calca', 'sport'],
-    price: 1032.00,
+    price: 1032.90,
     name: 'Calça Monogram Lacoste Bege',
     images: ['masculino/lacoste/lacoste-monogram-calca-bege.jpg'],
     description: 'Calça Lacoste Monogram em bege — tecido técnico com padrão monograma all-over em creme neutro, elástico ajustável e corte moderno para o dia a dia refinado.',
