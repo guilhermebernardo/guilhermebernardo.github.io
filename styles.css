@@ -398,15 +398,11 @@ button { font-family: inherit; cursor: pointer; }
 .category-bar {
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
+  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 0;
   padding-bottom: 14px;
 }
-.category-bar::-webkit-scrollbar { display: none; }
 .category-bar .filter-btn {
   border-color: rgba(201,169,110,0.14);
   font-size: 9px;
@@ -426,15 +422,11 @@ button { font-family: inherit; cursor: pointer; }
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
+  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 0;
   padding-bottom: 14px;
 }
-.sort-bar::-webkit-scrollbar { display: none; }
 .sort-label {
   font-family: 'Montserrat', sans-serif;
   font-size: 8.5px;
@@ -641,15 +633,11 @@ button { font-family: inherit; cursor: pointer; }
 .filter-bar {
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 0;
   padding-bottom: 16px;
 }
-.filter-bar::-webkit-scrollbar { display: none; }
 .filter-btn {
   padding: 10px 30px;
   background: transparent;

@@ -2351,7 +2351,7 @@ const PRODUCTS = [
     id: 283, brand: 'Apple', gender: 'feminino',
     tags: ['acessorio'],
     price: 5275.20,
-    name: 'iPhone 16 Pro Max 256GB Desert Titanium (Usado)',
+    name: 'iPhone 16 Pro Max 256GB Desert Titanium (Seminovo com Caixa)',
     images: ['feminino/apple/iphone-16-pro-max.jpg'],
     description: 'Apple iPhone 16 Pro Max 256GB em Desert Titanium desbloqueado — usado em condição excelente. Chip A18 Pro, câmera 48MP ProRAW, tela Super Retina XDR de 6,9".',
   },
@@ -2653,8 +2653,6 @@ document.querySelectorAll('.gender-tab').forEach(tab => {
     buildBrandFilters(activeGender);
     buildCategoryFilters();
     renderProducts();
-    const grid = document.getElementById('productGrid');
-    if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
 
@@ -2662,10 +2660,12 @@ document.querySelectorAll('.gender-tab').forEach(tab => {
    HERO GENDER BUTTONS
    ===================================================== */
 document.querySelectorAll('.hero-gender-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
     const gender = btn.dataset.gender;
     document.querySelectorAll('.gender-tab').forEach(t => {
-      t.classList.toggle('active', t.dataset.gender === gender);
+      t.classList.remove('active');
+      if (t.dataset.gender === gender) t.classList.add('active');
     });
     activeGender   = gender;
     activeBrand    = 'all';
@@ -2673,8 +2673,11 @@ document.querySelectorAll('.hero-gender-btn').forEach(btn => {
     buildBrandFilters(activeGender);
     buildCategoryFilters();
     renderProducts();
-    /* O href="#collection" já dispara o smooth scroll do anchor,
-       não precisamos chamar scrollToCollection() aqui */
+    const grid = document.getElementById('productGrid');
+    if (grid) {
+      const top = grid.getBoundingClientRect().top + window.scrollY - (navbar.offsetHeight + 12);
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
   });
 });
 
