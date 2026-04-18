@@ -2455,7 +2455,7 @@ const PRODUCTS = [
   {
     id: 298, brand: 'Lacoste', gender: 'masculino',
     tags: ['moletom', 'sport'],
-    price: 10.00,
+    price: 1.00,
     name: 'Jaqueta Monogram Lacoste Azul',
     images: ['masculino/lacoste/lacoste-monogram-jaqueta-azul.jpg'],
     description: 'Jaqueta Lacoste Monogram em azul — corte track jacket com padrão monograma jacquard, zíper metálico e silhueta atlética de alto padrão.',
