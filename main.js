@@ -2471,7 +2471,7 @@ const PRODUCTS = [
   {
     id: 300, brand: 'Lacoste', gender: 'masculino',
     tags: ['conjunto', 'sport'],
-    price: 2889.90, originalPrice: 2952.00,
+    price: 3889.90, originalPrice: 2952.00,
     name: 'Conjunto Monogram Lacoste Azul',
     images: [
       'masculino/lacoste/lacoste-monogram-polo-azul.jpg',
@@ -2511,7 +2511,7 @@ const PRODUCTS = [
   {
     id: 304, brand: 'Lacoste', gender: 'masculino',
     tags: ['conjunto', 'sport'],
-    price: 2889.90, originalPrice: 2952.00,
+    price: 3889.90, originalPrice: 2952.00,
     name: 'Conjunto Monogram Lacoste Bege',
     images: [
       'masculino/lacoste/lacoste-monogram-polo-bege.jpg',
