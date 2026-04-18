@@ -30,6 +30,11 @@ module.exports = async function handler(req, res) {
   if (isNaN(unitPrice) || unitPrice <= 0)
     return res.status(400).json({ error: 'Preço inválido.' });
 
+  /* Separa nome e sobrenome para o Mercado Pago */
+  const nameParts = (buyer.name || '').trim().split(/\s+/);
+  const firstName = nameParts[0] || undefined;
+  const surname   = nameParts.length > 1 ? nameParts.slice(1).join(' ') : nameParts[0] || undefined;
+
   try {
     const mpRes = await fetch('https://api.mercadopago.com/checkout/preferences', {
       method: 'POST',
@@ -53,24 +58,29 @@ module.exports = async function handler(req, res) {
         },
         back_urls: {
           success: `${SITE_URL}/sucesso.html`,
-          failure: `${SITE_URL}`,
+          failure: `${SITE_URL}/sucesso.html`,
           pending: `${SITE_URL}/sucesso.html`,
         },
-        auto_return:          'approved',
+        auto_return:          'all',
         statement_descriptor: 'TOLENT IMPORTS',
-        /* buyer info encoded here so webhook can read it reliably */
         external_reference:   JSON.stringify({
           id:    `order-${Date.now()}`,
           name:  buyer.name  || '',
           email: buyer.email || '',
           phone: buyer.phone || '',
         }),
-        notification_url:     `${VERCEL_BASE}/api/webhook`,
+        notification_url: `${VERCEL_BASE}/api/webhook`,
         ...(buyer.email && {
           payer: {
-            name:  buyer.name  || undefined,
-            email: buyer.email,
-            phone: buyer.phone ? { area_code: buyer.phone.replace(/\D/g,'').slice(0,2), number: buyer.phone.replace(/\D/g,'').slice(2) } : undefined,
+            name:    firstName,
+            surname: surname,
+            email:   buyer.email,
+            phone:   buyer.phone
+              ? {
+                  area_code: buyer.phone.replace(/\D/g,'').slice(0,2),
+                  number:    buyer.phone.replace(/\D/g,'').slice(2),
+                }
+              : undefined,
           },
         }),
       }),

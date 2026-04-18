@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pedido Confirmado — Tolent Imports</title>
+  <title>Pedido — Tolent Imports</title>
   <link rel="icon" type="image/png" href="images/new_logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,10 +24,12 @@
       font-family: 'Cormorant Garamond', serif;
       font-size: 32px;
       font-weight: 300;
-      color: #c9a96e;
       letter-spacing: 2px;
       margin-bottom: 16px;
     }
+    .success-title.approved { color: #c9a96e; }
+    .success-title.pending  { color: #e8d5a3; }
+    .success-title.failure  { color: #c0392b; }
     .success-text {
       font-family: 'Montserrat', sans-serif;
       font-size: 13px;
@@ -55,15 +57,44 @@
 </head>
 <body>
   <div class="success-card">
-    <div class="success-icon">✓</div>
-    <h1 class="success-title">Pedido Confirmado</h1>
-    <p class="success-text">
-      Seu pagamento foi <strong>recebido com sucesso</strong>.<br />
-      Em breve entraremos em contato pelo WhatsApp para confirmar
-      os detalhes e o prazo de entrega.<br /><br />
-      Obrigado por escolher a <strong>Tolent Imports</strong>.
-    </p>
+    <div class="success-icon" id="statusIcon"></div>
+    <h1 class="success-title" id="statusTitle"></h1>
+    <p class="success-text" id="statusText"></p>
     <a href="/" class="btn-back">Continuar Comprando</a>
   </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const status = params.get('status') || 'approved';
+
+    const icon  = document.getElementById('statusIcon');
+    const title = document.getElementById('statusTitle');
+    const text  = document.getElementById('statusText');
+
+    if (status === 'approved') {
+      icon.textContent  = '✓';
+      title.textContent = 'Pedido Confirmado';
+      title.classList.add('approved');
+      text.innerHTML    = 'Seu pagamento foi <strong>recebido com sucesso</strong>.<br />'
+        + 'Em breve entraremos em contato pelo WhatsApp para confirmar<br />'
+        + 'os detalhes e o prazo de entrega.<br /><br />'
+        + 'Obrigado por escolher a <strong>Tolent Imports</strong>.';
+    } else if (status === 'pending' || status === 'in_process') {
+      icon.textContent  = '⏳';
+      title.textContent = 'Pagamento em Processamento';
+      title.classList.add('pending');
+      text.innerHTML    = 'Seu pagamento está sendo <strong>processado</strong>.<br />'
+        + 'Assim que for confirmado, entraremos em contato<br />'
+        + 'pelo WhatsApp para combinar a entrega.<br /><br />'
+        + 'Isso pode levar alguns minutos. Obrigado por escolher a <strong>Tolent Imports</strong>.';
+    } else {
+      icon.textContent  = '✕';
+      title.textContent = 'Pagamento não Concluído';
+      title.classList.add('failure');
+      text.innerHTML    = 'Houve um problema ao processar seu pagamento.<br />'
+        + 'Por favor, tente novamente ou entre em contato<br />'
+        + 'pelo <strong>WhatsApp</strong> para finalizar seu pedido manualmente.';
+    }
+  </script>
 </body>
 </html>
