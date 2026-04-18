@@ -2351,17 +2351,17 @@ const PRODUCTS = [
     id: 283, brand: 'Apple', gender: 'feminino',
     tags: ['acessorio'],
     price: 5275.20,
-    name: 'iPhone 16 Pro Max 256GB Desert Titanium (Recondicionado)',
+    name: 'iPhone 16 Pro Max 256GB Desert Titanium (Usado)',
     images: ['feminino/apple/iphone-16-pro-max.jpg'],
-    description: 'Apple iPhone 16 Pro Max 256GB em Desert Titanium desbloqueado — recondicionado em condição excelente. Chip A18 Pro, câmera 48MP ProRAW, tela Super Retina XDR de 6,9".',
+    description: 'Apple iPhone 16 Pro Max 256GB em Desert Titanium desbloqueado — usado em condição excelente. Chip A18 Pro, câmera 48MP ProRAW, tela Super Retina XDR de 6,9".',
   },
   {
     id: 284, brand: 'Apple', gender: 'feminino',
     tags: ['acessorio'],
     price: 7789.90,
-    name: 'iPhone 17 Pro Max 256GB Cosmic Orange',
+    name: 'iPhone 17 Pro Max 256GB Cosmic Orange (Na Caixa)',
     images: ['feminino/apple/iphone-17-pro-max.jpg'],
-    description: 'Apple iPhone 17 Pro Max 256GB Cosmic Orange desbloqueado — o topo de linha Apple com câmera profissional de nova geração, chip A19 Pro e design em titânio cor exclusiva.',
+    description: 'Apple iPhone 17 Pro Max 256GB Cosmic Orange novo e desbloqueado — o topo de linha Apple com câmera profissional de nova geração, chip A19 Pro e design em titânio cor exclusiva.',
   },
   {
     id: 287, brand: 'Apple', gender: 'masculino',
@@ -2518,22 +2518,69 @@ function buildWhatsAppURL(name, brand, price) {
 /* =====================================================
    FILTROS — MARCA
    ===================================================== */
+/* =====================================================
+   SCROLL AO CATÁLOGO
+   ===================================================== */
+function scrollToCollection() {
+  const target = document.getElementById('collection');
+  if (!target) return;
+  const top = target.getBoundingClientRect().top + window.scrollY - (navbar.offsetHeight + 12);
+  window.scrollTo({ top, behavior: 'smooth' });
+}
+
+/* Previne clicks fantasmas ao deslizar a barra de filtros no mobile.
+   No mobile: touchmove indica scroll → ignora o click subsequente.
+   No desktop: apenas o evento click é usado. */
+function attachScrollAwareFilter(bar, getBtn, onSelect) {
+  let _didScroll = false;
+
+  bar.addEventListener('touchstart', () => { _didScroll = false; }, { passive: true });
+  bar.addEventListener('touchmove',  () => { _didScroll = true;  }, { passive: true });
+
+  bar.addEventListener('touchend', e => {
+    if (_didScroll) return; /* era scroll — deixa o click disparar, mas ele será ignorado */
+    const btn = e.target.closest('[data-filter],[data-cat]');
+    if (btn) {
+      e.preventDefault(); /* bloqueia o click sintético */
+      onSelect(btn);
+    }
+  });
+
+  /* Fallback desktop / ignora click sintético pós-scroll mobile */
+  bar.addEventListener('click', e => {
+    if (_didScroll) { _didScroll = false; return; }
+    const btn = getBtn(e.target);
+    if (btn) onSelect(btn);
+  });
+}
+
 function buildBrandFilters(gender) {
   const bar = document.querySelector('.filter-bar');
   const brands = BRANDS_BY_GENDER[gender];
-  bar.innerHTML = `<button class="filter-btn ${activeBrand === 'all' ? 'active' : ''}" data-filter="all">Todos</button>`;
+  bar.innerHTML = `<button class="filter-btn" data-filter="all">Todos</button>`;
   brands.forEach(b => {
     const label = b === 'Christian Dior' ? 'Dior' : b;
-    bar.innerHTML += `<button class="filter-btn ${activeBrand === b ? 'active' : ''}" data-filter="${b}">${label}</button>`;
+    bar.innerHTML += `<button class="filter-btn" data-filter="${b}">${label}</button>`;
   });
+
+  /* Marca botão ativo */
   bar.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      bar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      activeBrand = btn.dataset.filter;
-      renderProducts();
-    });
+    if (btn.dataset.filter === activeBrand) btn.classList.add('active');
   });
+
+  const selectBrand = btn => {
+    bar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeBrand = btn.dataset.filter;
+    renderProducts();
+    scrollToCollection();
+  };
+
+  attachScrollAwareFilter(
+    bar,
+    target => target.closest('[data-filter]'),
+    selectBrand
+  );
 }
 
 /* =====================================================
@@ -2542,18 +2589,29 @@ function buildBrandFilters(gender) {
 function buildCategoryFilters() {
   const bar = document.querySelector('.category-bar');
   if (!bar) return;
-  bar.innerHTML = `<button class="filter-btn cat-btn ${activeCategory === 'all' ? 'active' : ''}" data-cat="all">Todas</button>`;
+  bar.innerHTML = `<button class="filter-btn cat-btn" data-cat="all">Todas</button>`;
   CATEGORIES.forEach(c => {
-    bar.innerHTML += `<button class="filter-btn cat-btn ${activeCategory === c.id ? 'active' : ''}" data-cat="${c.id}">${c.label}</button>`;
+    bar.innerHTML += `<button class="filter-btn cat-btn" data-cat="${c.id}">${c.label}</button>`;
   });
+
+  /* Marca botão ativo */
   bar.querySelectorAll('.cat-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      bar.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      activeCategory = btn.dataset.cat;
-      renderProducts();
-    });
+    if (btn.dataset.cat === activeCategory) btn.classList.add('active');
   });
+
+  const selectCat = btn => {
+    bar.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeCategory = btn.dataset.cat;
+    renderProducts();
+    scrollToCollection();
+  };
+
+  attachScrollAwareFilter(
+    bar,
+    target => target.closest('[data-cat]'),
+    selectCat
+  );
 }
 
 /* =====================================================
@@ -2597,6 +2655,7 @@ document.querySelectorAll('.gender-tab').forEach(tab => {
     buildBrandFilters(activeGender);
     buildCategoryFilters();
     renderProducts();
+    scrollToCollection();
   });
 });
 
@@ -2615,6 +2674,8 @@ document.querySelectorAll('.hero-gender-btn').forEach(btn => {
     buildBrandFilters(activeGender);
     buildCategoryFilters();
     renderProducts();
+    /* O href="#collection" já dispara o smooth scroll do anchor,
+       não precisamos chamar scrollToCollection() aqui */
   });
 });
 
