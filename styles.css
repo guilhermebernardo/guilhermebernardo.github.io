@@ -155,9 +155,10 @@ button { font-family: inherit; cursor: pointer; }
 #hero {
   position: relative;
   height: 100svh;
-  min-height: 620px;
+  min-height: 580px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   background: radial-gradient(ellipse at 50% 60%, #0f0c06 0%, var(--black) 70%);
 }
@@ -194,23 +195,24 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 .hero-content {
-  flex: 1;
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 24px;
   text-align: center;
   padding: 0 24px;
+  width: 100%;
 }
 
-.hero-bottom {
+/* Marquee dentro do hero — quebra o padding do pai para ser full-width */
+.hero-marquee {
+  width: 100vw;
   position: relative;
-  z-index: 1;
-  width: 100%;
-  flex-shrink: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
 }
 
 .hero-logo {
@@ -533,6 +535,9 @@ button { font-family: inherit; cursor: pointer; }
   border: none;
   color: var(--grey);
   font-family: 'Montserrat', sans-serif;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 3px;

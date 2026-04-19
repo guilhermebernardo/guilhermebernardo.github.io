@@ -2707,7 +2707,7 @@ function buildSortControls() {
    GENDER TABS
    ===================================================== */
 document.querySelectorAll('.gender-tab').forEach(tab => {
-  tab.addEventListener('click', () => {
+  function selectGender() {
     document.querySelectorAll('.gender-tab').forEach(t => t.classList.remove('active'));
     tab.classList.add('active');
     activeGender   = tab.dataset.gender;
@@ -2716,7 +2716,11 @@ document.querySelectorAll('.gender-tab').forEach(tab => {
     buildBrandFilters(activeGender);
     buildCategoryFilters();
     renderProducts();
-  });
+  }
+  /* touchstart para resposta imediata no mobile (sem delay de 300ms) */
+  tab.addEventListener('touchstart', e => { e.preventDefault(); selectGender(); }, { passive: false });
+  /* click como fallback para desktop e acessibilidade */
+  tab.addEventListener('click', selectGender);
 });
 
 
