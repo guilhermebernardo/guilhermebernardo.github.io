@@ -1350,7 +1350,7 @@ const PRODUCTS = [
     id: 60, brand: 'Christian Dior', gender: 'feminino',
     tags: ['acessorio'],
     sold: true,
-    price: 1389.90,
+    price: 4389.90,
     name: 'Bolsa Lady Dior Preta',
     images: ['feminino/dior/dior-bolsa-lady-dior-preta.jpeg'],
     description: 'A lendária Lady Dior em bordado toile de jouy preto e branco com alça removível. Bordados elaborados com padrão exclusivo, ferragens douradas e charm "D.I.O.R." — um objeto de desejo absoluto, símbolo da haute couture parisiense.',
