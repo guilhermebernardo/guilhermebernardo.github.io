@@ -3050,6 +3050,7 @@ function openModal(product, startIdx = 0) {
   modalImg.src = encodeImg(_mImages[startIdx]);
   modalOverlay.classList.add('open');
   document.body.style.overflow = 'hidden';
+  history.pushState({ productId: product.id }, '', '?p=' + product.id);
   document.getElementById('modalClose').focus();
 }
 
@@ -3064,8 +3065,20 @@ function modalGoTo(n) {
 function closeModal() {
   modalOverlay.classList.remove('open');
   document.body.style.overflow = '';
+  if (location.search.includes('p=')) {
+    history.replaceState({}, '', location.pathname);
+  }
   setTimeout(() => { modalImg.src = ''; }, 460);
 }
+
+/* Fecha modal ao navegar com o botão Voltar do browser */
+window.addEventListener('popstate', () => {
+  if (modalOverlay.classList.contains('open')) {
+    modalOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+    setTimeout(() => { modalImg.src = ''; }, 460);
+  }
+});
 
 document.getElementById('modalClose').addEventListener('click', closeModal);
 modalPrev.addEventListener('click', () => modalGoTo(_mCurrent - 1));
@@ -3156,3 +3169,24 @@ buildBrandFilters('masculino');
 buildCategoryFilters();
 buildSortControls();
 renderProducts();
+
+/* Abre produto via URL compartilhada: ?p=123 */
+(function () {
+  const pId = parseInt(new URLSearchParams(location.search).get('p'), 10);
+  if (!pId) return;
+  const product = PRODUCTS.find(p => p.id === pId);
+  if (!product) return;
+  /* Garante que o gênero correto está selecionado */
+  if (product.gender !== activeGender) {
+    activeGender = product.gender;
+    document.querySelectorAll('.gender-tab').forEach(t =>
+      t.classList.toggle('active', t.dataset.gender === product.gender)
+    );
+    buildBrandFilters(activeGender);
+    buildCategoryFilters();
+    renderProducts();
+  }
+  openModal(product);
+  /* Substitui o state para que o pushState do openModal não duplique */
+  history.replaceState({ productId: pId }, '', '?p=' + pId);
+})();
