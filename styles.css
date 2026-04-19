@@ -216,8 +216,8 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 .hero-logo {
-  width: 300px;
-  max-width: 80vw;
+  width: min(460px, 88vw);
+  height: auto;
   animation: fadeUp 1.2s var(--ease) both;
   filter: drop-shadow(0 0 50px rgba(201,169,110,0.3));
 }
@@ -1370,7 +1370,7 @@ footer {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
-  .hero-logo { width: 210px; }
+  .hero-logo { width: min(320px, 88vw); }
   .about-accent { flex-direction: column; }
   .about-stat { border-right: none; border-bottom: 1px solid var(--gold-border); }
   .about-stat:last-child { border-bottom: none; }

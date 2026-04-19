@@ -3142,6 +3142,96 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 /* =====================================================
+   LOGO SVG ANIMATION
+   ===================================================== */
+(function () {
+  const d1el      = document.getElementById('d1');
+  if (!d1el) return; /* logo is static image fallback */
+  const d2el      = document.getElementById('d2');
+  const d1corners = [0,1,2,3].map(i => document.getElementById('d1-c' + i));
+  const ruleRight = document.getElementById('rule-right');
+  const ruleLeft  = document.getElementById('rule-left');
+  const boltEl    = document.getElementById('bolt');
+
+  const CX = 260, CY = 150;
+  const RX1 = 98, RY1 = 112;
+  const RX2 = 82, RY2 = 96;
+  const CORNER_S = 5;
+  const SPEED1 = 0.012, SPEED2 = 0.007;
+  let t1 = 0, t2 = Math.PI * 0.4;
+  let boltActive = false, boltAlpha = 0, boltDecay = false;
+  let nextBolt = 80 + Math.floor(Math.random() * 120);
+  let lastPickedDiamond = 1;
+
+  function ptStr(pts) {
+    return pts.map(p => p[0].toFixed(2) + ',' + p[1].toFixed(2)).join(' ');
+  }
+  function cornerPoly(x, y, s, depth) {
+    const w = s * Math.max(0.15, Math.abs(depth));
+    return `${x},${y-s} ${x+w},${y} ${x},${y+s} ${x-w},${y}`;
+  }
+
+  function frame() {
+    t1 += SPEED1; t2 += SPEED2;
+    const cosT1 = Math.cos(t1);
+    const d1verts = [
+      [CX, CY - RY1], [CX + RX1 * cosT1, CY],
+      [CX, CY + RY1], [CX - RX1 * cosT1, CY],
+    ];
+    d1el.setAttribute('points', ptStr(d1verts));
+    d1corners[0].setAttribute('points', cornerPoly(d1verts[0][0], d1verts[0][1], CORNER_S, 1));
+    d1corners[1].setAttribute('points', cornerPoly(d1verts[1][0], d1verts[1][1], CORNER_S, cosT1));
+    d1corners[2].setAttribute('points', cornerPoly(d1verts[2][0], d1verts[2][1], CORNER_S, 1));
+    d1corners[3].setAttribute('points', cornerPoly(d1verts[3][0], d1verts[3][1], CORNER_S, -cosT1));
+
+    const rx = d1verts[1][0], lx = d1verts[3][0];
+    ruleRight.setAttribute('x1', rx); ruleRight.setAttribute('x2', Math.min(rx + 118, 510));
+    ruleLeft.setAttribute('x1', Math.max(lx - 118, 10)); ruleLeft.setAttribute('x2', lx);
+    ruleRight.setAttribute('opacity', (0.1 + 0.2 * Math.abs(cosT1)).toFixed(2));
+    ruleLeft.setAttribute('opacity',  (0.1 + 0.2 * Math.abs(cosT1)).toFixed(2));
+
+    const cosT2 = Math.cos(t2);
+    const d2verts = [
+      [CX, CY - RY2 * cosT2], [CX + RX2, CY],
+      [CX, CY + RY2 * cosT2], [CX - RX2, CY],
+    ];
+    d2el.setAttribute('points', ptStr(d2verts));
+    d2el.setAttribute('opacity', (0.3 + 0.4 * (1 - Math.abs(cosT2))).toFixed(2));
+
+    /* bolt / raio ocasional */
+    nextBolt--;
+    if (nextBolt <= 0 && !boltActive) {
+      lastPickedDiamond = lastPickedDiamond === 1 ? 2 : 1;
+      const verts = lastPickedDiamond === 1 ? d1verts : d2verts;
+      let bestV = 0, bestDist = 0;
+      verts.forEach((v, i) => {
+        const dx = v[0] - CX, dy = v[1] - CY;
+        const d = Math.sqrt(dx*dx + dy*dy);
+        if (d > bestDist) { bestDist = d; bestV = i; }
+      });
+      boltEl.setAttribute('x1', verts[bestV][0].toFixed(2));
+      boltEl.setAttribute('y1', verts[bestV][1].toFixed(2));
+      boltEl.setAttribute('x2', CX.toFixed(2));
+      boltEl.setAttribute('y2', (CY + 3).toFixed(2));
+      boltActive = true; boltDecay = false; boltAlpha = 0;
+      nextBolt = 80 + Math.floor(Math.random() * 120);
+    }
+    if (boltActive) {
+      boltAlpha += boltDecay ? -0.035 : 0.1;
+      if (!boltDecay && boltAlpha >= 1) { boltAlpha = 1; boltDecay = true; }
+      if (boltDecay && boltAlpha <= 0) {
+        boltAlpha = 0; boltActive = false;
+        boltEl.setAttribute('opacity', '0');
+      } else {
+        boltEl.setAttribute('opacity', boltAlpha.toFixed(3));
+      }
+    }
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+
+/* =====================================================
    SCROLL REVEAL
    ===================================================== */
 const revealObs = new IntersectionObserver(entries => {

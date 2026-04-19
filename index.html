@@ -43,15 +43,82 @@
     <div class="hero-glow hero-glow--left"></div>
     <div class="hero-glow hero-glow--right"></div>
     <div class="hero-content">
-      <img
-        src="images/new_logo.png"
-        alt="Tolent Imports"
-        class="hero-logo"
-        id="heroLogo"
-      />
-      <p class="hero-tagline">Luxo Curado. Estilo Elevado.</p>
-      <div class="hero-divider"></div>
-      <p class="hero-sub">Importações premium das casas de moda mais prestigiadas do mundo</p>
+      <svg id="heroLogo" class="hero-logo" viewBox="0 0 520 460" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Tolent Imports">
+        <defs>
+          <linearGradient id="gold" x1="162" y1="38" x2="358" y2="262" gradientUnits="userSpaceOnUse">
+            <stop offset="0%"   stop-color="#C8A84B"/>
+            <stop offset="48%"  stop-color="#F2DC8A"/>
+            <stop offset="100%" stop-color="#9A7428"/>
+          </linearGradient>
+          <linearGradient id="gold-dim" x1="162" y1="38" x2="358" y2="262" gradientUnits="userSpaceOnUse">
+            <stop offset="0%"   stop-color="#9A7428"/>
+            <stop offset="48%"  stop-color="#C8A84B"/>
+            <stop offset="100%" stop-color="#6A5418"/>
+          </linearGradient>
+          <linearGradient id="silver" x1="90" y1="0" x2="430" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%"   stop-color="#888"/>
+            <stop offset="50%"  stop-color="#D8D8D8"/>
+            <stop offset="100%" stop-color="#888"/>
+          </linearGradient>
+          <linearGradient id="rule-fade" x1="90" y1="0" x2="430" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%"   stop-color="#07070700"/>
+            <stop offset="30%"  stop-color="#C8A84B"/>
+            <stop offset="50%"  stop-color="#F2DC8A"/>
+            <stop offset="70%"  stop-color="#C8A84B"/>
+            <stop offset="100%" stop-color="#07070700"/>
+          </linearGradient>
+          <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <polygon id="d1" points="260,38 358,150 260,262 162,150"
+          stroke="url(#gold)" stroke-width="1" fill="none" filter="url(#glow)"/>
+
+        <polygon id="d1-c0" points="260,32 264,38 260,44 256,38"  fill="url(#gold)"/>
+        <polygon id="d1-c1" points="364,147 370,153 364,159 358,153" fill="url(#gold)"/>
+        <polygon id="d1-c2" points="260,256 264,262 260,268 256,262" fill="url(#gold)"/>
+        <polygon id="d1-c3" points="156,147 162,153 156,159 150,153" fill="url(#gold)"/>
+
+        <line id="rule-right" x1="358" y1="150" x2="476" y2="150"
+          stroke="url(#gold)" stroke-width="0.5" opacity="0.25"/>
+        <line id="rule-left"  x1="44"  y1="150" x2="162" y2="150"
+          stroke="url(#gold)" stroke-width="0.5" opacity="0.25"/>
+        <line x1="476" y1="146" x2="476" y2="154" stroke="url(#gold)" stroke-width="0.8" opacity="0.3"/>
+        <line x1="44"  y1="146" x2="44"  y2="154" stroke="url(#gold)" stroke-width="0.8" opacity="0.3"/>
+
+        <polygon id="d2" points="260,54 342,150 260,246 178,150"
+          stroke="url(#gold-dim)" stroke-width="0.4" fill="none" opacity="0.6"/>
+
+        <g id="t-mark">
+          <rect x="225"    y="127"   width="70"  height="4.5" fill="url(#gold)"/>
+          <rect x="257.5"  y="131.5" width="5"   height="30"  fill="url(#gold)"/>
+          <rect x="225"    y="125.5" width="4.5" height="1.5" fill="url(#gold)" opacity="0.6"/>
+          <rect x="290.5"  y="125.5" width="4.5" height="1.5" fill="url(#gold)" opacity="0.6"/>
+          <rect x="251"    y="160"   width="18"  height="1.5" fill="url(#gold)" opacity="0.6"/>
+        </g>
+
+        <line id="bolt" x1="0" y1="0" x2="0" y2="0"
+          stroke="url(#gold)" stroke-width="0.4" opacity="0"/>
+
+        <text x="260" y="315"
+          font-family="'Cormorant Garamond','Times New Roman',serif"
+          font-size="48" font-weight="400"
+          fill="url(#gold)" text-anchor="middle" letter-spacing="14">TOLENT</text>
+
+        <rect x="90" y="329" width="340" height="0.5" fill="url(#rule-fade)"/>
+
+        <text x="260" y="358"
+          font-family="'Montserrat',Arial,sans-serif"
+          font-size="10" font-weight="300"
+          fill="url(#silver)" text-anchor="middle" letter-spacing="9">IMPORTS</text>
+
+        <text x="260" y="410"
+          font-family="'Cormorant Garamond','Times New Roman',serif"
+          font-size="12.5" font-weight="300" font-style="italic"
+          fill="#666" text-anchor="middle" letter-spacing="1.5">European &amp; Canadian Luxury — Curated for Brazil</text>
+      </svg>
       <!-- ======== MARQUEE ======== -->
       <div class="marquee-track hero-marquee">
     <div class="marquee-inner">
