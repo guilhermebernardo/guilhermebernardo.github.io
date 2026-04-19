@@ -3145,44 +3145,33 @@ window.addEventListener('scroll', () => {
    LOGO SVG ANIMATION
    ===================================================== */
 (function () {
-  const d1Wrap = document.getElementById('d1-wrap');
-  if (!d1Wrap) return;
-  const d2Wrap    = document.getElementById('d2-wrap');
-  const d2el      = document.getElementById('d2');
+  const boltEl    = document.getElementById('bolt');
+  if (!boltEl) return;
   const ruleRight = document.getElementById('rule-right');
   const ruleLeft  = document.getElementById('rule-left');
-  const boltEl    = document.getElementById('bolt');
+  const d2el      = document.getElementById('d2');
 
-  const CX = 260, CY = 150, RX1 = 98, RY1 = 112, RX2 = 82, RY2 = 96;
+  const CX = 260, CY = 150, RX1 = 98, RY2 = 96;
   const SPEED1 = 0.012, SPEED2 = 0.007;
   let t1 = 0, t2 = Math.PI * 0.4;
   let boltActive = false, boltAlpha = 0, boltDecay = false;
   let nextBolt = 80 + Math.floor(Math.random() * 120);
   let lastPickedDiamond = 1;
 
-  const isMobile = navigator.maxTouchPoints > 1 || /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
-  const TARGET_MS = isMobile ? 1000 / 30 : 0;
-  let lastTs = 0;
-
-  function frame(ts) {
-    requestAnimationFrame(frame);
-    if (TARGET_MS && ts - lastTs < TARGET_MS) return;
-    lastTs = ts;
-
+  /* Diamonds spin via CSS @keyframes — JS only handles rule lines + bolt */
+  function frame() {
     t1 += SPEED1; t2 += SPEED2;
     const cosT1 = Math.cos(t1);
     const cosT2 = Math.cos(t2);
 
-    d1Wrap.style.transform = 'scaleX(' + cosT1.toFixed(4) + ')';
-    d2Wrap.style.transform = 'scaleY(' + cosT2.toFixed(4) + ')';
     d2el.style.opacity = (0.3 + 0.4 * (1 - Math.abs(cosT2))).toFixed(2);
 
-    const rx = (CX + RX1 * cosT1).toFixed(1);
-    const lx = (CX - RX1 * cosT1).toFixed(1);
-    ruleRight.setAttribute('x1', rx);
-    ruleRight.setAttribute('x2', Math.min(CX + RX1 * cosT1 + 118, 510).toFixed(1));
-    ruleLeft.setAttribute('x1', Math.max(CX - RX1 * cosT1 - 118, 10).toFixed(1));
-    ruleLeft.setAttribute('x2', lx);
+    const rx = CX + RX1 * cosT1;
+    const lx = CX - RX1 * cosT1;
+    ruleRight.setAttribute('x1', rx.toFixed(1));
+    ruleRight.setAttribute('x2', Math.min(rx + 118, 510).toFixed(1));
+    ruleLeft.setAttribute('x1', Math.max(lx - 118, 10).toFixed(1));
+    ruleLeft.setAttribute('x2', lx.toFixed(1));
     const rOpacity = (0.1 + 0.2 * Math.abs(cosT1)).toFixed(2);
     ruleRight.setAttribute('opacity', rOpacity);
     ruleLeft.setAttribute('opacity',  rOpacity);
@@ -3190,7 +3179,7 @@ window.addEventListener('scroll', () => {
     nextBolt--;
     if (nextBolt <= 0 && !boltActive) {
       lastPickedDiamond = lastPickedDiamond === 1 ? 2 : 1;
-      const bx = lastPickedDiamond === 1 ? CX + RX1 * cosT1 : CX + RX2;
+      const bx = lastPickedDiamond === 1 ? rx : CX + 82;
       const by = lastPickedDiamond === 1 ? CY : CY - RY2 * cosT2;
       boltEl.setAttribute('x1', bx.toFixed(2));
       boltEl.setAttribute('y1', by.toFixed(2));
@@ -3208,6 +3197,7 @@ window.addEventListener('scroll', () => {
         boltEl.setAttribute('opacity', boltAlpha.toFixed(3));
       }
     }
+    requestAnimationFrame(frame);
   }
   requestAnimationFrame(frame);
 })();

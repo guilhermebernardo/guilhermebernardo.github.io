@@ -215,10 +215,28 @@ button { font-family: inherit; cursor: pointer; }
   margin-top: 8px;
 }
 
-#d1-wrap, #d2-wrap {
+@keyframes diamond-flip-x {
+  0%   { transform: scaleX(1);  animation-timing-function: ease-in-out; }
+  50%  { transform: scaleX(-1); animation-timing-function: ease-in-out; }
+  100% { transform: scaleX(1); }
+}
+@keyframes diamond-flip-y {
+  0%   { transform: scaleY(1);  animation-timing-function: ease-in-out; }
+  50%  { transform: scaleY(-1); animation-timing-function: ease-in-out; }
+  100% { transform: scaleY(1); }
+}
+#d1-wrap {
   transform-box: fill-box;
   transform-origin: center;
   will-change: transform;
+  animation: diamond-flip-x 8.7s linear infinite;
+}
+#d2-wrap {
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: transform;
+  animation: diamond-flip-y 14.9s linear infinite;
+  animation-delay: -3s;
 }
 
 .hero-logo {
