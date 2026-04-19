@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tolent Imports — Moda de Luxo</title>
-  <link rel="icon" type="image/png" href="images/tolent_imports_logo_no_background.png" />
+  <link rel="icon" type="image/png" href="images/tolent_imports_logo_favicon.png" />
   <link rel="apple-touch-icon" href="images/tolent_imports_logo_no_background.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +17,7 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">
-        <img src="images/tolent_imports_logo_black_background.png" alt="Tolent Imports" />
+        <img src="images/tolent_imports_logo_no_background.png" alt="Tolent Imports" />
       </a>
       <ul class="nav-links">
         <li><a href="#collection">Coleção</a></li>
@@ -73,13 +73,21 @@
           </filter>
         </defs>
 
-        <polygon id="d1" points="260,38 358,150 260,262 162,150"
-          stroke="url(#gold)" stroke-width="1" fill="none" filter="url(#glow)"/>
+        <!-- d2 — inner diamond, scaleY via CSS transform -->
+        <g id="d2-wrap">
+          <polygon id="d2" points="260,54 342,150 260,246 178,150"
+            stroke="url(#gold-dim)" stroke-width="0.4" fill="none"/>
+        </g>
 
-        <polygon id="d1-c0" points="260,32 264,38 260,44 256,38"  fill="url(#gold)"/>
-        <polygon id="d1-c1" points="364,147 370,153 364,159 358,153" fill="url(#gold)"/>
-        <polygon id="d1-c2" points="260,256 264,262 260,268 256,262" fill="url(#gold)"/>
-        <polygon id="d1-c3" points="156,147 162,153 156,159 150,153" fill="url(#gold)"/>
+        <!-- d1 — outer diamond + corner accents, scaleX via CSS transform -->
+        <g id="d1-wrap">
+          <polygon id="d1" points="260,38 358,150 260,262 162,150"
+            stroke="url(#gold)" stroke-width="1" fill="none" filter="url(#glow)"/>
+          <polygon id="d1-c0" points="260,33 265,38 260,43 255,38"   fill="url(#gold)"/>
+          <polygon id="d1-c1" points="358,145 363,150 358,155 353,150" fill="url(#gold)"/>
+          <polygon id="d1-c2" points="260,257 265,262 260,267 255,262" fill="url(#gold)"/>
+          <polygon id="d1-c3" points="162,145 167,150 162,155 157,150" fill="url(#gold)"/>
+        </g>
 
         <line id="rule-right" x1="358" y1="150" x2="476" y2="150"
           stroke="url(#gold)" stroke-width="0.5" opacity="0.25"/>
@@ -87,9 +95,6 @@
           stroke="url(#gold)" stroke-width="0.5" opacity="0.25"/>
         <line x1="476" y1="146" x2="476" y2="154" stroke="url(#gold)" stroke-width="0.8" opacity="0.3"/>
         <line x1="44"  y1="146" x2="44"  y2="154" stroke="url(#gold)" stroke-width="0.8" opacity="0.3"/>
-
-        <polygon id="d2" points="260,54 342,150 260,246 178,150"
-          stroke="url(#gold-dim)" stroke-width="0.4" fill="none" opacity="0.6"/>
 
         <g id="t-mark">
           <rect x="225"    y="127"   width="70"  height="4.5" fill="url(#gold)"/>

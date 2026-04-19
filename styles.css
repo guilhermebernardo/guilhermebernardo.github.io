@@ -215,6 +215,12 @@ button { font-family: inherit; cursor: pointer; }
   margin-top: 8px;
 }
 
+#d1-wrap, #d2-wrap {
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: transform;
+}
+
 .hero-logo {
   width: min(460px, 88vw);
   height: auto;
