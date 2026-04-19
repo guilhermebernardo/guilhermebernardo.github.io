@@ -338,7 +338,9 @@ button { font-family: inherit; cursor: pointer; }
   margin-top: 0;
 }
 .hero-scroll-hint {
-  margin-top: 28px;
+  display: block;
+  text-align: center;
+  padding: 18px 0 22px;
   font-family: 'Montserrat', sans-serif;
   font-size: 9px;
   font-weight: 400;
@@ -567,7 +569,7 @@ button { font-family: inherit; cursor: pointer; }
   align-items: center;
   white-space: nowrap;
   width: max-content;
-  animation: marquee 35s linear infinite;
+  animation: marquee 60s linear infinite;
 }
 .marquee-inner span {
   font-size: 9.5px;

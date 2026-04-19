@@ -1068,7 +1068,7 @@ const PRODUCTS = [
   {
     id: 59, brand: 'Hermès', gender: 'masculino',
     tags: ['tenis'],
-    price: 889.90,
+    price: 2889.90,
     sold: true,
     name: 'Sandália Chypre Preta',
     images: ['masculino/hermes/hermes-sandalia-chypre-preta.jpeg'],
@@ -2719,30 +2719,6 @@ document.querySelectorAll('.gender-tab').forEach(tab => {
   });
 });
 
-/* =====================================================
-   HERO GENDER BUTTONS
-   ===================================================== */
-document.querySelectorAll('.hero-gender-btn').forEach(btn => {
-  btn.addEventListener('click', e => {
-    e.preventDefault();
-    const gender = btn.dataset.gender;
-    document.querySelectorAll('.gender-tab').forEach(t => {
-      t.classList.remove('active');
-      if (t.dataset.gender === gender) t.classList.add('active');
-    });
-    activeGender   = gender;
-    activeBrand    = 'all';
-    activeCategory = 'all';
-    buildBrandFilters(activeGender);
-    buildCategoryFilters();
-    renderProducts();
-    const grid = document.getElementById('productGrid');
-    if (grid) {
-      const top = grid.getBoundingClientRect().top + window.scrollY - (navbar.offsetHeight + 12);
-      window.scrollTo({ top, behavior: 'smooth' });
-    }
-  });
-});
 
 /* =====================================================
    RENDERIZAR PRODUTOS
