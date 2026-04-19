@@ -360,13 +360,13 @@ button { font-family: inherit; cursor: pointer; }
 }
 .price-current {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--gold);
   letter-spacing: 0.5px;
 }
 .price-original {
-  font-size: 13px;
+  font-size: 11px;
   color: var(--grey);
   text-decoration: line-through;
   letter-spacing: 0.3px;
@@ -659,8 +659,8 @@ button { font-family: inherit; cursor: pointer; }
 /* Grid */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
 }
 
 /* Product Card */
@@ -738,28 +738,28 @@ button { font-family: inherit; cursor: pointer; }
 
 /* Card info */
 .card-info {
-  padding: 20px 22px 26px;
+  padding: 12px 14px 16px;
 }
 .card-brand {
-  font-size: 9px;
+  font-size: 8px;
   font-weight: 700;
-  letter-spacing: 3.5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 .card-name {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 21px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--white);
   letter-spacing: 0.5px;
   line-height: 1.2;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 .card-desc {
-  font-size: 11.5px;
-  line-height: 1.75;
+  font-size: 10px;
+  line-height: 1.65;
   color: var(--grey);
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -1322,12 +1322,15 @@ footer {
    RESPONSIVE
    ===================================================== */
 @media (max-width: 1200px) {
-  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .product-grid { grid-template-columns: repeat(4, 1fr); }
   .brands-grid  { grid-template-columns: repeat(2, 1fr); }
   .about-inner  { grid-template-columns: 1fr; gap: 60px; }
   .about-accent { flex-direction: row; }
   .about-stat   { flex: 1; border-bottom: none; border-right: 1px solid var(--gold-border); }
   .about-stat:last-child { border-right: none; }
+}
+@media (max-width: 900px) and (min-width: 701px) {
+  .product-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 900px) {
@@ -1340,7 +1343,7 @@ footer {
 }
 
 @media (max-width: 700px) {
-  .product-grid { grid-template-columns: 1fr; gap: 14px; }
+  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .brands-grid  { grid-template-columns: 1fr; }
   .modal-card {
     grid-template-columns: 1fr;
