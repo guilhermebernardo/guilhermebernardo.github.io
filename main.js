@@ -29,14 +29,6 @@ const PRODUCTS = [
   /* ══════════════════════════════════════════════════
      TESTE DE PAGAMENTO — REMOVER APÓS VALIDAR
   ══════════════════════════════════════════════════ */
-  {
-    id: 999, brand: 'Tolent Imports', gender: 'masculino',
-    tags: ['acessorio'],
-    price: 5.00,
-    name: 'TESTE — Produto de Validação',
-    images: ['new_logo.png'],
-    description: '⚠️ Produto de teste. Realize o pagamento para validar PIX e cartão de crédito. Remover após validação.',
-  },
 
   /* ══════════════════════════════════════════════════
      CONJUNTOS
@@ -66,6 +58,7 @@ const PRODUCTS = [
   {
     id: 3, brand: 'Lacoste', gender: 'masculino',
     tags: ['conjunto', 'sport'],
+    sold: true,
     price: 649.41, originalPrice: 749.90,
     name: 'Conjunto Wimbledon Azul Celeste',
     images: ['masculino/lacoste/Conjunto Wimbledon Azul Celeste.jpeg'],
@@ -477,6 +470,7 @@ const PRODUCTS = [
     id: 28, brand: 'Lacoste', gender: 'masculino',
     tags: ['moletom'],
     price: 470.41, originalPrice: 489.90,
+    sold: true,
     name: 'Moletom Zip Premium Verde',
     images: ['masculino/lacoste/lacoste-moletom-zip-verde.jpeg'],
     description: 'Moletom com zíper completo em verde sálvia de malha pesada escovada. Emblema do crocodilo Lacoste no punho, com ribana de precisão no cós e mangas — silhueta atlética refinada para o guarda-roupa contemporâneo.',
@@ -654,14 +648,6 @@ const PRODUCTS = [
     description: 'Calça flared em marrom terroso com monograma Lacoste — a sofisticação dos tons neutros com o corte generoso que define a feminilidade contemporânea.',
   },
   {
-    id: 36, brand: 'Lacoste', gender: 'masculino',
-    tags: ['calca'],
-    price: 559.41, originalPrice: 659.90,
-    name: 'Calça Jogger Monograma',
-    images: ['masculino/lacoste/lacoste-calca-jogger-monograma.jpeg'],
-    description: 'Calça jogger Lacoste em jacquard monograma azul celeste. Cós elástico com cordão, detalhamento de faixas em dourado e marinho — lazer elegante redefinido para quem se move com intenção e estilo.',
-  },
-  {
     id: 37, brand: 'Lacoste', gender: 'masculino',
     tags: ['calca'],
     price: 464.90,
@@ -750,6 +736,7 @@ const PRODUCTS = [
     id: 43, brand: 'Lacoste', gender: 'masculino',
     tags: ['short', 'sport'],
     price: 299.90,
+    sold: true,
     name: 'Short Sport Lacoste Azul',
     images: ['masculino/lacoste/Short Sport Lacoste Azul.jpeg'],
     description: 'Short de performance Lacoste Sport em azul royal. Tecido de secagem rápida, vivos brancos nos bolsos e emblema de crocodilo bordado — feito para as quadras, com a elegância de quem domina qualquer ambiente.',
@@ -1072,7 +1059,8 @@ const PRODUCTS = [
   {
     id: 54, brand: 'Louis Vuitton', gender: 'masculino',
     tags: ['tenis'],
-    price: 1389.90,
+    price: 2389.90,
+    sold: true,
     name: 'LV Trainer Denim Azul',
     images: ['masculino/louis-vuitton/lv-trainer-denim-azul.jpeg'],
     description: 'LV Trainer na coloração denim azul com monograma LV em relevo e detalhes brancos. Uma fusão da herança francesa centenária com a cultura streetwear contemporânea — para quem escreve suas próprias regras.',
@@ -1081,6 +1069,7 @@ const PRODUCTS = [
     id: 59, brand: 'Hermès', gender: 'masculino',
     tags: ['tenis'],
     price: 889.90,
+    sold: true,
     name: 'Sandália Chypre Preta',
     images: ['masculino/hermes/hermes-sandalia-chypre-preta.jpeg'],
     description: 'A icônica sandália Chypre da Hermès em couro negro mate com palmilha em couro goffrado. Silhueta de corte limpo com fivela ajustável — o calçado definitivo do luxo discreto, construído à mão por mestres artesãos em Paris.',
@@ -1221,6 +1210,7 @@ const PRODUCTS = [
   {
     id: 99, brand: 'Nike', gender: 'masculino',
     tags: ['tenis'],
+    sold: true,
     price: 779.90, originalPrice: 1119.90,
     name: 'Air Max Plus Azul Claro',
     images: [
@@ -2455,7 +2445,7 @@ const PRODUCTS = [
   {
     id: 298, brand: 'Lacoste', gender: 'masculino',
     tags: ['moletom', 'sport'],
-    price: 1.00,
+    price: 1080.90,
     name: 'Jaqueta Monogram Lacoste Azul',
     images: ['masculino/lacoste/lacoste-monogram-jaqueta-azul.jpg'],
     description: 'Jaqueta Lacoste Monogram em azul — corte track jacket com padrão monograma jacquard, zíper metálico e silhueta atlética de alto padrão.',
@@ -2463,7 +2453,7 @@ const PRODUCTS = [
   {
     id: 299, brand: 'Lacoste', gender: 'masculino',
     tags: ['calca', 'sport'],
-    price: 1032.00,
+    price: 1032.90,
     name: 'Calça Monogram Lacoste Azul',
     images: ['masculino/lacoste/lacoste-monogram-calca-azul.jpg'],
     description: 'Calça Lacoste Monogram em azul — tecido técnico com padrão monograma all-over, elástico ajustável e corte moderno para uso esportivo e casual.',
@@ -2472,10 +2462,10 @@ const PRODUCTS = [
     id: 300, brand: 'Lacoste', gender: 'masculino',
     tags: ['conjunto', 'sport'],
     price: 2889.90, originalPrice: 3952.00,
-    name: 'Conjunto Monogram Lacoste Azul',
+    name: 'Conjunto Jaqueta + Polo + Calça Monogram Lacoste Azul',
     images: [
-      'masculino/lacoste/lacoste-monogram-polo-azul.jpg',
       'masculino/lacoste/lacoste-monogram-jaqueta-azul.jpg',
+      'masculino/lacoste/lacoste-monogram-polo-azul.jpg',
       'masculino/lacoste/lacoste-monogram-calca-azul.jpg',
     ],
     description: 'Conjunto completo Lacoste Monogram Azul — polo, jaqueta track e calça coordenadas em padrão monograma all-over. Três peças com identidade visual única, artesanato Lacoste e desconto exclusivo na compra do conjunto.',
@@ -2512,10 +2502,10 @@ const PRODUCTS = [
     id: 304, brand: 'Lacoste', gender: 'masculino',
     tags: ['conjunto', 'sport'],
     price: 2889.90, originalPrice: 3952.00,
-    name: 'Conjunto Monogram Lacoste Bege',
+    name: 'Conjunto Jaqueta + Polo + Calça Monogram Lacoste Bege',
     images: [
-      'masculino/lacoste/lacoste-monogram-polo-bege.jpg',
       'masculino/lacoste/lacoste-monogram-jaqueta-bege.jpg',
+      'masculino/lacoste/lacoste-monogram-polo-bege.jpg',
       'masculino/lacoste/lacoste-monogram-calca-bege.jpg',
     ],
     description: 'Conjunto completo Lacoste Monogram Bege — polo, jaqueta track e calça coordenadas em padrão monograma all-over em tons creme e bege. Três peças com identidade visual única e desconto exclusivo na compra do conjunto.',
