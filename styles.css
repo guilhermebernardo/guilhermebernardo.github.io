@@ -171,6 +171,7 @@ button { font-family: inherit; cursor: pointer; }
     linear-gradient(90deg, rgba(201,169,110,0.035) 1px, transparent 1px);
   background-size: 80px 80px;
   z-index: 0;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 50%, black 20%, transparent 80%);
   mask-image: radial-gradient(ellipse at 50% 50%, black 20%, transparent 80%);
 }
 
@@ -192,6 +193,10 @@ button { font-family: inherit; cursor: pointer; }
   background: rgba(201,169,110,0.05);
   bottom: 10%;
   right: -10%;
+}
+@media (hover: none) {
+  .hero-glow { display: none; }
+  .hero-grid-overlay { display: none; }
 }
 
 .hero-content {
