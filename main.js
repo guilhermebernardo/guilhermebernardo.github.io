@@ -2461,7 +2461,7 @@ const PRODUCTS = [
   {
     id: 300, brand: 'Lacoste', gender: 'masculino',
     tags: ['conjunto', 'sport'],
-    price: 2889.90, originalPrice: 3952.00,
+    price: 2089.90, originalPrice: 3952.00,
     name: 'Conjunto Jaqueta + Polo + Calça Monogram Lacoste Azul',
     images: [
       'masculino/lacoste/lacoste-monogram-jaqueta-azul.jpg',
